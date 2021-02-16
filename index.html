@@ -1,0 +1,176 @@
+---
+layout: default
+title: Home
+permalink:
+---
+
+<div class="main-container col-12">
+
+    <div class="home-highlight slideDown col-2"></div>
+    <div id="home" class="main-section">
+        <div class="time-roles col-8" data-depth="0.2">
+            <div class="roles">
+                ux / ui / front-end
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="contact">
+                a.c.fusato@gmail.com
+            </div>
+        </div>
+        <div class="home-img col-6" data-depth="0.1">
+            <div class="home-gif slideDown">
+            </div>
+            <div class="gif-shadow"></div>
+        </div>
+        <div class="year-title col-7" data-depth="0.6">
+            <div class="year slowSlide">
+                20 <br> 20
+            </div>
+            <div class="vertical-line slowSlide"></div>
+            <div class="title slowSlide">
+                Port <br> folio
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="main-section">
+        <div class="highlight">
+            <h2>Projects</h2>
+        </div>
+
+        <div class="project-wrapper">
+
+            {% for block in site.data.my-projects.projects %}
+            <div class="col-4">
+                <a href="{{ block.link }}" class="project-link">
+                    <div class="project-item"
+                        style="background-image: url('{{ block.icon | asset_url }}')">
+                        <span onMouseOver="this.style.backgroundColor='{{ block.color }}'">
+                            <h2>
+                                {{ block.name }}
+                            </h2>
+                            <p>
+                                {{ block.desc }}
+                            </p>
+                        </span>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+
+    <div id="gallery" class="main-section">
+        <div class="highlight">
+            <h2>Gallery</h2>
+        </div>
+        <div id="gridContainer" class="">
+            {% for block in site.data.my-projects.gallery %}
+            <!-- <div class="col-4"> -->
+            <a href="{{ block.image | asset_url }}" class="gallery-link fresco zoom"
+                data-fresco-group="Gallery" data-fresco-caption="{{ block.caption }}"
+                title="{{ block.name }}" data-fresco-group-options="loop: true"
+                data-fresco-options="thumbnail: '{{ block.icon | asset_url }}'">
+                <div class="gallery-item"
+                    style="background-image: url('{{ block.icon | asset_url }}')">
+                    <span onMouseOver="this.style.backgroundColor='{{ block.color }}'">
+                        <h2>
+                            {{ block.name }}
+                        </h2>
+                        <p>
+                            {% for type in block.type %}
+                            {{ type | split:'' | reverse | join:'' | replace_first: ' ', ';psbn&' | split:'' | reverse | join:'' }}
+                            {% if forloop.last == true %}
+                            {% break %}
+                            {% else %}
+                            &nbsp;|&nbsp;
+                            {% endif %}
+                            {% endfor %}
+                        </p>
+                    </span>
+                </div>
+            </a>
+            <!-- </div> -->
+            {% endfor %}
+        </div>
+
+    </div>
+
+
+    <div id="about" class="main-section">
+        <!-- <div class="highlight">
+            <h2>About</h2>
+        </div> -->
+        <div class="about-wrapper">
+            <!-- <div class="col-8"> -->
+            <div class="about-img" style="background-image: url('/assets/images/profilebw.jpg')">
+            </div>
+            <div class="about-content responsive-hide-M">
+                <span> Hi! <b>I'm Alyssa</b>, an aspiring<br><b>user interface</b> &<b>
+                    experience
+                        designer</b>.</span><br>
+                <p>
+                    I like to think of the creative challenges presented by my work as a combination
+                    of two of my favorite things: puzzles and art. Whether it's by overhauling a
+                    site,
+                    designing a framework for organizing office supplies or rearranging the
+                    furniture
+                    in my house, I'm always looking for ways to improve the systems I interact with.
+                    <br> <br>
+                    Work aside, I also have a great love for psychology, philosophy, hand-drawn
+                    animation, and wacky puzzle games. <br> <br>
+                    Drop me a line or request a resume at
+                    <a href="mailto:a.c.fusato@gmail.com">a.c.fusato@gmail.com</a>!
+                </p>
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
+</div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var slideDown = {
+            interval: 60,
+            distance: '50px',
+            delay: 10,
+            origin: 'top',
+            opacity: 0,
+            duration: 800,
+            easing: 'ease-in-out'
+        }
+
+        var slowSlide = {
+            interval: 150,
+            distance: '80px',
+            delay: 150,
+            origin: 'top',
+            opacity: 0,
+            duration: 1000,
+            easing: 'ease-in-out'
+        }
+
+        var easeIn = {
+            interval: 60,
+            distance: '10px',
+            delay: 10,
+            origin: 'top',
+            opacity: 0,
+            duration: 1000,
+            easing: 'ease-out',
+            reset: true,
+        }
+
+        ScrollReveal().reveal('.gallery-item', slideDown);
+        ScrollReveal().reveal('.project-item', slideDown);
+        ScrollReveal().reveal('.slowSlide', slowSlide);
+        ScrollReveal().reveal('.slideDown', easeIn);
+
+        // var scene = document.getElementById('home');
+        // var parallaxInstance = new Parallax(home);
+    });
+
+
+</script>

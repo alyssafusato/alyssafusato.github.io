@@ -1,0 +1,368 @@
+//Variables:
+$darkBg: #30303f;
+$SectionPadLeft: 6.4rem;
+$heroMarginTop: 45vh;
+
+@mixin bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin paragraph {
+  line-height: 1.7;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+
+.flex-column {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.flex-row {
+    flex-direction: row;
+    align-items: center;
+}
+
+.darkBg {
+    background: $darkBg;
+}
+
+a {
+    color: $highlight-dark;
+    &:visited {
+        color: $bright-purple;
+    }
+    &:hover {
+        color: $bright-blue;
+    }
+}
+
+#main {
+    padding-left: $nav-width;
+
+    .projectSection {
+        padding: 2rem 2rem 4rem 4rem;
+        display: flex;
+
+        figure {
+            margin: unset;
+        }
+
+        .imgHide {
+            display: none;
+        }
+
+        .sectionText {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            z-index: 1;
+
+            h1.sectionTitle {
+                display: inline-block;
+                font-family: "Inter";
+                font-size: 70px;
+                margin-bottom: 0em;
+                margin-top: 0.5em;
+                text-transform: none;
+                transition: all 1s cubic-bezier(0.19, 0.12, 0.81, 0.35);
+                font-weight: 700;
+                color: $main-color;
+                // color: $baby-blue;
+                color: lighten($main-color, 22%);
+                letter-spacing: 0.2px;
+                text-shadow: 2px 2px 1px #000, 0 -1px 1px #000, 1px 1px 1px #000, -1px 0 0 #000, 1px 1px 0 #000,
+                    1px 0 0 #000, 0 -1px 0 #000;
+                &:hover,
+                &:focus {
+                    color: $text-primary;
+                    font-weight: 200;
+                    letter-spacing: 1px;
+                }
+            } //h1.projecth1
+
+            h2.sectionSubHeader {
+                font-style: italic;
+                font-weight: 300;
+                font-size: 26px;
+                line-height: 145%;
+                letter-spacing: 0.05em;
+                // text-transform: uppercase;
+                color: $baby-blue;
+                margin-top: -0.25rem;
+            } //h2.sectionSubHeader
+
+            p.sectionBody {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 19px;
+                line-height: 1.7;
+                color: whitesmoke;
+                max-width: 35rem;
+                min-width: 30%;
+            } //.sectionBody
+        }
+
+        .imgWrap {
+            display: flex;
+            flex-direction: column;
+            padding-right: 4rem;
+            justify-content: space-evenly;
+        }
+
+        div.sectionImg {
+            flex-basis: 10rem;
+            flex-grow: 1;
+            margin: 2rem 0 0 4rem;
+            height: 40vh;
+            min-height: 20vw;
+            min-width: 20vw;
+            transition: all 0.5s cubic-bezier(0.19, 0.12, 0.81, 0.35);
+            @include bgimg;
+
+            &:hover,
+            &:focus {
+                box-shadow: 6px 6px 0px 1px black;
+                transform: translate(-5px, -5px);
+            }
+        } //div.sectionImg
+
+        img.sectionImg-width {
+            flex-grow: 1;
+            margin-top: 2rem;
+            width: 80%;
+            height: auto;
+            transition: all 0.5s cubic-bezier(0.19, 0.12, 0.81, 0.35);
+
+            &:hover,
+            &:focus {
+                box-shadow: 6px 6px 0px 1px black;
+                transform: translate(-5px, -5px);
+            }
+        } //img.sectionImg
+
+        img.sectionImg-height {
+            height: auto;
+            width: 35vw;
+            transition: all 0.5s cubic-bezier(0.19, 0.12, 0.81, 0.35);
+
+            &:hover,
+            &:focus {
+                box-shadow: 6px 6px 0px 1px black;
+                transform: translate(-5px, -5px);
+            }
+        } //img.sectionImg
+
+        a.sectionImg-height {
+            height: auto;
+            width: 35vw;
+            transition: all 0.5s cubic-bezier(0.19, 0.12, 0.81, 0.35);
+
+            &:hover,
+            &:focus {
+                box-shadow: 6px 6px 0px 1px black;
+                transform: translate(-5px, -5px);
+            }
+        } //img.sectionImg
+
+        p.caption {
+            font-style: italic;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 145%;
+            letter-spacing: 0.07em;
+            color: lighten($baby-blue, 15%);
+            // color: lighten($baby-blue 50%);
+            // color: $baby-blue;
+            max-width: 24rem;
+        }
+    } //.projectSection
+
+
+
+    #heroImg {
+        width: 100%;
+        height: 25vh;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        @include bgimg;
+        background-position: bottom;
+    } //#heroImg
+
+    #projectHero {
+        .infoItemWrap {
+            padding-right: 4rem;
+
+            .infoItem {
+                width: 35vw;
+            }
+        }
+
+        #heroSectionText {
+            .infoTextWrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .infoText {
+                    opacity: 0.76;
+                    font-family: $font-secondary;
+                    font-style: italic;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 145%;
+                    letter-spacing: 0.05em;
+                    color: $highlight-pink;
+                    :first-of-type {
+                    }
+                    :last-of-type {
+                    }
+                } //.infoText
+            } // .infoTextWrapper
+        } //#heroSectionText
+    } //#projectHero
+    // } //#textBg
+} //#main
+
+    #objectives {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+
+        .objective-wrapper {
+            min-width: 27em;
+            max-width: 100%;
+            padding: 3em 1.5em 4em 0em;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: baseline;
+
+            .vert-divider {
+                @include vert-line(3em, 1px, steelblue);
+                align-self: center;
+            }
+
+            .objective {
+                width: 45em;
+                padding: 0em 3em;
+
+                img {
+                    height: 4em;
+                    width: auto;
+                    opacity: 0.75;
+                    filter: invert(51%) sepia(6%) saturate(4534%) hue-rotate(166deg) brightness(91%) contrast(80%);
+                }
+
+                h4 {
+                    margin: 2em 0 0.5em;
+                    font-size: 22px;
+                }
+
+                p {
+                    margin: 0 0.2em;
+                    @include paragraph;
+                    font-size: 16px;
+                }
+
+                &:first-of-type {
+                    padding-left: 0;
+                }
+                &:last-of-type {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+@media only screen and (max-width: 1100px) {
+    $section-left: 1rem;
+
+    #main {
+        padding-left: 2rem;
+        h2.sectionSubHeader {
+            margin-left: 0rem !important;
+        }
+
+        .projectSection {
+            padding-left: 4rem !important;
+        }
+
+        #textBg {
+            top: $heroMarginTop - 4vh !important;
+            left: $section-left !important;
+        }
+
+        .objective-wrapper {
+            min-width: unset;
+            flex-direction: column;
+        }
+
+        #objectives .objective-wrapper .objective {
+            width: unset;
+            max-width: 35rem;
+            padding: 1rem 1rem 1rem 0;
+            margin-bottom: 1rem;
+        }
+
+        #objectives .objective-wrapper .objective h4 {
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #main .projectSection {
+        padding: 2rem 3rem 4rem 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main .projectSection .imgWrap {
+        justify-content: flex-start;
+        flex-direction: row;
+        order: 2;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #main {
+        padding-left: 0rem;
+
+        .projectSection {
+            padding-left: 2rem !important;
+            display: flex;
+            flex-direction: column;
+
+            div.sectionImg {
+                width: 100%;
+                min-height: 70vw;
+                margin: 2rem 0 0 0;
+            }
+
+            img.sectionImg {
+                width: 100%;
+                margin: 2rem 0 0 0;
+            }
+
+            a.sectionImg {
+                width: 100%;
+                margin: 2rem 0 0 0;
+            }
+        }
+
+        #textBg {
+            left: 0 !important;
+            width: 100%;
+        }
+    }
+}
+
+.blah {
+    width: 100%;
+    height: 5rem;
+    border: 2px solid red;
+}

@@ -1,0 +1,31 @@
+---
+pietime:
+    name: "PieTime"
+    sections: 
+    hero:
+    subtitle: "A multitasking visual timer"
+    info1: "UX/UI, Mobile App Dev"
+    info2: "Spring 2020 - Present"
+    hero: "../assets/images/works/pieTimeMockup3.jpg"
+    description: "../assets/images/works/pieTimeMockup.jpg"
+    problem1: "../assets/images/works/visualTimers.jpg"
+    problem2: "../assets/images/works/visualTimers2.jpg"
+    concept: "../assets/images/works/concept.jpg"
+    process: "../assets/images/works/pieTimeFigmaHQ.jpg"
+    challenges:
+    results: "../assets/images/works/pietime_mockup.jpg"
+
+Sharebio:
+  - name: Sharebio
+    description: "../assets/images/works/sharebio.jpg"
+    info1: "UX/UI, Web Dev"
+    info2: "June - July 2019"
+    subtitle: "Center for bioinformatics research"
+    hero: "../assets/images/works/sharebioRenderMockup.jpg"
+    problem: "../assets/images/works/sharebio-logo.png"
+    challenge1: "../assets/images/works/sharebio-browse.png"
+    challenge2: "../assets/images/works/sharebio-projects.png"
+    concept:
+    process:
+    challenges:
+    results:

@@ -1,0 +1,187 @@
+---
+projects:
+  - name: PieTime
+    link: /pietime/
+    icon: "/assets/images/pieTimeThumb.png"
+    color: "rgb(176, 25, 25)"
+    date: Spring 2020
+    skills: 
+    - UX design 
+    - UI design
+    - Mobile App Dev
+    desc: "A picturesque timer app for visual thinkers and people who like pie. My role involved concept development, UX/UI design, and mobile implementation in Flutter."
+        
+  - name: Sharebio
+    link: /sharebio/
+    icon: "/assets/images/sharebio-thumbnail.png"
+    color: "#08416a"
+    date: Summer 2019 - Present
+    skills: 
+    - front-end development 
+    - UI design 
+    - branding
+    desc: "An intercollegiate platform that hosts bioinformatics research
+          materials shared between Whitworth, Reed, and Lewis & Clark College."
+  
+  - name: Starbird
+    link: /starbird/
+    icon: "/assets/images/starbird-thumbnail.png"
+    color: "#270986"
+    date: Jan. 2019
+    skills: 
+    - UX design 
+    - UI design
+    desc: "A classic intergalactic astroid-dodging game I designed, animated, and helped code. See if you can get Starbird back to the spaceship in one piece!"
+
+  # - name: Starbird
+  #   link: /under-construction/
+  #   icon: "/assets/images/starbird-thumbnail.png"
+  #   color: "#4a3296"
+  #   date: January 2019
+  #   skills: 
+  #   - front-end development
+  #   - UI design
+  #   - graphic design
+  #   desc: "A classic browser-based side-scrolling adventure about a bird
+  #         trying to find its way home across the galaxy. Dodge asteroids to help 
+  #         Starbird catch the next spaceship back! (Page under construction)"
+  
+gallery:
+
+  - name: Another Good Meeting
+    caption: Another Good Meeting mobile wireframes
+    icon: "/assets/images/design/agm_thumbnail.jpg"
+    image: "/assets/images/design/agm_wireframes.jpg"
+    color: "#146AB4"
+    type:
+    - UX/UI Design
+    - Mobile
+
+  - name: Hawaiian Air Registration
+    caption: Hawaiian Air Registration concept
+    icon: "/assets/images/design/HA_thumbnail.jpg"
+    image: "/assets/images/design/HA_screens.jpg"
+    color: "#7813a7"
+    type:
+    - UI Design
+    - Mobile   
+  
+  - name: Montage
+    caption: Montage mockups
+    icon: "/assets/images/design/montage_green.jpg"
+    image: "/assets/images/design/Montage_fullview.png"
+    color: "#34a9a9"
+    type:
+    - UI Design
+    - UX Design
+
+  - name: Sacred Heart Schools
+    caption: Sacred Heart Schools wireframe and mockup
+    icon: "/assets/images/design/shs_thumbnail.jpg"
+    image: "/assets/images/design/shs_wireframe_mockup.jpg"
+    color: "#c05353"
+    type:
+    - UX/UI Design
+    - Mobile
+
+  - name: Spine & Scoliosis Clinic
+    caption: Spine & Scoliosis Clinic mockup concept
+    icon: "/assets/images/design/SSC-site-edited.png"
+    image: "/assets/images/design/SSC-site-edited.png"
+    color: "#1d8bbb"
+    type:
+    - UI Design
+    - Web Design
+
+  - name: Maton
+    caption: Maton logo concept
+    icon: "/assets/images/design/maton_thumbnail.jpg"
+    image: "/assets/images/design/maton.jpg"
+    color: "#de8f17"
+    type:
+    - Graphic Design
+   
+  - name: Video Narrative
+    caption: Video Narrative highlight
+    icon: "/assets/images/design/staticReading.jpg"
+    image: "/assets/images/design/animatedReading.gif"
+    color: "#2b3c74"
+    type:
+    - animation
+    - illustration
+
+  - name: Video Narrative II
+    caption: Video Narrative highlight II
+    icon: "/assets/images/design/staticStairs.gif"
+    image: "/assets/images/design/animatedStairs.gif"
+    color: "#a72913"
+    type:
+    - animation
+    - illustration
+
+  - name: Video Narrative III
+    caption: Video Narrative highlight III
+    icon: "/assets/images/design/staticFridge.jpg"
+    image: "/assets/images/design/animatedfridge.gif"
+    color: "#8b4a24"
+    type:
+    - animation
+    - illustration
+
+  # - name: Maton
+  #   icon: "/assets/images/maton-thumb.jpg"
+  #   image: "/assets/images/maton.jpg"
+  #   color: "#217984"
+  #   type: 
+  #   - concept
+  #   - mockup
+  #   - graphic design
+
+  # - name: Spine and Scoliosis Clinic
+  #   icon: "/assets/images/SSC-site-edited.png"
+  #   image: "/assets/images/SSC-site-edited.png"
+  #   color: "#2067a0"
+  #   type:
+  #   - mockup
+  #   - site redesign
+
+  # - name: Lorien Herbs & Natural Foods
+  #   icon: "/assets/images/lorien.png"
+  #   image: "/assets/images/lorien.png"
+  #   color: "#37356b" 
+  #   type:
+  #   - mockup
+  #   - site redesign
+
+gallery2:
+
+
+
+pages:
+  - name: PieTime
+    subtitle: "UX/UI, Mobile App Development"
+    info1: "Spring 2020 - Present"
+    info2: ""
+    hero: "../assets/images/works/pieTimeMockup3.jpg"
+    description: "../assets/images/works/pieTimeMockup.jpg"
+    problem1: "../assets/images/works/visualTimers.jpg"
+    problem2: "../assets/images/works/visualTimers2.jpg"
+    concept: "../assets/images/works/concept.jpg"
+    process: "../assets/images/works/pieTimeFigmaHQ.jpg"
+    challenges:
+    results: "../assets/images/works/pieTimeMockup2.jpg"
+    results2: "../assets/images/works/pietime_mockups.jpg"
+
+  - name: Sharebio
+    subtitle: "UX/UI, Front-end Web Development"
+    description: "../assets/images/works/sharebio.jpg"
+    info1: "June - July 2019"
+    info2: ""
+    hero: "../assets/images/works/sharebioRenderMockup.jpg"
+    problem: "../assets/images/works/sharebio-logo.png"
+    challenge1: "../assets/images/works/sharebio-browse.png"
+    challenge2: "../assets/images/works/sharebio-projects.png"
+    concept:
+    process:
+    challenges:
+    results:

@@ -1,0 +1,189 @@
+---
+layout: default
+title: PieTime
+permalink: /pietime/
+---
+
+{% for block in site.data.my-projects.pages %}
+{% if block.name == 'PieTime' %}
+<div id="main">
+    <div id="heroImg" style="background-image: url('{{ block.hero | asset_url }}');">
+        {{ site.data.my-projects.block.name }}
+    </div>
+    <div id="projectHero" class="projectSection">
+        <!-- <div class="infoItemWrap">
+            <div class="infoItem"></div>
+            <div class="infoItem"></div>
+            <div class="infoItem"></div>
+            <div class="infoItem">
+            </div>
+        </div> -->
+        <div class="imgWrap">
+            <a href="{{ block.description | asset_url }}" alt="" class="fresco"
+                data-fresco-group="Description">
+                <img src="{{ block.description | asset_url }}" alt="" class="sectionImg-height">
+            </a>
+        </div>
+        <!-- <div id="textBg"> -->
+        <div id="heroSectionText" class="sectionText">
+            <div class="infoTextWrapper">
+                <div class="infoText">{{ block.info1 }}</div>
+                <div class="infoText">{{ block.info2 }}</div>
+            </div>
+            <h1 class="sectionTitle">{{ block.name }}</h1>
+            <h2 class="sectionSubHeader">{{ block.subtitle }}</h2>
+            <p class="sectionBody">
+                PieTime is a mobile timer app that illustrates your to-do list in the best way
+                possible- like a pie.
+                Optimized for visual learners, PieTime keeps track of your tasks and sections your
+                schedule into
+                sweet visual components so you can see how you're making the most of your day.
+            </p>
+        </div>
+        <!-- </div> -->
+    </div>
+    <div id="problem" class="projectSection darkBg">
+        <div class="imgWrap">
+            <a href="{{ block.problem1 | asset_url }}" alt="" class="fresco"
+                data-fresco-group="Problem" data-fresco-group-options="loop: true">
+                <img src="{{ block.problem1 | asset_url }}" alt="" class="sectionImg-height">
+            </a>
+            <a href="{{ block.problem2 | asset_url }}" alt="" class="fresco"
+                data-fresco-group="Problem" data-fresco-group-options="loop: true">
+                <img src="{{ block.problem2 | asset_url }}" alt="" class="sectionImg-height">
+            </a>
+        </div>
+        <div class="sectionText">
+            <div class="textWrapper">
+                <h1 class="sectionTitle">Problem</h1>
+                <p class="sectionBody">
+                    I absolutely love visual timers. They represent the passage of time in a
+                    language I instantly understand, which is something sorely lacking in most
+                    productivity apps I've
+                    tried over the years.
+                    <br><br>
+                    Unfortunately, there's no easy way to setup a series of timers that can track
+                    your progress
+                    as you work through tasks consecutively- you can either set one big timer, or
+                    several smaller ones.
+                    This can be
+                    extremely disruptive when you're on a tight schedule, or if you already find it
+                    difficult to keep
+                    track of
+                    and switch tasks.
+                    <br><br>
+                    Furthermore, setting up schedules and to-do lists can be a time consuming and
+                    exhaustive process for
+                    the people who
+                    could benefit from it most. Given that our concentration is already <a
+                        href="https://www.nngroup.com/articles/mobile-ux/?lm=mobile-website-and-application-usability&pt=report">
+                        fragmented while using mobile devices</a> and that the increased <a
+                        href="https://www.nngroup.com/articles/big-pictures-small-screens/">
+                        interaction costs on mobile</a> can quickly become a pain point, the
+                    solution would also have to
+                    be
+                    easy to set up and reuse on-the-fly.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="concept" class="projectSection">
+        <div class="imgWrap">
+            <a href="{{ block.concept | asset_url }}" alt="" class="fresco"
+                data-fresco-group="Concept"
+                data-fresco-caption="Brainstorming and sketches for app ideas">
+                <img src="{{ block.concept | asset_url }}" alt="" class="sectionImg-height">
+            </a>
+        </div>
+        <div class="sectionText">
+            <div class="textWrapper">
+                <h1 class="sectionTitle">Concept</h1>
+                <p class="sectionBody">
+                    To address these issues, PieTime takes inspiration from pie chart layouts and
+                    splits the timer
+                    circle
+                    into "slices"
+                    that represent each task. As the circle becomes smaller, the user will be able
+                    to see how much time
+                    to
+                    spend on each
+                    slice relative to the time they have remaining. This will help frame how each
+                    task relates to the
+                    overall schedule, and
+                    allow users to pace themselves accordingly.
+                </p>
+            </div>
+            <p class="caption">
+                For some reason or another, the Fiddler Crab Combat Simulator (top) never
+                really took off.
+            </p>
+        </div>
+        <!-- <div class="sectionImg" style="background-image: url('{{ block.concept | asset_url }}')"></div> -->
+    </div>
+    <div id="process" class="projectSection darkBg">
+        <div class="imgWrap">
+            <a href="{{ block.process | asset_url }}" alt="" class="fresco"
+                data-fresco-group="Process"
+                data-fresco-caption="Visual assets and tentative mockups">
+                <img src="{{ block.process | asset_url }}" alt="" class="sectionImg-height">
+            </a>
+        </div>
+        <div class="sectionText">
+            <div class="textWrapper">
+                <h1 class="sectionTitle">Process</h1>
+                <p class="sectionBody">
+                    For this project, I worked with two teammates and acted as the sole designer on
+                    the team.
+                    My role included concept design, pitching, UX/UI design, prototyping, visual
+                    design, and front-end
+                    implementation.
+                    We made the wireframes and mockups in Figma, used Dart and Flutter to build the
+                    app, and Github for version control.
+                    After making the prototype, the team set out to create a minimum viable product
+                    and drafted a prioritized list of features to
+                    add during the later stages of development.
+                </p>
+            </div>
+            <p class="caption">
+                The prototype, branding materials, and style guide created in Figma to guide the
+                app's design moving forward.
+            </p>
+        </div>
+    </div>
+    <div id="results" class="projectSection">
+        <div class="imgWrap">
+            <a href="{{ block.results | asset_url }}" alt="" class="fresco"
+                data-fresco-group="Results" data-fresco-group-options="loop: true">
+                <img src="{{ block.results | asset_url }}" alt="" class="sectionImg-height">
+            </a>
+            <a href="{{ block.results2 | asset_url }}" alt="" class="fresco"
+                data-fresco-group="Results" data-fresco-group-options="loop: true">
+                <img src="{{ block.results2 | asset_url }}" alt="" class="sectionImg-height">
+            </a>
+        </div>
+        <div class="sectionText">
+            <div class="textWrapper">
+                <h1 class="sectionTitle">Results</h1>
+                <p class="sectionBody">
+                    As we progressed with development and became more familiar with Flutter,
+                    I adjusted the prototype as needed to suit the scope of what we could feasibly
+                    build.
+                    By the end of roughly three months, we built a functional visual timer app with
+                    presets,
+                    the ability to add, edit, and delete tasks, and an animated display that
+                    contains each task
+                    as a slice with a name and assigned duration- which went well beyond our MVP.
+                    <br><br>
+                    Overall, working on PieTime gave me a better understanding of how the initial
+                    concept, interface design, and front-end implementation play into the
+                    development process. It also helped me recognize just how critical
+                    mockups are as a shared point of reference for the team to build toward, which
+                    reduce ambiguity and the costs associated with it. My team and I plan to
+                    continue working on PieTime over the summer and plan to release it by the end of 2020.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}

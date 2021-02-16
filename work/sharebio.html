@@ -1,0 +1,145 @@
+---
+layout: default
+title: Sharebio
+permalink: /sharebio/
+---
+
+{% for block in site.data.my-projects.pages %}
+{% if block.name == 'Sharebio' %}
+<div id="main">
+    <div id="heroImg" style="background-image: url('{{ block.hero | asset_url }}')">
+    </div>
+    <div id="projectHero" class="projectSection">
+        <!-- <div class="infoItemWrap">
+            <div class="infoItem"></div>
+            <div class="infoItem"></div>
+            <div class="infoItem"></div>
+            <div class="infoItem">
+            </div>
+        </div> -->
+        <div class="imgWrap">
+            <!-- <img src="{{ block.description | asset_url }}" alt="" class="sectionImg-height"> -->
+            <a href="{{ block.description | asset_url }}" alt="" class="fresco"
+                data-fresco-group="Description">
+                <img src="{{ block.description | asset_url }}" alt="" class="sectionImg-height">
+            </a>
+        </div>
+        <div id="textBg">
+            <div id="heroSectionText" class="sectionText">
+                <div class="infoTextWrapper">
+                    <div class="infoText">{{ block.info1 }}</div>
+                    <div class="infoText">{{ block.info2 }}</div>
+                </div>
+                <h1 class="sectionTitle">{{ block.name }}</h1>
+                <h2 class="sectionSubHeader">{{ block.subtitle }}</h2>
+                <p class="sectionBody">
+                    Last summer, I overhauled the design of Sharebio- an intercollegiate
+                    research sharing platform for bioinformatics studies. My primary role in the
+                    project was to assist in moving Sharebio to a local server and to push some
+                    updates and features to it before the second launch. This gave me the
+                    opportunity to learn about setting up web servers in a Linux environment, but
+                    also allowed me the creative freedom to engineer the site's user experience and
+                    overall design.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="objectives" class="projectSection darkBg">
+        <div class="sectionText">
+            <!-- <h1 class="sectionTitle">Objectives</h1> -->
+        </div>
+        <div class="objective-wrapper">
+            <div class="objective">
+                <img src="/assets/images/pencil-edit.svg" alt="" class="scrollReveal">
+                <h4>Reinforce Brand Image</h4>
+                <p>
+                    Made creative assets and redesigned the site to provide it with a stronger image
+                    and a distinctive visual identity
+                </p>
+            </div>
+            <div class="objective">
+                <img src="/assets/images/comment-checked.svg" alt="" class="scrollReveal">
+                <h4>Streamline project browsing</h4>
+                <p>
+                    Added visual cues to indicate access level, ID, and other possible actions on
+                    project thumbnails
+                </p>
+            </div>
+            <div class="objective">
+                <img src="/assets/images/code.svg" alt="" class="scrollReveal">
+                <h4>Debugging</h4>
+                <p>
+                    Resolved database issues related to account creation, login, project creation,
+                    and project sharing
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="branding" class="projectSection">
+        <!-- <img src="{{ block.problem | asset_url }}" alt="" class="sectionImg-height"> -->
+        <div class="imgWrap">
+            <a href="{{ block.problem | asset_url }}" alt="" class="fresco"
+                data-fresco-group="Problem" data-fresco-caption="Old and and new logo">
+                <img src="{{ block.problem | asset_url }}" alt="" class="sectionImg-height">
+            </a>
+        </div>
+
+        <div class="sectionText">
+            <div class="textWrapper">
+                <h1 class="sectionTitle">Branding</h1>
+                <p class="sectionBody">
+                    While I was working on testing project creation and modification, I noticed that
+                    aside from the favicon, Sharebio's logo was only used once on the entire site.
+                    The logo also used the site's tagline but didn't incorporate it's name, which
+                    made it potentially confusing out of context.
+                    <br>
+                    <br>
+                    The new logo makes use of the site's accent blue, as well as the original's
+                    iconic microscope. I went with a wordmark logo so it could fit in the upper-left
+                    navbar where it would be readily seen by first-time visitors and help identify
+                    the site.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="challenges" class="projectSection darkBg">
+        <div class="imgWrap">
+            <a href="{{ block.challenge1 | asset_url }}" alt="" class="fresco"
+                data-fresco-group="Challenges" data-fresco-group-options="loop: true"
+                data-fresco-caption="Thumbnails from the project browsing page">
+                <img src="{{ block.challenge1 | asset_url }}" alt="" class="sectionImg-height">
+            </a>
+            <a href="{{ block.challenge2 | asset_url }}" alt="" class="fresco"
+                data-fresco-group="Challenges" data-fresco-group-options="loop: true"
+                data-fresco-caption="Project preview modal">
+                <img src="{{ block.challenge2 | asset_url }}" alt="" class="sectionImg-height">
+            </a>
+        </div>
+
+        <div class="sectionText">
+            <div class="textWrapper">
+                <h1 class="sectionTitle">Challenges</h1>
+                <p class="sectionBody">
+                    One of the biggest user experience challenges on the site was making the best of
+                    the
+                    space available on each project thumbnail. Given that each project had a unique
+                    identifier
+                    on the database but no way to view it on the front end, I added an ID number to
+                    each project,
+                    which also helped distinguish projects with similar names or images.
+                    <br> <br>
+                    The other major consideration was permissions, since each user had to request
+                    access to view
+                    and edit the files of other people's projects. Here, I used icons to indicate
+                    that the
+                    status of each request, and to help communicate that projects would be opened
+                    elsewhere- in
+                    this case, in a new tab on ownCloud, which was where all of the project files
+                    were stored.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}

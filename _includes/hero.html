@@ -1,0 +1,27 @@
+<!-- Dynamic hero image- Grid layout? Gallery that changes upon refresh -->
+<section id="home" class="hero-container">
+<div class="title-container">
+
+    <header class="hero-header rellax">
+        <h1 class="hero-title-alt"> Alyssa's </h1>
+        <h1 class="hero-title"> site stuff </h1>
+    </header>
+    
+</div>
+
+    <div class="hero parallax">
+    <header id="hero-top">
+        
+    </header>
+ 
+    <footer class="hero-footer rellax" data-rellax-speed="1">
+        {% for block in site.data.my-projects.buttons %} 
+        <a class="button" href="#"> {{ block.title }}</a>
+        <!-- 
+        <a class="button" href="#">button two</a>
+        <a class="button" href="#">button two</a> -->
+        {% endfor %}
+    </footer>
+    </div>
+</section>
+
