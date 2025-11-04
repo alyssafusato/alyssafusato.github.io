@@ -1,2 +1,5 @@
 # alyssafusato.github.io
-Alyssa Fusato's product/UX design portfolio
+Home of Alyssa Fusato's product/UX design portfolio.
+
+
+## 🏗️ Currently under construction, please return later! 🏗️
