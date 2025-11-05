@@ -1,0 +1,548 @@
+---
+layout: default
+title: Wearables Library
+permalink: /wearables-library.html
+---
+
+<div class="body-wrapper">
+    <div id="Overview" class="title-section">
+        <div class="project-section">
+            <div class="content-wrapper">
+                <div class="title-img-wrapper">
+                    <img src="/assets/images/shotview-marketing-app.png" class="project-card-img" alt="image">
+                </div>
+                <div class="title-wrapper"> <!-- Page Title & Subline  -->
+                    <h2 class="font-extrabold text-accent-primary">{{ page.title }}</h2>
+                    <h4 class="text-secondary font-family-body">Co-authoring Garmin's first wireframing kit for
+                        wearables</h4>
+                </div>
+                <div class="subsection-row">
+                    <div class="content-block"> <!-- Page Description & Intro  -->
+                        <h5 class="font-medium text-accent-primary">
+                            Wearables are a major part of Garmin’s device portfolio, boasting 6+ regularly updated
+                            product families and making up nearly <strong>40% of the company’s total revenue.</strong>
+                        </h5>
+                    </div>
+                    <div class="content-block">
+                        <p>
+                            Before this project, wearables designers on my team had <strong>no dedicated resources for
+                                building wireframes.</strong> They often used elements pasted from older files, edited
+                            screenshots, or created their own components, resulting in <strong>frequent inconsistencies
+                                and obsolete design patterns.</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="stat-block-wrapper">
+                    <div class="stat-block">
+                        <div class="stat-block-label body-large">Timeline</div>
+                        <div class="stat-block-value body-large">12 months, Sep 2024-2025</div>
+                    </div>
+                    <div class="stat-block">
+                        <div class="stat-block-label body-large">Role</div>
+                        <div class="stat-block-value body-large">Main library architect</div>
+                    </div>
+                    <div class="stat-block">
+                        <div class="stat-block-label body-large">Collaborators</div>
+                        <div class="stat-block-value body-large">UX Lead</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="img-section-divider"> <!-- Placeholder for clickable process steps  -->
+        <img src="/assets/images/shotview-marketing-app.png" class="project-card-img" alt="image">
+    </div>
+
+    <div id="Discovery" class="project-section section-row">
+        <div class="content-wrapper">
+            <div class="section-title-wrapper">
+                <h3 class="section-title">{{ "Discovery" | upcase }}</h3>
+                <h5 class="section-title-subline">Exploring the problem space & understanding the vision</h5>
+            </div>
+            <div class="subsection-row">
+                <div class="content-block" style="flex:1.5 0 0">
+                    <p>
+                        We kicked things off by studying other design systems and learning about the day-to-day problems
+                        encountered by the wearables team.
+                    </p>
+                    <p>
+                        During this phase, we wanted to learn more about:
+                    <ul>
+                        <li>The issues the team wanted the kit would address</li>
+                        <li>How they imagined the kit would integrate into their workflow</li>
+                        <li>Any concerns or anxieties they had about the kit’s potential impact on the team</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="content-block block-center">
+                    <div class="img-wrapper">
+                        <img src="/assets/images/shotview-marketing-app.png" class="project-card-img" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Core-issue" class="project-section section-row alt-bg-color">
+        <div class="content-wrapper">
+            <div class="section-title-wrapper">
+                <h4 class="section-title">
+                    The core issue boiled down to two things:
+                </h4>
+            </div>
+            <div class="subsection-row">
+                <div class="content-block content-group">
+                    <div class="img-wrapper"><img src="/assets/images/shotview-marketing-app.png"
+                            class="project-card-img" alt="image"></div>
+                    <div class="paragraph-wrapper">
+                        <div class="body-large">
+                            Each designer had to independently figure out how to rebuild common elements, interactions,
+                            and flows.
+                        </div>
+                        <small class="text-secondary">
+                            This, compounded by a lack of documentation or standardization for our wearables UI, meant
+                            that mocking up <strong>
+                                simple screens and flows could become extremely time consuming and
+                                laborious.
+                            </strong>
+                        </small>
+                        <small class="text-secondary">
+                            Which led to the next issue...
+                        </small>
+                    </div>
+                </div>
+                <div class="content-block content-group">
+                    <div class="img-wrapper"><img src="/assets/images/shotview-marketing-app.png"
+                            class="project-card-img" alt="image"></div>
+                    <div class="paragraph-wrapper">
+                        <div class="body-large">
+                            To keep up, designers often resorted to using time-saving shortcuts.
+                        </div>
+                        <small class="text-secondary">
+                            Some strategies included: </small>
+                        <small class="text-secondary">
+                            <ul>
+                                <li>Copying elements from existing files</li>
+                                <li>Making their own ad hoc components</li>
+                                <li>Editing screenshots to use as stand-ins for less important elements</li>
+                            </ul>
+                        </small>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Pain-points" class="project-section section-grid">
+        <div class="content-wrapper">
+            <div class="section-title-wrapper">
+                <h4 class="section-title">
+                    Cascading pain points
+                </h4>
+            </div>
+            <div class="subsection-grid">
+                <div class="content-block content-group grid-item card-style">
+                    <small class="font-bold">
+                        Outdated designs circulated quickly & easily
+                    </small>
+                    <div class="label-1 text-secondary">
+                        Since designers often
+                        copied from existing documents to save time, obsolete interactions weresometimes perpetuated
+                        across multiple projects.
+                    </div>
+                </div>
+                <div class="content-block content-group grid-item card-style">
+                    <small class="font-bold">
+                        Difficulty with onboarding & collaboration
+                    </small>
+                    <div class="label-1 text-secondary">
+                        Made onboarding much
+                        slower for the rapidly-growing wearables team.
+                        Handoff between designers became much more involved since everyone mocks up screens their own
+                        way.
+                    </div>
+                </div>
+                <div class="content-block content-group grid-item card-style">
+                    <small class="font-bold">
+                        Slow feature conversions
+                    </small>
+                    <div class="label-1 text-secondary">
+                        Converting features from one product family to another was a very common task that took an
+                        inordinate amount of time to complete, especially if the designer is not familiar with one or
+                        both product families.
+                    </div>
+                </div>
+                <div class="content-block content-group grid-item card-style">
+                    <small class="font-bold">
+                        Hard to tell if reused UI elements were reliable, very time-consuming to validate
+                    </small>
+                    <div class="label-1 text-secondary">
+                        Documentation on the current/final implementation for each product was often lacking, so
+                        validating designs typically involved obtaining an updated device and recreating the
+                        interaction.
+                    </div>
+                </div>
+                <div class="content-block content-group grid-item card-style">
+                    <small class="font-bold">
+                        Redundancies & inconsistencies between products
+                    </small>
+                    <div class="label-1 text-secondary">
+                        Documentation on the current/final implementation for each product was often lacking, so
+                        validating designs typically involved obtaining an updated device and recreating the
+                        interaction.
+                    </div>
+                </div>
+            </div>
+            <div class="markup-circle text-emphasis">
+                With all of these problems, why did the team put off building a
+                library for so long?
+            </div>
+        </div>
+    </div>
+
+    <div id="Concerns" class="project-section section-grid alt-bg-color">
+        <div class="content-wrapper">
+            <div class="section-title-wrapper">
+                <h4 class="section-title text-accent-primary">
+                    Concerns about establishing a kit
+                </h4>
+                <div class="content-block vert-spacing-lg">
+                    <p class="font-medium">
+                        In spite of the situation, the team also had a lot of anxieties about
+                        how having a library could change the way the team works.
+                    </p>
+                    <small>
+                        A major concern was around the <strong>loss of creative freedom and innovation</strong>, which are
+                        defining values for the Wearables team. Such concerns have prevented us from investing in design
+                        systems and libraries in the past, and were something we wanted to familiarize ourselves with
+                        before moving forward.
+                    </small>
+                </div>
+            </div>
+            <div class="subsection-grid">
+                <div class="content-block content-group grid-item card-style">
+                    <small class="font-bold">
+                        Systems are often resistant to change
+                    </small>
+                    <div class="label-1 text-secondary">
+                        Unresponsive to feedback, stifles creative freedom and exploration, very difficult for users to
+                        provide input.
+                        “We invested in the library so it’s better to just default to using it rather than try new
+                        things.”
+                    </div>
+                </div>
+                <div class="content-block content-group grid-item card-style">
+                    <small class="font-bold">
+                        Resource-heavy
+                    </small>
+                    <div class="label-1 text-secondary">
+                        Figma libraries require a huge amount of work to build and maintain, on top of the product ecosystem knowledge and system architecture skills needed to even start. 
+                    </div>
+                </div>
+                <div class="content-block content-group grid-item card-style">
+                    <small class="font-bold">
+                        Slow to update
+                    </small>
+                    <div class="label-1 text-secondary">
+                        Team cannot afford to wait for months for component requests to get processed and handled,
+                        designers will just employ a shortcut and move on.
+                    </div>
+                </div>
+                <div class="content-block content-group grid-item card-style">
+                    <small class="font-bold">
+                        Difficult to understand and use
+                    </small>
+                    <div class="label-1 text-secondary">
+                        Users do not really understand how it works, can’t get it to do what they want, or can’t find
+                        what they need. Leads to frequent detaching or creating own components.
+                        It can be difficult to find what you need and it takes time to learn how elements are meant to
+                        be used.
+                    </div>
+                </div>
+                <div class="content-block content-group grid-item card-style">
+                    <small class="font-bold">
+                        Disconnected from users
+                    </small>
+                    <div class="label-1 text-secondary">
+                        by having the library team operate separately from the designers using the kit, library
+                        gradually becomes less in touch with the needs of designers and communication will deteriorate
+                        over time as the library becomes an end in itself.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Strategy" class="project-section section-row">
+        <div class="content-wrapper">
+            <div class="section-title-wrapper">
+                <h3 class="section-title">
+                    {{ "Strategy" | upcase }}
+                </h3>
+                <h5 class="section-title-subline">
+                    Charting a path forward
+                </h5>
+            </div>
+            <div class="subsection-row">
+                <div class="content-block" style="flex:1.5 0 0">
+                    <p>
+                        We needed to find a way to build this kit with limited resources and tenuous buy-in.
+                    </p>
+                    <p>
+                        Due to the unique needs of the wearables ecosystem compared to something more standardized like
+                        mobile or web, we were also working with a completely foreign set of parameters and
+                        considerations.
+                    </p>
+                    <p>
+                        To ensure the kit’s success, we developed several key principles to keep us grounded as we began
+                        building.
+                    </p>
+                </div>
+                <div class="content-block block-center">
+                    <div class="img-wrapper">
+                        <img src="/assets/images/shotview-marketing-app.png" class="project-card-img" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Principles" class="project-section section-grid alt-bg-color">
+        <div class="content-wrapper">
+            <div class="section-title-wrapper">
+                <h4 class="section-title">
+                    Guiding Principles
+                </h4>
+            </div>
+            <div class="subsection-grid-small">
+                <div class="content-block content-group grid-item card-style">
+                    <div class="img-wrapper"><img src="/assets/images/shotview-marketing-app.png" alt=""> </img></div>
+                    <p class="font-bold">
+                        Quick Start
+                    </p>
+                    <div class="label-1 text-secondary" style="flex-grow:1;">
+                        Focus on building the most common elements first, test, & rapidly iterate
+                    </div>
+                    <div class="text-wrapper" style="flex-grow:1;">
+                        <div class="label-2 text-accent-secondary font-medium">
+                            {{ "Rationale" | upcase }}
+                        </div>
+                        <div class="label-1">
+                            Figure out what works quickly, avoid decision paralysis and perfectionism
+                        </div>
+                    </div>
+                </div>
+                <div class="content-block content-group grid-item card-style">
+                    <div class="img-wrapper"><img src="/assets/images/shotview-marketing-app.png" alt=""> </img></div>
+                    <p class="font-bold">
+                        Maintainability
+                    </p>
+                    <div class="label-1 text-secondary" style="flex-grow:1;">
+                        Prioritize structural simplicity, consistency, and clarity
+                    </div>
+                    <div class="text-wrapper" style="flex-grow:1;">
+                        <div class="label-2 text-accent-secondary font-medium">
+                            {{ "Rationale" | upcase }}
+                        </div>
+                        <div class="label-1">
+                            Creates a stable, learnable system that can be passed onto new designers and architects
+                        </div>
+                    </div>
+                </div>
+                <div class="content-block content-group grid-item card-style">
+                    <div class="img-wrapper"><img src="/assets/images/shotview-marketing-app.png" alt=""> </img></div>
+                    <p class="font-bold">Easy Adoption</p>
+                    <div class="label-1 text-secondary" style="flex-grow:1;">Design for convenience, ease-of-use, and findability</div>
+                    <div class="text-wrapper" style="flex-grow:1;">
+                        <div class="label-2 text-accent-secondary font-medium">
+                            {{ "Rationale" | upcase }}
+                        </div>
+                        <div class="label-1">Encourages widespread adoption and overall buy-in from both users and leadership</div>
+                    </div>
+                </div>
+                <div class="content-block content-group grid-item card-style">
+                    <div class="img-wrapper"><img src="/assets/images/shotview-marketing-app.png" alt=""> </img></div>
+                    <p class="font-bold">Stay Connected</p>
+                    <div class="label-1 text-secondary" style="flex-grow:1;">Regular rhythm for feedback & updates, maintain a strong relationship with end users</div>
+                    <div class="text-wrapper" style="flex-grow:1;">
+                        <div class="label-2 text-accent-secondary font-medium">
+                            {{ "Rationale" | upcase }}
+                        </div>
+                        <div class="label-1">Helps the kit stay relevant and creates a friendly collaborative environment that allows for honest feedback</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Solutions" class="project-section section-3t">
+        <div class="content-wrapper">
+            <div class="section-title-wrapper">
+                <h3 class="section-title">{{ "Solutions" | upcase }}</h3>
+                <h5 class="section-title-subline">Exploring the problem space & understanding the vision</h5>
+            </div>
+            <div class="subsection-col">
+                <div class="content-block">
+                    <p>
+                        We kicked things off by studying other design systems and learning about the day-to-day problems
+                        encountered by the wearables team.
+                    </p>
+                </div>
+            </div>
+            <div class="subsection-row">
+                <div class="content-block">
+                    <p>
+                        We kicked things off by studying other design systems and learning about the day-to-day
+                        problems
+                        encountered by the wearables team.
+                    </p>
+                </div>
+                <div class="content-block">
+                    <p>
+                        We kicked things off by studying other design systems and learning about the day-to-day
+                        problems
+                        encountered by the wearables team.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-section section-3y alt-bg-color">
+        <div class="content-wrapper">
+            <div class="section-title-wrapper">
+                <h3 class="section-title">Section Layout Y</h3>
+                <h5 class="section-title-subline">Optional subline</h5>
+            </div>
+            <div class="subsection-row">
+                <div class="content-block">
+                    <h6>Paragraph title</h6>
+                    <p>We kicked things off by studying other design systems and learning about the day-to-day problems
+                        encountered by the wearables team. </p>
+                </div>
+                <div class="content-block">
+                    <p>We kicked things off by studying other design systems and learning about the day-to-day problems
+                        encountered by the wearables team. </p>
+                </div>
+            </div>
+            <div class="subsection-col">
+                <div class="content-block">
+                    <div class="img-wrapper">
+                        <img src="/assets/images/shotview-marketing-app.png" class="project-card-img" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-section section-col">
+        <div class="content-wrapper">
+            <div class="section-title-wrapper">
+                <h3 class="section-title">Section Layout Col</h3>
+                <h5 class="section-title-subline">Optional subline</h5>
+            </div>
+            <div class="block-wrapper subsection-col">
+                <div class="content-block">
+                    <p>We kicked things off by studying other design systems and learning about the day-to-day problems
+                        encountered by the wearables team. </p>
+                </div>
+                <div class="content-block">
+                    <p>We kicked things off by studying other design systems and learning about the day-to-day problems
+                        encountered by the wearables team. </p>
+                </div>
+                <div class="content-block">
+                    <p>We kicked things off by studying other design systems and learning about the day-to-day problems
+                        encountered by the wearables team. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-section section-row">
+        <div class="content-wrapper">
+            <div class="section-title-wrapper">
+                <h3 class="section-title">Section Layout Row</h3>
+                <h5 class="section-title-subline">Optional subline</h5>
+            </div>
+            <div class="subsection-row">
+                <div class="content-block">
+                    <p>We kicked things off by studying other design systems and learning about the day-to-day problems
+                        encountered by the wearables team. </p>
+                </div>
+                <div class="content-block">
+                    <p>We kicked things off by studying other design systems and learning about the day-to-day problems
+                        encountered by the wearables team. </p>
+                </div>
+                <div class="content-block">
+                    <p>We kicked things off by studying other design systems and learning about the day-to-day problems
+                        encountered by the wearables team. </p>
+                </div>
+                <div class="content-block">
+                    <p>We kicked things off by studying other design systems and learning about the day-to-day problems
+                        encountered by the wearables team. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-section section-3l">
+        <div class="content-wrapper">
+            <div class="section-title-wrapper">
+                <h3 class="section-title">Section Layout 3-Left</h3>
+                <h5 class="section-title-subline">Optional subline</h5>
+            </div>
+            <div class="subsection-row">
+                <div class="content-block">
+                    <p>We kicked things off by studying other design systems and learning about the day-to-day problems
+                        encountered by the wearables team. </p>
+                </div>
+                <div class="subsection-col">
+                    <div class="content-block">
+                        <p>We kicked things off by studying other design systems and learning about the day-to-day
+                            problems
+                            encountered by the wearables team. </p>
+                    </div>
+                    <div class="content-block">
+                        <p>We kicked things off by studying other design systems and learning about the day-to-day
+                            problems
+                            encountered by the wearables team. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-section section-3r">
+        <div class="content-wrapper">
+            <div class="section-title-wrapper">
+                <h3 class="section-title">Section Layout 3-Right</h3>
+                <h5 class="section-title-subline">Optional subline</h5>
+            </div>
+            <div class="subsection-row">
+                <div class="subsection-col">
+                    <div class="content-block">
+                        <p>We kicked things off by studying other design systems and learning about the day-to-day
+                            problems
+                            encountered by the wearables team. </p>
+                    </div>
+                    <div class="content-block">
+                        <p>We kicked things off by studying other design systems and learning about the day-to-day
+                            problems
+                            encountered by the wearables team. </p>
+                    </div>
+                </div>
+                <div class="content-block">
+                    <h5>We kicked things off by studying other design systems and learning about the day-to-day problems
+                        encountered by the wearables team. </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="img-standalone">
+        <img src="/assets/images/shotview-marketing-app.png" class="project-card-img" alt="image">
+        <small>Image caption</small>
+    </div>
+</div>
