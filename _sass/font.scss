@@ -2,8 +2,6 @@
 
 @import "color";
 @import "spacing";
-// @use "sass:list";
-// @use "sass:map";
 
 $body: "Inter",
   ui-sans-serif,
@@ -32,78 +30,6 @@ $monospaced: "Geist Mono",
   Consolas,
   Liberation Mono,
   monospace;
-
-$font-sizes: (
-  "h1": 64px,
-  "h2": 48px,
-  "h3": 32px,
-  "h4": 28px,
-  "h5": 24px,
-  "h6": 20px,
-  ".body-large": 20px,
-  "p": 18px,
-  "small": 16px,
-  ".label-1": 14px,
-  ".label-2": 13px,
-);
-
-$font-families: (
-  "h1": $display,
-  "h2": $display,
-  "h3": $display,
-  "h4": $display,
-  "h5": $body,
-  "h6": $monospaced,
-  ".body-large": $body,
-  "p": $body,
-  "small": $body,
-  ".label-1": $body,
-  ".label-2": $body,
-);
-
-$font-weights: (
-  "h1": 800,
-  "h2": 700,
-  "h3": 700,
-  "h4": 600,
-  "h5": 700,
-  "h6": 700,
-  ".body-large": 500,
-  "p": 400,
-  "small": 400,
-  ".label-1": 400,
-  ".label-2": 400,
-);
-
-$line-heights: (
-  "h1": 120%,
-  "h2": 120%,
-  "h3": 120%,
-  "h4": 120%,
-  "h5": 130%,
-  "h6": 120%,
-  ".body-large": 140%,
-  "p": 140%,
-  "small": 140%,
-  ".label-1": 140%,
-  ".label-2": 140%,
-);
-
-$letter-spacing: (
-  "h1": 0em,
-  "h2": 0em,
-  "h3": 0em,
-  "h4": 0em,
-  "h5": -0.02em,
-  "h6": 0em,
-  ".body-large": -0.01em,
-  "p": -0.01em,
-  "small": -0.01em,
-  ".label-1": -0.01em,
-  ".label-2": -0.01em,
-);
-
-
 
 h1 {
   font-family: $display;
@@ -196,46 +122,6 @@ small {
 h1, h2, h3, h4, h5, h6, .body-large, p, small, label-1, label-2 {
   margin: 0;
 }
-
-
-
-// @each $font, $size in $font-sizes {
-//   #{$font} {
-//     margin: 0;
-//     font-size: $size;
-//     font-weight: get($font-weights, $font);
-//     font-family: get($font-families, $font);
-//     line-height: get($line-heights, $font);
-//     letter-spacing: get($letter-spacing, $font);
-//   }
-// }
-
-// $h1-font-size: map.get($font-sizes, "h1");
-// $h2-font-size: map.get($font-sizes, "h2");
-// $h3-font-size: map.get($font-sizes, "h3");
-// $h4-font-size: map.get($font-sizes, "h4");
-// $h5-font-size: map.get($font-sizes, "h5");
-// $h6-font-size: map.get($font-sizes, "h6");
-// $p-font-size: map.get($font-sizes, "p");
-// $small-font-size: map.get($font-sizes, "small");
-// $label-1-font-size: map.get($font-sizes, ".label-l");
-// $label-2-font-size: map.get($font-sizes, ".label-2");
-
-// :root {
-//   --body: #{$body};
-//   --display: #{$display};
-//   --monospaced: #{$monospaced};
-//   --h1-font-size: #{$h1-font-size};
-//   --h2-font-size: #{$h2-font-size};
-//   --h3-font-size: #{$h3-font-size};
-//   --h4-font-size: #{$h4-font-size};
-//   --h5-font-size: #{$h5-font-size};
-//   --h6-font-size: #{$h6-font-size};
-//   --p-font-size: #{$p-font-size};
-//   --small-font-size: #{$small-font-size};
-//   --label-1-font-size: #{$label-1-font-size};
-//   --label-2-font-size: #{$label-2-font-size};
-// }
 
 html {
   @extend p;
