@@ -1,0 +1,50 @@
+// Content color
+@use "sass:color";
+$primary: #0a0a0a;
+$secondary: #0a0a0ab2;
+$accent-primary: #085F82;
+$accent-secondary: #0E86B6;
+$accent-tertiary: #d7a93e;
+// $accent-shadow: color.adjust($accent-secondary,
+//         /* used on for box-shadow on cards */
+//         $saturation: 10%,
+//         $lightness: -6%,
+//         $alpha: -0.75);
+$accent-shadow:#14415363;
+
+// Background color
+$background-default: #E0EAEE;
+$background-secondary: #c6dde5;
+$surface-1: #EDF2F5;
+$white-overlay-1: #ffffff7a;
+
+:root {
+    --primary: #{$primary};
+    --secondary: #{$secondary};
+    --accent-primary: #{$accent-primary};
+    --accent-secondary: #{$accent-secondary};
+    --accent-tertiary: #{$accent-tertiary};
+    --background-default: #{$background-default};
+    --surface-1: #{$surface-1};
+    --white-overlay-1: #{$white-overlay-1};
+}
+
+.text-primary {
+    color: $primary;
+}
+
+.text-secondary {
+    color: $secondary;
+}
+
+.text-accent-primary {
+    color: $accent-primary;
+}
+
+.text-accent-secondary {
+    color: $accent-secondary;
+}
+
+.text-accent-tertiary {
+    color: $accent-tertiary;
+}
