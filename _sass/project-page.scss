@@ -93,13 +93,8 @@ $card-radius: 16px;
 
 .section-title-wrapper {
   @include flex-col;
-  gap: $xs;
+  gap: $sm;
   align-self: stretch;
-}
-
-.section-title-subline {
-  font-weight: 500;
-  color: $secondary;
 }
 
 .subsection-row {
@@ -133,7 +128,7 @@ $card-radius: 16px;
 .subsection-grid {
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: $med;
+  gap: $lg;
   align-self: stretch;
 }
 
@@ -261,4 +256,16 @@ $card-radius: 16px;
   max-width: $section-max-width;
   margin: auto;
   padding: $xl4;
+}
+
+.type-test-row {
+  @include flex-row-nowrap;
+  gap: $xl2;
+  align-self: stretch;
+  padding-bottom: $xl;
+  // align-items: center;
+
+  > :nth-child(odd) {
+    width: 140px;
+  }
 }

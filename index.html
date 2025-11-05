@@ -6,16 +6,16 @@ title: Home
 <div class="body-padding">
     <div id="title" class="title-section">
         <div class="text-wrapper">
-            <h3 class="title-overline"> {{"Alyssa Fusato" | upcase}} </h3>
-            <h1>UX/PRODUCT <br> DESIGNER</h1>
+            <h3 class="font-medium"> ALYSSA FUSATO </h3>
+            <h1 class="text-accent-primary">UX/PRODUCT <br> DESIGNER</h1>
         </div>
-        <ul>
-            <h4>
-                <li>4+ years in industry</li>
-                <li>good at job</li>
-                <li>very polite :)</li>
-            </h4>
-        </ul>
+        <h5 class="font-medium">
+            <ul>
+                <li> 4+ years in industry</li>
+                <li> good at job</li>
+                <li> very polite :)</li>
+            </ul>
+        </h5>
         <div class="contact-section">
             <!-- <svg display="none"><defs><filter id="turb"><feTurbulence baseFrequency="0.01" numOctaves="4" /><feDisplacementMap in="SourceGraphic" scale="5" /></filter></defs></svg> -->
             <div class="contact-wrapper">
@@ -50,14 +50,14 @@ title: Home
             </div>
         </div>
     </div>
-    
+
     <div id="projects">
         <h6 class="section-label">Recent Work</h6>
         <div class="project-card-row">
             {% for item in site.data.projects.main-projects %}
             <a href="{{ item.link }}" class="project-card" {% if page.url==item.link %} style="color: red;" {% endif %}>
                 <div class="text-wrapper">
-                    <small class="info">{{ item.date }} • {{ item.type }}</small>
+                    <div class="info label-1 font-medium">{{ item.date }} • {{ item.type }}</div>
                     <div class="title-wrapper">
                         <h4>{{ item.name }}</h4>
                         <p>{{ item.subline }}</p>
@@ -68,13 +68,13 @@ title: Home
             {% endfor %}
         </div>
     </div>
-    
+
     <div id="other-projects">
         <h6 class="section-label">Other Projects</h6>
         <div class="project-card-row">
             {% for item in site.data.projects.other-projects %}
-            <a href="{{ item.link }}" class="project-card-other" {% if page.url==item.link %} style="color: red;" {% endif
-                %}>
+            <a href="{{ item.link }}" class="project-card-other" {% if page.url==item.link %} style="color: red;" {%
+                endif %}>
                 <div class="card-img-wrapper"><img src="{{ item.image }}" class="project-card-img" alt="image"></div>
                 <div class="text-wrapper">
                     <div class="title-wrapper">
@@ -88,13 +88,13 @@ title: Home
             <div class="lint-frog"> </div>
         </div>
     </div>
-    
+
     <div id="about">
         <div id="about-me">
-            <h3>{{ site.data.about.main.headline }}</h3>
+            <h4>{{ site.data.about.main.headline }}</h4>
             <p>{{ site.data.about.main.body }}</p>
-            <div class="text-list-wrapper">
-                <p>other interests include:</p>
+            <div class="text-ul-wrapper">
+                <p>Other interests include:</p>
                 <ul>
                     {% for item in site.data.about.interests %}
                     <li>{{ item }}</li>
@@ -107,17 +107,20 @@ title: Home
                 {% endfor %}
             </div>
         </div>
-    
+
         <div id="testimonials">
             <h6 class="section-label">Nice things people have said</h6>
             {% for item in site.data.about.testimonials %}
             <blockquote class="testimonial-item">
-                <h5>{{ item.comment }}</h5>
+                <div class="body-large">{{ item.comment }}</div>
                 <div class="testimonial-source">
-                    <p>{{ item.author }} • {{ item.role }}</p>
+                    <small>{{ item.author }}</small>
+                    <small class="text-accent-secondary">|</small>
+                    <small>{{ item.role }}</small>
                 </div>
                 <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="speech-bubble-tail" width="45" height="12" viewBox="0 0 45 19" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="speech-bubble-tail" width="45" height="12"
+                        viewBox="0 0 45 19" fill="none">
                         <path d="M45 0H3.72561L0 19L45 0Z" />
                     </svg>
                 </div>

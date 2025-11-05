@@ -1,6 +1,12 @@
 main:
-  headline: Hi! I'm Alyssa, a UX designer who specializes in creating interfaces & systems that work for people.
-  body: In my time at Garmin, I’ve worked on a variety of mobile apps and consumer electronics, mentored two designers, and made a handful of design resources like plugins and libraries. 
+  headline: Hi! I'm Alyssa, a UX designer who specializes in making interfaces & systems that work for people.
+  body: In my time at Garmin, I’ve worked on a variety of mobile apps and consumer electronics, mentored two designers, and authored a handful of design resources like plugins and libraries. 
+
+interests: 
+  - making stickers
+  - amateur woodworking
+  - container gardening
+  - going to local art fairs
 
 main-images:
   - img: "/assets/images/about-me.png"
@@ -12,16 +18,10 @@ main-images:
   - img: "/assets/images/about-bird.png"
     img-alt: Container plants in an apartment complex with a blurry bird in the foreground
 
-interests: 
-  - making stickers
-  - amateur woodworking
-  - container gardening
-  - going to local art fairs
-
 testimonials:
   - comment: "\"Alyssa's Figma knowledge, design research and intuition, execution, and general organization skills are excellent.”"
     author: Jerad Hesla
-    role: Device UX Team Manager
+    role: UX Team Manager
 
   - comment: "\"Every stakeholder she works with doesn't want to work with anyone else.”"
     author: Geoff Pratt
@@ -29,4 +29,4 @@ testimonials:
   
   - comment: "\"Cares deeply about providing a successful, well thought out design, but is mindful of timelines.”"
     author: Jerad Hesla
-    role: Device UX Team Manager
+    role: UX Team Manager
