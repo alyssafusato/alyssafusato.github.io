@@ -23,11 +23,11 @@ title: Home
 
     <div id="projects">
         <h6 class="section-label">Recent Work</h6>
-        <div class="project-card-row">
+        <div class="project-card-grid">
             {% for item in site.data.projects.main-projects %}
             <a href="{{ item.link }}" class="project-card">
                 <div class="text-wrapper">
-                    <div class="info-wrapper">
+                    <div class="info-wrapper text-accent-secondary">
                         <small class="info font-bold">{{ item.type }}</small>
                         <div class="info label-1 font-bold">{{ item.date }}</div>
                     </div>
@@ -44,7 +44,7 @@ title: Home
 
     <div id="other-projects">
         <h6 class="section-label">Other Projects</h6>
-        <div class="project-card-row">
+        <div class="project-other-card-grid">
             <!-- Checks for "complete" property on "Other" projects in projects.yaml and assigns "disabled" class AND will not link to project page if false -->
             {% for item in site.data.projects.other-projects %}
             {% if item.complete == false %}

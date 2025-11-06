@@ -5,6 +5,8 @@
 @import "spacing";
 
 $section-max-width: 1100px;
+$project-card-min-width: 300px;
+$project-other-card-min-width: 220px;
 
 @mixin card-border {
     box-shadow: 2px 2px 12px -4px $accent-shadow;
@@ -85,42 +87,17 @@ body {
     }
 }
 
-.contact-section {
-    @include flex-col;
-    align-self: flex-start;
-    border-radius: 12px;
-    @include card-border();
-    // filter: url(#turb);
-    background-color: $white-overlay-1;
-    padding: $med;
-    justify-content: start;
-}
-
-.contact-wrapper {
-    @include flex-row;
-    padding: $sm 0;
-
-    a {
-        @extend .text-link;
-        @include flex-row;
-        gap: $sm;
-        align-items: center;
-    }
-
-    path {
-        fill: $accent-primary !important;
-    }
-}
-
-.project-card-row {
-    @include flex-row;
+.project-card-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: $lg;
+    align-self: stretch;
     gap: $xl;
     padding: $xl $none;
 
     .project-card {
         flex-grow: 1;
-        width: 30%;
-        max-width: 500px;
+        // min-width: $project-card-min-width;
         @include flex-col;
         @include card-border;
         border-radius: 12px;
@@ -154,10 +131,6 @@ body {
             background-color: $white-overlay-1;
         }
 
-        .info {
-            color: $accent-secondary;
-        }
-
         .title-wrapper {
             @include flex-col;
             gap: $xs;
@@ -182,16 +155,6 @@ body {
             display: block;
             height: 100%;
             width: 100%;
-        }
-    }
-
-    .project-card-other {
-        @extend .project-card;
-        width: 25%;
-        max-width: 300px;
-
-        .card-img-wrapper {
-            height: 10em;
         }
     }
 
@@ -231,6 +194,21 @@ body {
             }
         }
     }
+}
+
+.project-other-card-grid {
+    @extend .project-card-grid;
+    grid-template-columns: auto auto auto auto;
+
+    .project-card-other {
+        @extend .project-card;
+        // width: 25%;
+        min-width: $project-other-card-min-width;
+
+        .card-img-wrapper {
+            height: 10em;
+        }
+    }
 
     .lint-frog {
         width: 10em;
@@ -245,13 +223,13 @@ body {
 }
 
 #about {
-    @include flex-row();
+    display: grid;
+    grid-template-columns: auto auto;
     gap: $xl $xl4;
     width: 100%;
     margin-top: $xl;
 
     >* {
-        width: 40%;
         flex-grow: 1;
         @include flex-col();
         gap: inherit;
@@ -310,6 +288,49 @@ body {
     }
 }
 
+@media screen and (max-width: 1100px) {
+    .project-card-grid {
+        grid-template-columns: auto auto;
+    }
+
+    .project-other-card-grid {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .project-card-grid {
+        grid-template-columns: auto;
+    }
+
+    .project-other-card-grid {
+        grid-template-columns: auto auto;
+    }
+
+    #about {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .project-other-card-grid {
+        grid-template-columns: auto;
+    }
+
+    #title {
+        gap: $xl;
+    }
+
+    .title-section > .text-wrapper {
+        h1 {
+            font-size: 48px;
+        }
+        h3 {
+            font-size: 30px;
+        }
+    }
+}
+
 // 404.html styling
 .not-found-wrapper {
     @include flex-col();
@@ -340,6 +361,33 @@ body {
 
     .return-link {
         margin-top: $xl4;
+    }
+}
+
+.contact-section {
+    @include flex-col;
+    align-self: flex-start;
+    border-radius: 12px;
+    @include card-border();
+    // filter: url(#turb);
+    background-color: $white-overlay-1;
+    padding: $med;
+    justify-content: start;
+}
+
+.contact-wrapper {
+    @include flex-row;
+    padding: $sm 0;
+
+    a {
+        @extend .text-link;
+        @include flex-row;
+        gap: $sm;
+        align-items: center;
+    }
+
+    path {
+        fill: $accent-primary !important;
     }
 }
 
