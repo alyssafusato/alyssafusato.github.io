@@ -47,7 +47,7 @@ $card-radius: 16px;
 
   .stat-block {
     @include flex-col;
-    color: $accent-primary;
+    color: $secondary;
     padding: $xl $none;
     gap: $sm;
   }
@@ -258,14 +258,54 @@ $card-radius: 16px;
   padding: $xl4;
 }
 
+#Table-of-Contents {
+  align-items: center;
+
+  .horizontal-line {
+    border-bottom: 3px solid $accent-primary;
+    flex-grow: 1;
+    height: 30px;
+  }
+
+  .content-wrapper {
+    @include flex-row-nowrap;
+    gap: 0;
+    max-width: $section-max-width;
+    flex-grow: 1;
+  }
+
+  .section-link-wrapper {
+    @include flex-col;
+    justify-content: center;
+    color: $accent-primary;
+    gap: $med;
+    align-items: center;
+    width: 60px;
+    text-transform: uppercase;
+  }
+
+  .icon-wrapper {
+    align-self: center;
+    padding: $med $med (
+      $sm - 2px) $med;
+    border-radius: 12px;
+    background-color: $surface-1;
+    text-transform: uppercase;
+    border: 3px solid $accent-primary;
+
+    svg>path {
+      stroke: $accent-secondary;
+    }
+  }
+}
+
 .type-test-row {
   @include flex-row-nowrap;
   gap: $xl2;
   align-self: stretch;
   padding-bottom: $xl;
-  // align-items: center;
 
   > :nth-child(odd) {
-    width: 140px;
+    min-width: 140px;
   }
 }
