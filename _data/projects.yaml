@@ -30,6 +30,7 @@ other-projects:
     date: 2022 - 2025
     type: Mobile App, Concept Pitch
     image: "/assets/images/wearables-kit-notext-thumbnail.png" 
+    complete: false
 
   - name: Community Kits
     link: /figma-community
@@ -37,6 +38,7 @@ other-projects:
     date: 2025 
     type: Figma Library
     image: "/assets/images/chatgpt-kit-thumbnail.png" 
+    complete: false
 
   - name: Figma Plugins
     link: /figma-plugins
@@ -44,3 +46,4 @@ other-projects:
     date: 2024 - 2025
     type: HTML/CSS/TypeScript
     image: "/assets/images/plugin-thumbnail.png"
+    complete: true

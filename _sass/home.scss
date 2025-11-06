@@ -137,7 +137,7 @@ body {
             }
 
             .text-wrapper {
-                background-color: $white-overlay-1, rgba(211, 0, 0, 0.489);
+                background-color: mix($white-overlay-1, white, 70%);
             }
 
             .card-img-wrapper>img {
@@ -164,11 +164,13 @@ body {
         }
 
         .card-img-wrapper {
+            @include flex-col;
             width: 100%;
             height: 14em;
             overflow: hidden;
             display: flex;
             justify-content: center;
+            align-items: center;
         }
 
         .card-img-wrapper>img {
@@ -193,11 +195,53 @@ body {
         }
     }
 
+    .project-card-disabled {
+        &:hover {
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+
+            .title-wrapper>h4 {
+                text-decoration: none;
+            }
+
+            .card-img-wrapper>img {
+                opacity: 100%;
+                transform: scale(1.1);
+            }
+        }
+
+        .card-img-wrapper>img {
+            -webkit-filter: brightness(30%) blur(1px);
+            -moz-filter: brightness(30%) blur(1px);
+            -ms-filter: brightness(30%) blur(1px);
+            -o-filter: brightness(30%) blur(1px);
+        }
+
+        .overlay-text {
+            @include flex-col();
+            gap: $sm;
+
+            small {
+                -webkit-filter: brightness(200%);
+                -moz-filter: brightness(200%);
+                -ms-filter: brightness(200%);
+                -o-filter: brightness(200%);
+            }
+        }
+    }
+
     .lint-frog {
         width: 10em;
         height: 10em;
         background-color: blue;
     }
+}
+
+.overlay-text {
+    position: absolute;
+    z-index: 1;
 }
 
 #about {

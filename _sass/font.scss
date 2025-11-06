@@ -235,6 +235,10 @@ a {
   font-variation-settings: "wdth" 80;
 }
 
+.line-height-display {
+  line-height: $line-height-display;
+}
+
 // Text Link Styles & Interaction -------
 @mixin text-hover-underline {
   text-decoration: underline $accent-secondary wavy;

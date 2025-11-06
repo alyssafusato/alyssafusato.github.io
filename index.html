@@ -17,7 +17,7 @@ title: Home
             </ul>
         </h5>
         <div class="contact-section">
-           {% include contact-links.html %}
+            {% include contact-links.html %}
         </div>
     </div>
 
@@ -45,22 +45,37 @@ title: Home
     <div id="other-projects">
         <h6 class="section-label">Other Projects</h6>
         <div class="project-card-row">
+            <!-- Checks for "complete" property on "Other" projects in projects.yaml and assigns "disabled" class AND will not link to project page if false -->
             {% for item in site.data.projects.other-projects %}
-            <a href="{{ item.link }}" class="project-card-other">
-                <div class="card-img-wrapper"><img src="{{ item.image }}" class="project-card-img" alt="image"></div>
-                <div class="text-wrapper">
-                    <div class="title-wrapper">
-                        <h4>{{ item.name }}</h4>
-                    </div>
-                    <div class="info-wrapper">
-                        <small class="info font-bold">{{ item.type }}</small>
-                        <div class="info label-1 font-bold">{{ item.date }}</div>
-                    </div>
-                    <small>{{ item.description }}</small>
+            {% if item.complete == false %}
+            <div class="project-card-other project-card-disabled">
+                <div class="card-img-wrapper">
+                    <div class="overlay-text text-on-color font-family-heading center-text"> <div class="body-xl">🏗️ </div> <div class="body-large line-height-display">Under <br>Construction</div> <small class="text-accent-secondary">Stay tuned!</small></div>
+                    <img src="{{ item.image }}" class="project-card-img" alt="image">
                 </div>
+                {% else %}
+                <a href="{{ item.link }}" class="project-card-other">
+                    <div class="card-img-wrapper"><img src="{{ item.image }}" class="project-card-img" alt="image">
+                    </div>
+                    {% endif %}
+                    <div class="text-wrapper">
+                        <div class="title-wrapper">
+                            <h4>{{ item.name }}</h4>
+                        </div>
+                        <div class="info-wrapper">
+                            <small class="info font-bold">{{ item.type }}</small>
+                            <div class="info label-1 font-bold">{{ item.date }}</div>
+                        </div>
+                        <small>{{ item.description }}</small>
+                    </div>
+                    {% if item.complete == false %}
+            </div>
+            {% else %}
             </a>
+            {% endif %}
             {% endfor %}
-            <div class="lint-frog"> </div>
+            <div class="lint-frog">
+            </div>
         </div>
     </div>
 
