@@ -43,13 +43,14 @@ $card-radius: 16px;
   @include flex-row;
   align-self: stretch;
   align-items: flex-start;
-  gap: $xl4;
+  gap: $med $xl4;
 
   .stat-block {
     @include flex-col;
     color: $secondary;
     padding: $xl $none;
     gap: $sm;
+    max-width: 300px;
   }
 
   .stat-block-label {
@@ -62,6 +63,12 @@ $card-radius: 16px;
 }
 
 // BODY
+.body-wrapper {
+  .project-section:nth-of-type(odd) {
+    background-color: $surface-1;
+  }
+}
+
 .alt-bg-color {
   background-color: $surface-1;
 }
@@ -202,6 +209,11 @@ $card-radius: 16px;
   @extend .grid-item, .content-group;
   min-width: $grid-item-small-min-width;
   padding-bottom: $lg;
+   
+  p {
+    line-height: $line-height-display;
+    padding: $sm 0;
+  }
 }
 
 .card-style {
@@ -243,7 +255,7 @@ $card-radius: 16px;
   @extend .img-wrapper;
 
   img {
-    max-height: $img-divider-height;
+    height: $img-divider-height; // Default height, override with inline CSS to customize
     align-self: stretch;
     flex: 1 0 0;
     object-fit: cover;
@@ -258,7 +270,7 @@ $card-radius: 16px;
   padding: $xl4;
 }
 
-#Table-of-Contents {
+#Table-of-contents {
   align-items: center;
 
   .horizontal-line {
@@ -270,6 +282,7 @@ $card-radius: 16px;
   .content-wrapper {
     @include flex-row-nowrap;
     gap: 0;
+    align-items: flex-start;
     max-width: $section-max-width;
     flex-grow: 1;
   }
@@ -281,7 +294,8 @@ $card-radius: 16px;
     gap: $med;
     align-items: center;
     width: 60px;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    text-align: center;
   }
 
   .icon-wrapper {
