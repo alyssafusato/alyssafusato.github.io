@@ -1,0 +1,52 @@
+main-projects:
+  - name: Wearables Library
+    link: /wearables-library
+    subline: Garmin’s first wearables wireframing kit
+    description: 
+    date: 2024 - 2025
+    type: Figma Library
+    image: "/assets/images/wearables-kit-notext-thumbnail.png" 
+    complete: false
+
+  - name: ShotView Mobile
+    link: /shotview
+    subline: C1 Pro Chronograph & companion app
+    description: 
+    date: 2022 - 2023
+    type: Mobile & Consumer Electronics
+    image: "/assets/images/shotview-marketing-app.png" 
+    complete: false
+
+  - name: eTrex SE
+    link: /etrex-se
+    subline: Entry-level GPS navigator
+    description: 
+    date: 2021 - 2022
+    type: Consumer Electronics
+    image: "/assets/images/etrex-se-video-screenshot.png" 
+    complete: false
+
+other-projects:
+  - name: GC+ Live Activity
+    link: /live-activity
+    description: View and control wearable activities from the appin one of the most successful subscription features to launch on Connect+ this past year.
+    date: 2022 - 2025
+    type: Mobile App, Concept Pitch
+    image: "/assets/images/wearables-kit-notext-thumbnail.png" 
+    complete: false
+
+  - name: Community Kits
+    link: /figma-community
+    description: Component libraries I created and published to the public on Figma Community. Includes the FigPal Kit and ChatGPT 5 Web Kit.
+    date: 2025 
+    type: Figma Library
+    image: "/assets/images/chatgpt-kit-thumbnail.png" 
+    complete: false
+
+  - name: Figma Plugins
+    link: /figma-plugins
+    description: Three plugins I’ve created to help with UX work. Table of Contents Generator, Variable Copy/Paste/Export, and Screen Count. 
+    date: 2024 - 2025
+    type: HTML/CSS/TypeScript
+    image: "/assets/images/plugin-thumbnail.png"
+    complete: false

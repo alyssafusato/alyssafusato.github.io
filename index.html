@@ -1,0 +1,144 @@
+---
+layout: default
+title: Home
+---
+
+<div class="body-padding">
+    <div id="title" class="title-section">
+        <div class="text-wrapper">
+            <h3 class="font-medium"> ALYSSA FUSATO </h3>
+            <h1 class="text-accent-primary">UX/PRODUCT <br> DESIGNER</h1>
+        </div>
+        <h5 class="font-medium">
+            <ul>
+                <li> 4+ years in industry</li>
+                <li> good at job</li>
+                <li> very polite :)</li>
+            </ul>
+        </h5>
+        <div class="contact-section">
+            {% include contact-links.html %}
+        </div>
+    </div>
+    <div class="back-layer-img" style="opacity:100%; right:30%; top: 30%; "><img src="/assets/images/Ellipse.png"
+            class="project-card-img" alt="image"></div>
+    <div class="back-layer-img" style="left:24%; top: 26%; "><img src="/assets/images/Star 2.svg"
+            class="project-card-img" alt="image"></div>
+
+    <div id="projects">
+        <h6 class="section-label">Recent Work</h6>
+        <div class="project-card-grid">
+            {% for item in site.data.projects.main-projects %}
+            {% if item.complete == false %}
+            <div class="project-card project-card-disabled">
+                {% else %}
+                <a href="{{ item.link }}" class="project-card">
+                {% endif %}
+                <div class="text-wrapper">
+                    <div class="info-wrapper text-accent-secondary">
+                        <small class="info font-bold">{{ item.type }}</small>
+                        <div class="info label-1 font-bold">{{ item.date }}</div>
+                    </div>
+                    <div class="title-wrapper">
+                        <h4>{{ item.name }}</h4>
+                        <p>{{ item.subline }}</p>
+                    </div>
+                </div>
+                {% if item.complete == false %}
+                <div class="card-img-wrapper">
+                    <div class="overlay-text text-on-color font-family-heading center-text">
+                        <div class="body-xl">🏗️ </div>
+                        <div class="body-large line-height-display">Under <br>Construction</div> <small
+                            class="text-accent-secondary">Stay tuned!</small>
+                    </div>
+                    <img src="{{ item.image }}" class="project-card-img" alt="image">
+                </div>
+            </div>
+            {% else %}
+            <div class="card-img-wrapper"><img src="{{ item.image }}" class="project-card-img" alt="image"></div>
+            </a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <div id="other-projects">
+        <h6 class="section-label">Other Projects</h6>
+        <div class="project-other-card-grid">
+            <!-- Checks for "complete" property on "Other" projects in projects.yaml and assigns "disabled" class AND will not link to project page if false -->
+            {% for item in site.data.projects.other-projects %}
+            {% if item.complete == false %}
+            <div class="project-card-other project-card-disabled">
+                <div class="card-img-wrapper">
+                    <div class="overlay-text text-on-color font-family-heading center-text">
+                        <div class="body-xl">🏗️ </div>
+                        <div class="body-large line-height-display">Under <br>Construction</div> <small
+                            class="text-accent-secondary">Stay tuned!</small>
+                    </div>
+                    <img src="{{ item.image }}" class="project-card-img" alt="image">
+                </div>
+                {% else %}
+                <a href="{{ item.link }}" class="project-card-other">
+                    <div class="card-img-wrapper"><img src="{{ item.image }}" class="project-card-img" alt="image">
+                    </div>
+                    {% endif %}
+                    <div class="text-wrapper">
+                        <div class="title-wrapper">
+                            <h4>{{ item.name }}</h4>
+                        </div>
+                        <div class="info-wrapper">
+                            <small class="info font-bold">{{ item.type }}</small>
+                            <div class="info label-1 font-bold">{{ item.date }}</div>
+                        </div>
+                        <small>{{ item.description }}</small>
+                    </div>
+                    {% if item.complete == false %}
+            </div>
+            {% else %}
+            </a>
+            {% endif %}
+            {% endfor %}
+            <div class="lint-frog"></div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div id="about-me">
+            <h4>{{ site.data.about.main.headline }}</h4>
+            <p>{{ site.data.about.main.body }}</p>
+            <div class="text-ul-wrapper">
+                <p>Other interests include:</p>
+                <ul>
+                    {% for item in site.data.about.interests %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="img-wrapper">
+                {% for item in site.data.about.main-images %}
+                <img src="{{ item.img }}" alt="{{ item.img-alt }}" />
+                {% endfor %}
+            </div>
+        </div>
+
+        <div id="testimonials">
+            <h6 class="section-label">Nice things people have said</h6>
+            {% for item in site.data.about.testimonials %}
+            <blockquote class="testimonial-item">
+                <div class="body-large">{{ item.comment }}</div>
+                <div class="testimonial-source">
+                    <small>{{ item.author }}</small>
+                    <small class="text-accent-secondary">|</small>
+                    <small>{{ item.role }}</small>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="speech-bubble-tail" width="45" height="12"
+                        viewBox="0 0 45 19" fill="none">
+                        <path d="M45 0H3.72561L0 19L45 0Z" />
+                    </svg>
+                </div>
+            </blockquote>
+            {% endfor %}
+        </div>
+    </div>
+</div>
