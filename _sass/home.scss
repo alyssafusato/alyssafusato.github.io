@@ -114,7 +114,7 @@ body {
             }
 
             .text-wrapper {
-                background-color: mix($white-overlay-1, white, 70%);
+                background-color: mix($surface-1, white, 70%);
             }
 
             .card-img-wrapper>img {
@@ -128,7 +128,7 @@ body {
             flex-grow: 1;
             gap: $sm;
             padding: $xl;
-            background-color: $white-overlay-1;
+            background-color: $surface-1;
         }
 
         .title-wrapper {
@@ -213,13 +213,8 @@ body {
     .lint-frog {
         width: 10em;
         height: 10em;
-        background-color: blue;
+        // background-color: blue;
     }
-}
-
-.overlay-text {
-    position: absolute;
-    z-index: 1;
 }
 
 #about {
@@ -228,7 +223,7 @@ body {
     gap: $xl $xl4;
     width: 100%;
     margin-top: $xl;
-
+    
     >* {
         flex-grow: 1;
         @include flex-col();
@@ -331,6 +326,18 @@ body {
     }
 }
 
+.back-layer-img {
+    position: absolute;
+    z-index: -1;
+    color: $accent-secondary;
+    opacity: 20%;
+}
+
+.overlay-text {
+    position: absolute;
+    z-index: 1;
+}
+
 // 404.html styling
 .not-found-wrapper {
     @include flex-col();
@@ -370,7 +377,7 @@ body {
     border-radius: 12px;
     @include card-border();
     // filter: url(#turb);
-    background-color: $white-overlay-1;
+    background-color: $surface-1;
     padding: $med;
     justify-content: start;
 }

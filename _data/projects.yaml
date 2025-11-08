@@ -6,6 +6,7 @@ main-projects:
     date: 2024 - 2025
     type: Figma Library
     image: "/assets/images/wearables-kit-notext-thumbnail.png" 
+    complete: false
 
   - name: ShotView Mobile
     link: /shotview
@@ -14,6 +15,7 @@ main-projects:
     date: 2022 - 2023
     type: Mobile & Consumer Electronics
     image: "/assets/images/shotview-marketing-app.png" 
+    complete: false
 
   - name: eTrex SE
     link: /etrex-se
@@ -22,6 +24,7 @@ main-projects:
     date: 2021 - 2022
     type: Consumer Electronics
     image: "/assets/images/etrex-se-video-screenshot.png" 
+    complete: false
 
 other-projects:
   - name: GC+ Live Activity
@@ -46,4 +49,4 @@ other-projects:
     date: 2024 - 2025
     type: HTML/CSS/TypeScript
     image: "/assets/images/plugin-thumbnail.png"
-    complete: true
+    complete: false

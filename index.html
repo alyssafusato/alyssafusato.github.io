@@ -20,12 +20,20 @@ title: Home
             {% include contact-links.html %}
         </div>
     </div>
+    <div class="back-layer-img" style="opacity:100%; right:30%; top: 30%; "><img src="/assets/images/Ellipse.png"
+            class="project-card-img" alt="image"></div>
+    <div class="back-layer-img" style="left:24%; top: 26%; "><img src="/assets/images/Star 2.svg"
+            class="project-card-img" alt="image"></div>
 
     <div id="projects">
         <h6 class="section-label">Recent Work</h6>
         <div class="project-card-grid">
             {% for item in site.data.projects.main-projects %}
-            <a href="{{ item.link }}" class="project-card">
+            {% if item.complete == false %}
+            <div class="project-card project-card-disabled">
+                {% else %}
+                <a href="{{ item.link }}" class="project-card">
+                {% endif %}
                 <div class="text-wrapper">
                     <div class="info-wrapper text-accent-secondary">
                         <small class="info font-bold">{{ item.type }}</small>
@@ -36,8 +44,20 @@ title: Home
                         <p>{{ item.subline }}</p>
                     </div>
                 </div>
-                <div class="card-img-wrapper"><img src="{{ item.image }}" class="project-card-img" alt="image"></div>
+                {% if item.complete == false %}
+                <div class="card-img-wrapper">
+                    <div class="overlay-text text-on-color font-family-heading center-text">
+                        <div class="body-xl">🏗️ </div>
+                        <div class="body-large line-height-display">Under <br>Construction</div> <small
+                            class="text-accent-secondary">Stay tuned!</small>
+                    </div>
+                    <img src="{{ item.image }}" class="project-card-img" alt="image">
+                </div>
+            </div>
+            {% else %}
+            <div class="card-img-wrapper"><img src="{{ item.image }}" class="project-card-img" alt="image"></div>
             </a>
+            {% endif %}
             {% endfor %}
         </div>
     </div>
@@ -50,7 +70,11 @@ title: Home
             {% if item.complete == false %}
             <div class="project-card-other project-card-disabled">
                 <div class="card-img-wrapper">
-                    <div class="overlay-text text-on-color font-family-heading center-text"> <div class="body-xl">🏗️ </div> <div class="body-large line-height-display">Under <br>Construction</div> <small class="text-accent-secondary">Stay tuned!</small></div>
+                    <div class="overlay-text text-on-color font-family-heading center-text">
+                        <div class="body-xl">🏗️ </div>
+                        <div class="body-large line-height-display">Under <br>Construction</div> <small
+                            class="text-accent-secondary">Stay tuned!</small>
+                    </div>
                     <img src="{{ item.image }}" class="project-card-img" alt="image">
                 </div>
                 {% else %}
@@ -74,8 +98,7 @@ title: Home
             </a>
             {% endif %}
             {% endfor %}
-            <div class="lint-frog">
-            </div>
+            <div class="lint-frog"></div>
         </div>
     </div>
 

@@ -50,7 +50,7 @@ $card-radius: 16px;
     color: $secondary;
     padding: $xl $none;
     gap: $sm;
-    max-width: 300px;
+    max-width: 270px;
   }
 
   .stat-block-label {
@@ -267,7 +267,7 @@ $card-radius: 16px;
   @extend .img-wrapper;
   max-width: $section-max-width;
   margin: auto;
-  padding: $xl4;
+  padding: $xl $xl4;
 }
 
 #Table-of-contents {
