@@ -139,7 +139,7 @@ permalink: /shotview.html
                             stroke="#206C87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </div>
-                <small class="font-bold"><a href="{{ page.permalink }}/#research" class="text-link"> Research
+                <small class="font-bold"><a href="{{ page.permalink }}#research" class="text-link"> Research
                     </a></small>
             </div>
             <div class="horizontal-line"> </div>
@@ -151,7 +151,7 @@ permalink: /shotview.html
                             stroke="#206C87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </div>
-                <small class="font-bold"><a href="{{ page.permalink }}/#design" class="text-link">Design</a></small>
+                <small class="font-bold"><a href="{{ page.permalink }}#design" class="text-link">Design</a></small>
             </div>
             <div class="horizontal-line"> </div>
             <div class="section-link-wrapper">
@@ -162,8 +162,7 @@ permalink: /shotview.html
                             stroke="#206C87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </div>
-                <small class="font-bold"><a href="{{ page.permalink }}/#img-examples"
-                        class="text-link">Images</a></small>
+                <small class="font-bold"><a href="{{ page.permalink }}#feedback" class="text-link">Feedback</a></small>
             </div>
             <div class="horizontal-line"> </div>
             <div class="section-link-wrapper">
@@ -174,13 +173,44 @@ permalink: /shotview.html
                             stroke="#206C87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </div>
-                <small class="font-bold"><a href="{{ page.permalink }}/#typography"
-                        class="text-link">Typography</a></small>
+                <small class="font-bold"><a href="{{ page.permalink }}#conclusion"
+                        class="text-link">Conclusion</a></small>
             </div>
         </div>
     </div>
 
-    
+    <div id="background" class="project-section section-row">
+        <div class="content-wrapper">
+            <div class="section-title-wrapper">
+                <h3 class="section-title">Background</h3>
+            </div>
+            <div class="subsection-col">
+                <div class="content-block">
+                    <div class="body-large font-medium">
+                        Knowing basically nothing about the hunting and sports shooting scene, I interviewed several
+                        hobbyists and did a competitive analysis of the existing chronograph apps on the market to get a
+                        better understanding of what users wanted to see.
+                    </div>
+                </div>
+                <div class="content-block" style="flex:1.5 0 0">
+                    <p>
+                        Despite their rough design, I was able to get a sense of what kind of information was important
+                        to users by examining the way they presented shot data.
+                    </p>
+                    <ul>
+                        <li>The speed of the last shot is shown in large text to be easily read from a distance.</li>
+                        <li>Aggregated stats and shot calucaltions are important and shown on the main screen when
+                            possible.</li>
+                        <li>A list of all recorded shots is usually accessible nearby.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img-wrapper">
+                <img src="/assets/images/shotview-competitors.png" class="project-card-img" alt="image">
+                <small>Screenshots from the Caldwell Precision Chronograph and FX Radar mobile apps</small>
+            </div>
+        </div>
+    </div>
 
     <div id="research" class="project-section section-row">
         <div class="content-wrapper">
@@ -236,7 +266,8 @@ permalink: /shotview.html
                         </p>
                         <div class="body-large font-medium">
                             This drastically changed the focus of the app, which became more about
-                            finding ways to present session stats without being able to use charts or other complex visuals.
+                            finding ways to present session stats without being able to use charts or other complex
+                            visuals.
                         </div>
                     </div>
                 </div>
@@ -282,9 +313,9 @@ permalink: /shotview.html
             <div class="subsection-col">
                 <div class="content-block">
                     <p>
-                        Here are all of the main screens for ShotView diagrammed below. The shallow architecture of the
-                        app is meant to serve as a simple and modular base for future additions, whether for other
-                        ballistics devices or new chronograph-related features.
+                        A simplified map of ShotView's main screens is diagrammed below. The app's shallow architecture
+                        serves as a simple modular base for future
+                        additions, whether for other ballistics devices or new chronograph-related features.
                     </p>
                 </div>
             </div>
@@ -307,7 +338,8 @@ permalink: /shotview.html
             <div class="subsection-col">
                 <div class="content-block">
                     <p>
-                        While users would ideally get ShotView for the best possible experience, we knew that they'd be reluctant to install a new app unless absolutely necessary. 
+                        While users would ideally get ShotView for the best possible experience, we knew that they'd be
+                        reluctant to install a new app unless absolutely necessary.
                         To create a better experience for these users, I pulled in some UI updates based on the app.
                     </p>
                 </div>
@@ -321,7 +353,7 @@ permalink: /shotview.html
         </div>
     </div>
 
-    <div id="results" class="project-section section-row">
+    <div id="feedback" class="project-section section-row">
         <div class="content-wrapper">
             <div class="section-title-wrapper">
                 <h3 class="section-title">
@@ -364,7 +396,7 @@ permalink: /shotview.html
             <div class="subsection-row">
                 <div class="content-block" style="flex: 1.5 0 0">
                     <div class="paragraph-wrapper">
-                        <div class="body-large">
+                        <div class="body-xl">
                             Some users were happy with the app's detailed session view and note-taking tools, while
                             others were hoping for more advanced features.
                         </div>
@@ -376,8 +408,7 @@ permalink: /shotview.html
                         <p>
                             Many of these were features I'd identified in my earlier research that couldn't be included
                             due to time and resource constraints. Ultimately, I think the feedback provides a solid
-                            basis for future
-                            updates and can help guide the app's development moving forward.
+                            basis for future updates and can help guide the app's development moving forward.
                         </p>
                     </div>
                 </div>
@@ -385,7 +416,8 @@ permalink: /shotview.html
                     <div class="img-wrapper"><img src="/assets/images/shotview-bulk-export.png" class="project-card-img"
                             alt="image">
                         <div class="label-1">
-                            Wireframe flow for bulk exporting sessions
+                            The general tone of many of the app store reviews makes me wonder if the
+                            hype surrounding the device led to equally high expectations for the app.
                         </div>
                     </div>
                 </div>
@@ -393,8 +425,10 @@ permalink: /shotview.html
             <div class="subsection-col">
                 <div class="content-block content-group">
                     <p>
-                        We also found several helpful suggestions for improvements from customers that we
-                        looked into and decided to implement, such as bulk exporting for sessions.
+                        Among the wave of reactions, reviews, and forum posts, we also found several helpful
+                        suggestions for improvements from customers that we investigated and implemented.
+                        One standout was the addition of bulk exporting for sessions, which was a major plus for users
+                        who had their own systems for tracking and processing the data they recorded.
                     </p>
                     <div class="img-wrapper"><img src="/assets/images/shotview-bulk-export.png" class="project-card-img"
                             alt="image">
@@ -407,186 +441,41 @@ permalink: /shotview.html
         </div>
     </div>
 
-    <div class="project-section section-3t">
+    <div id="conclusion" class="project-section section-row">
         <div class="content-wrapper">
             <div class="section-title-wrapper">
-                <h3 class="section-title">Section Layout T</h3>
-                <h5 class=" text-accent-secondary">Optional subline</h5>
-            </div>
-            <div class="subsection-col">
-                <div class="content-block">
-                    <p>
-                        We kicked things off by studying other design systems and learning about the day-to-day
-                        problems encountered by the wearables team.
-                    </p>
-                </div>
+                <h3 class="section-title">
+                    Conclusion
+                </h3>
             </div>
             <div class="subsection-row">
-                <div class="content-block">
-                    <p>
-                        We kicked things off by studying other design systems and learning about the day-to-day
-                        problems
-                        encountered by the wearables team.
-                    </p>
-                </div>
-                <div class="content-block">
-                    <p>
-                        We kicked things off by studying other design systems and learning about the day-to-day
-                        problems
-                        encountered by the wearables team.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="project-section section-3y">
-        <div class="content-wrapper">
-            <div class="section-title-wrapper">
-                <h3 class="section-title">Section Layout Y</h3>
-                <h5 class="text-accent-secondary">Optional subline</h5>
-            </div>
-            <div class="subsection-row">
-                <div class="content-block">
-                    <p>We kicked things off by studying other design systems and learning about the day-to-day
-                        problems encountered by the wearables team. </p>
-                </div>
-                <div class="content-block">
-                    <p>We kicked things off by studying other design systems and learning about the day-to-day
-                        problems encountered by the wearables team. </p>
-                </div>
-            </div>
-            <div class="subsection-col">
-                <div class="content-block">
-                    <div class="content-block">
-                        <p>We kicked things off by studying other design systems and learning about the day-to-day
-                            problems encountered by the wearables team. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="project-section section-col">
-        <div class="content-wrapper">
-            <div class="section-title-wrapper">
-                <h3 class="section-title">Section Layout Col</h3>
-                <h5 class="text-accent-secondary">Optional subline</h5>
-            </div>
-            <div class="block-wrapper subsection-col">
-                <div class="content-block">
-                    <p>We kicked things off by studying other design systems and learning about the day-to-day
-                        problems
-                        encountered by the wearables team. </p>
-                </div>
-                <div class="content-block">
-                    <p>We kicked things off by studying other design systems and learning about the day-to-day
-                        problems
-                        encountered by the wearables team. </p>
-                </div>
-                <div class="content-block">
-                    <p>We kicked things off by studying other design systems and learning about the day-to-day
-                        problems
-                        encountered by the wearables team. </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="project-section section-row">
-        <div class="content-wrapper">
-            <div class="section-title-wrapper">
-                <h3 class="section-title">Section Layout Row</h3>
-                <h5 class="text-accent-secondary">Optional subline</h5>
-            </div>
-            <div class="subsection-row">
-                <div class="content-block">
-                    <p>We kicked things off by studying other design systems and learning about the day-to-day
-                        problems
-                        encountered by the wearables team. </p>
-                </div>
-                <div class="content-block">
-                    <p>We kicked things off by studying other design systems and learning about the day-to-day
-                        problems
-                        encountered by the wearables team. </p>
-                </div>
-                <div class="content-block">
-                    <p>We kicked things off by studying other design systems and learning about the day-to-day
-                        problems
-                        encountered by the wearables team. </p>
-                </div>
-                <div class="content-block">
-                    <p>We kicked things off by studying other design systems and learning about the day-to-day
-                        problems
-                        encountered by the wearables team. </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="project-section section-3l">
-        <div class="content-wrapper">
-            <div class="section-title-wrapper">
-                <h3 class="section-title">Section Layout 3-Left</h3>
-                <h5 class="text-accent-secondary">Optional subline</h5>
-            </div>
-            <div class="subsection-row">
-                <div class="content-block">
-                    <p>We kicked things off by studying other design systems and learning about the day-to-day
-                        problems
-                        encountered by the wearables team. </p>
-                </div>
-                <div class="subsection-col">
-                    <div class="content-block">
-                        <p>We kicked things off by studying other design systems and learning about the day-to-day
-                            problems
-                            encountered by the wearables team. </p>
-                    </div>
-                    <div class="content-block">
-                        <p>We kicked things off by studying other design systems and learning about the day-to-day
-                            problems
-                            encountered by the wearables team. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="project-section section-3r">
-        <div class="content-wrapper">
-            <div class="section-title-wrapper">
-                <h3 class="section-title">Section Layout 3-Right</h3>
-                <h5 class="text-accent-secondary">Optional subline</h5>
-            </div>
-            <div class="subsection-row">
-                <div class="subsection-col">
-                    <div class="content-block">
+                <div class="content-block" style="flex: 1.5 0 0">
+                    <div class="paragraph-wrapper">
+                        <div class="body-xl">
+                            ShotView was as a rare opportunity for me to design an app from the ground up and experience
+                            all of the ups and downs associated with it.
+                        </div>
                         <p>
-                            We kicked things off by studying other design systems and learning about the day-to-day
-                            problems encountered by the wearables team.
+                            While external limitations prevented us from implementing everything we'd planned, learning
+                            how to work within those constraints to improvise solutions has helped me rethink the way I
+                            approach design projects.
+                        </p>
+                        <p>
+                            Being the sole UX contact on ShotView taught me to trust in my intuition as a designer, and
+                            it was really satisfying to see the tangible results of everyone's contributions.
+                        </p>
+                        <p>
+                            Overall, ShotView has been a very unique project with huge potential
+                            for growth, and I'm excited to see where it goes in the future.
                         </p>
                     </div>
-                    <div class="content-block">
-                        <p>We kicked things off by studying other design systems and learning about the day-to-day
-                            problems encountered by the wearables team. </p>
-                    </div>
                 </div>
                 <div class="content-block">
-                    <div class="body-xl">We kicked things off by studying other design systems and learning about the
-                        day-to-day
-                        problems encountered by the wearables team. </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="img-examples" class="project-section">
-        <div class="content-wrapper">
-            <h3 class="section-title">Images</h3>
-            <div class="subsection-col">
-                <div class="content-block">
-                    <div class="body-xl">
-                        Standalone image and a section divider image that spans the width of the page.
+                    <div class="img-wrapper">
+                        <img src="/assets/images/shotview-bulk-export.png" class="project-card-img" alt="image">
+                        <div class="label-1">
+                            Wireframe flow for bulk exporting sessions
+                        </div>
                     </div>
                 </div>
             </div>
