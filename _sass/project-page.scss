@@ -41,6 +41,8 @@ $card-radius: 16px;
 
 .stat-block-wrapper {
   @include flex-row;
+  border-top: 2px solid $background-secondary;
+  border-bottom: 2px solid $background-secondary;
   align-self: stretch;
   align-items: flex-start;
   gap: $med $xl4;
