@@ -8,6 +8,7 @@ $section-max-width: 900px; // If changing, please also update style override on 
 $content-min-width: 300px;
 
 $img-divider-height: 240px;
+$title-img-height: 280px;
 
 $section-padding: $xl4;
 
@@ -18,7 +19,7 @@ $card-radius: 16px;
 // TITLE
 .title-img-wrapper {
   display: flex;
-  height: 240px;
+  height: $title-img-height;
   align-items: flex-start;
   align-self: stretch;
 
@@ -30,8 +31,13 @@ $card-radius: 16px;
   }
 }
 
+.title-section>.project-section {
+  background-color: $surface-1;
+  padding-top: $xl3;
+}
+
 .title-section>.project-section>.content-wrapper {
-  gap: $xl3;
+  gap: $xl2;
 }
 
 .title-wrapper {
@@ -42,7 +48,7 @@ $card-radius: 16px;
 .stat-block-wrapper {
   @include flex-row;
   border-top: 2px solid $background-secondary;
-  border-bottom: 2px solid $background-secondary;
+  // border-bottom: 2px solid $background-secondary;
   align-self: stretch;
   align-items: flex-start;
   gap: $med $xl4;
@@ -57,6 +63,7 @@ $card-radius: 16px;
 
   .stat-block-label {
     font-weight: 600;
+    color: $accent-primary;
   }
 
   .stat-block-value {
@@ -80,7 +87,8 @@ $card-radius: 16px;
 }
 
 .project-section {
-  display: flex;
+  @include flex-col;
+  gap: $xl3;
   padding: $section-padding;
 
   .content-wrapper {
@@ -159,6 +167,10 @@ $card-radius: 16px;
 }
 
 @media (max-width: 700px) {
+.project-section {
+  padding: $xl2;
+}
+
   .subsection-grid {
     grid-template-columns: auto;
   }
@@ -166,6 +178,12 @@ $card-radius: 16px;
   .subsection-grid-small {
     grid-template-columns: auto auto;
   }
+}
+
+@media (max-width: 400px) {
+.project-section {
+  padding: $xl;
+}
 }
 
 // On layouts like 3l and 3r, lets you center the non-partnered content block
@@ -274,6 +292,7 @@ $card-radius: 16px;
 
 #Table-of-contents {
   align-items: center;
+  flex-direction: row;
 
   .horizontal-line {
     border-bottom: 3px solid $accent-primary;
