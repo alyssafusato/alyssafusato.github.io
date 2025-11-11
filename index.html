@@ -6,7 +6,7 @@ title: Alyssa Fusato | UX Design
 <div class="body-padding">
     <div id="title" class="title-section">
         <div id="parallax">
-            <div class="wrapper layer" data-depth="0.9">
+            <div class="wrapper layer" data-depth="0.4">
                 <div id="title-wrapper" class="text-wrapper">
                     <h3 class="font-medium"> ALYSSA FUSATO </h3>
                     <h1 class="text-accent-primary">UX/PRODUCT <br> DESIGNER</h1>
@@ -32,11 +32,15 @@ title: Alyssa Fusato | UX Design
     <div id="projects">
         <h6 class="section-label">Recent Work</h6>
         <div class="project-card-grid">
+            {% assign counter = 1 %}
             {% for item in site.data.projects.main-projects %}
+            {% capture revealCounter %}
+            reveal{% increment counter %}
+            {% endcapture %}
             {% if item.complete == false %}
-            <div class="project-card project-card-disabled">
+            <div class="project-card project-card-disabled {{ revealCounter }}">
                 {% else %}
-                <a href="{{ item.link }}" class="project-card">
+                <a href="{{ item.link }}" class="project-card {{ revealCounter }}">
                     {% endif %}
                     <div class="text-wrapper">
                         <div class="info-wrapper text-accent-secondary">
@@ -70,9 +74,13 @@ title: Alyssa Fusato | UX Design
         <h6 class="section-label">Other Projects</h6>
         <div class="project-other-card-grid">
             <!-- Checks for "complete" property on "Other" projects in projects.yaml and assigns "disabled" class AND will not link to project page if false -->
+            {% assign otherCounter = 1 %}
             {% for item in site.data.projects.other-projects %}
+            {% capture revealCounterOther %}
+            reveal{% increment otherCounter %}
+            {% endcapture %}
             {% if item.complete == false %}
-            <div class="project-card-other project-card-disabled">
+            <div class="project-card-other project-card-disabled {{ revealCounterOther }}">
                 <div class="card-img-wrapper">
                     <div class="overlay-text text-on-color font-family-heading center-text">
                         <div class="body-xl">🚧</div>
@@ -82,7 +90,7 @@ title: Alyssa Fusato | UX Design
                     <img src="{{ item.image }}" class="project-card-img" alt="image">
                 </div>
                 {% else %}
-                <a href="{{ item.link }}" class="project-card-other">
+                <a href="{{ item.link }}" class="project-card-other {{ revealCounterOther }}">
                     <div class="card-img-wrapper"><img src="{{ item.image }}" class="project-card-img" alt="image">
                     </div>
                     {% endif %}

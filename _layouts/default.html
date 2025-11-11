@@ -20,8 +20,8 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J629LK1176"></script>
-<!-- <script src="/assets/js/parallax.min.js"></script>  -->
 <script src="/assets/js/parallax.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
 <script>
   // Google tag start
   window.dataLayer = window.dataLayer || [];
@@ -38,6 +38,12 @@
 {% include footer.html %}
 
 <script>
+  ScrollReveal({ distance: '0.5em', duration: 700, easing: 'ease-in-out' });
+  ScrollReveal().reveal('.headline');
+  ScrollReveal().reveal('.reveal0', { delay: 200 });
+  ScrollReveal().reveal('.reveal1', { delay: 300 });
+  ScrollReveal().reveal('.reveal2', { delay: 400 });
+  ScrollReveal().reveal('.reveal3', { delay: 500 });
   var parallax = document.getElementById('parallax');
   var parallax = new Parallax(parallax, {
     selector: '.layer'
