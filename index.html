@@ -3,27 +3,31 @@ layout: default
 title: Home
 ---
 
+
 <div class="body-padding">
     <div id="title" class="title-section">
-        <div class="text-wrapper">
-            <h3 class="font-medium"> ALYSSA FUSATO </h3>
-            <h1 class="text-accent-primary">UX/PRODUCT <br> DESIGNER</h1>
+        <div id="parallax">
+            <div class="wrapper layer" data-depth="0.6">
+                <div id="title-wrapper" class="text-wrapper">
+                    <h3 class="font-medium"> ALYSSA FUSATO </h3>
+                    <h1 class="text-accent-primary">UX/PRODUCT <br> DESIGNER</h1>
+                </div>
+                <h5 class="font-medium">
+                    <ul>
+                        <li> 4+ years in industry</li>
+                        <li> good at job</li>
+                        <li> very polite :)</li>
+                    </ul>
+                </h5>
+            </div>
+            <div class="back-layer-img layer circle" data-depth="0.1"><img src="/assets/images/Ellipse.png" alt="image"></div>
+            <div class="back-layer-img layer star" data-depth="0.3"><img src="/assets/images/Star 2.svg" alt="image"></div>
         </div>
-        <h5 class="font-medium">
-            <ul>
-                <li> 4+ years in industry</li>
-                <li> good at job</li>
-                <li> very polite :)</li>
-            </ul>
-        </h5>
-        <div class="contact-section">
-            {% include contact-links.html %}
-        </div>
+        
+            <div class="contact-section">
+                {% include contact-links.html %}
+            </div>
     </div>
-    <div class="back-layer-img" style="opacity:100%; right:30%; top: 30%; "><img src="/assets/images/Ellipse.png"
-            class="project-card-img" alt="image"></div>
-    <div class="back-layer-img" style="left:24%; top: 26%; "><img src="/assets/images/Star 2.svg"
-            class="project-card-img" alt="image"></div>
 
     <div id="projects">
         <h6 class="section-label">Recent Work</h6>
@@ -33,26 +37,26 @@ title: Home
             <div class="project-card project-card-disabled">
                 {% else %}
                 <a href="{{ item.link }}" class="project-card">
-                {% endif %}
-                <div class="text-wrapper">
-                    <div class="info-wrapper text-accent-secondary">
-                        <small class="info font-bold">{{ item.type }}</small>
-                        <div class="info label-1 font-bold">{{ item.date }}</div>
+                    {% endif %}
+                    <div class="text-wrapper">
+                        <div class="info-wrapper text-accent-secondary">
+                            <small class="info font-bold">{{ item.type }}</small>
+                            <div class="info label-1 font-bold">{{ item.date }}</div>
+                        </div>
+                        <div class="title-wrapper">
+                            <h4>{{ item.name }}</h4>
+                            <p>{{ item.subline }}</p>
+                        </div>
                     </div>
-                    <div class="title-wrapper">
-                        <h4>{{ item.name }}</h4>
-                        <p>{{ item.subline }}</p>
+                    {% if item.complete == false %}
+                    <div class="card-img-wrapper">
+                        <div class="overlay-text text-on-color font-family-heading center-text">
+                            <div class="body-xl">🚧</div>
+                            <div class="body-large line-height-display">Under <br>Construction</div> <small
+                                class="text-on-color-accent">Stay tuned!</small>
+                        </div>
+                        <img src="{{ item.image }}" class="project-card-img" alt="image">
                     </div>
-                </div>
-                {% if item.complete == false %}
-                <div class="card-img-wrapper">
-                    <div class="overlay-text text-on-color font-family-heading center-text">
-                        <div class="body-xl">🚧</div>
-                        <div class="body-large line-height-display">Under <br>Construction</div> <small
-                            class="text-on-color-accent">Stay tuned!</small>
-                    </div>
-                    <img src="{{ item.image }}" class="project-card-img" alt="image">
-                </div>
             </div>
             {% else %}
             <div class="card-img-wrapper"><img src="{{ item.image }}" class="project-card-img" alt="image"></div>

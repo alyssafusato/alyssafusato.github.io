@@ -47,6 +47,7 @@ body {
     gap: $xl4;
     max-width: $section-max-width;
     margin: auto;
+    overflow-x: hidden;
 }
 
 .text-ul-wrapper {
@@ -69,9 +70,27 @@ body {
     padding-bottom: $xl2;
     gap: $xl4;
 
+    #parallax {
+        z-index: -1;
+        flex-grow: 2;
+        display: flex;
+
+        .wrapper {
+            display: flex !important;
+            flex-direction: row;
+            gap: $xl $xl4;
+            width: 100%;
+        }
+    }
+
     .text-wrapper {
-        @include flex-col;
+        flex-flow: column;
         gap: $xs;
+    }
+
+    h5 {
+        @include flex-col;
+        min-width: 250px;
     }
 
     ul {
@@ -84,6 +103,17 @@ body {
         li {
             padding-bottom: $sm;
         }
+    }
+
+    .circle {
+        opacity: 100%;
+        top: 60% !important;
+        left: 82% !important;
+    }
+
+    .star {
+        top: 46% !important;
+        left: 34% !important;
     }
 }
 
@@ -169,7 +199,7 @@ body {
                 text-decoration: none;
             }
 
-            .text-wrapper{
+            .text-wrapper {
                 background-color: $surface-1;
             }
 
@@ -220,7 +250,7 @@ body {
     gap: $xl $xl4;
     width: 100%;
     margin-top: $xl;
-    
+
     >* {
         flex-grow: 1;
         @include flex-col();
@@ -264,7 +294,11 @@ body {
         position: relative;
         top: $xl + $xs;
         fill: $surface-1;
+        filter: drop-shadow(0px 8px 4px transparentize($accent-shadow, 0.3));
+        border-top: 5px solid $surface-1;
+        // box-shadow: 2px 2px 12px -4px $accent-shadow
     }
+
 
     #testimonials {
         :nth-child(even) {
@@ -302,9 +336,17 @@ body {
     #about {
         grid-template-columns: auto;
     }
+
+    #title #parallax .wrapper.layer {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width:600px) {
+    .body-padding {
+        padding: $xl;
+    }
+
     .project-other-card-grid {
         grid-template-columns: auto;
     }
@@ -313,10 +355,11 @@ body {
         gap: $xl;
     }
 
-    .title-section > .text-wrapper {
+    #title-wrapper {
         h1 {
-            font-size: 48px;
+            font-size: 40px;
         }
+
         h3 {
             font-size: 30px;
         }
