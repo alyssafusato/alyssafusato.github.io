@@ -160,38 +160,35 @@ body {
 
     .project-card-disabled {
         &:hover {
-            -webkit-filter: grayscale(100%);
-            -moz-filter: grayscale(100%);
-            -ms-filter: grayscale(100%);
-            -o-filter: grayscale(100%);
+            // -webkit-filter: grayscale(100%);
+            // -moz-filter: grayscale(100%);
+            // -ms-filter: grayscale(100%);
+            // -o-filter: grayscale(100%);
 
             .title-wrapper>h4 {
                 text-decoration: none;
             }
 
+            .text-wrapper{
+                background-color: $surface-1;
+            }
+
             .card-img-wrapper>img {
                 opacity: 100%;
-                transform: scale(1.1);
+                transform: none;
             }
         }
 
         .card-img-wrapper>img {
-            -webkit-filter: brightness(30%) blur(1px);
-            -moz-filter: brightness(30%) blur(1px);
-            -ms-filter: brightness(30%) blur(1px);
-            -o-filter: brightness(30%) blur(1px);
+            -webkit-filter: grayscale(100%) brightness(30%) blur(1px);
+            -moz-filter: grayscale(100%) brightness(30%) blur(1px);
+            -ms-filter: grayscale(100%) brightness(30%) blur(1px);
+            -o-filter: grayscale(100%) brightness(30%) blur(1px);
         }
 
         .overlay-text {
             @include flex-col();
             gap: $sm;
-
-            small {
-                -webkit-filter: brightness(200%);
-                -moz-filter: brightness(200%);
-                -ms-filter: brightness(200%);
-                -o-filter: brightness(200%);
-            }
         }
     }
 }

@@ -7,8 +7,15 @@ permalink: /shotview
 <div class="body-wrapper">
 
     <div id="Project-title" class="title-section">
-        <div class="title-img-wrapper">
-            <img src="/assets/images/shotview-promo.jpg" class="project-card-img" alt="image">
+        <div class="title-img-wrapper"
+            style="background-image:url(/assets/images/shotview-promo.jpg)">
+            <svg xmlns='http://www.w3.org/2000/svg'>
+                <filter id='noiseFilter'>
+                    <feTurbulence type='fractalNoise' baseFrequency='0.90' numOctaves='3' stitchTiles='stitch' />
+                </filter>
+                <rect width='100%' height='100%' filter='url(#noiseFilter)' />
+            </svg>
+            <!-- <img src="/assets/images/wearables-kit-notext-thumbnail.png" class="project-card-img" alt="image"> -->
         </div>
         <div class="project-section">
             <div class="content-wrapper">
@@ -172,13 +179,13 @@ permalink: /shotview
                 <div class="content-block">
                     <div class="body-large font-medium">
                         I had no background in hunting and sports shooting prior to this project. To gain familiarity
-                        with this space, I conducted interviews with several shooters and wrote a
+                        with this space, I conducted interviews with several shooters and drew up a
                         competitive analysis of existing chronograph apps.
                     </div>
                 </div>
                 <div class="content-block" style="flex:1.5 0 0">
                     <p>
-                        Through this process, I gained a sense of current design patterns, user expectations, and
+                        Through this process, I gained a sense for common design patterns, user expectations, and
                         opportunities for Garmin to set itself apart in the market.
                     </p>
                 </div>
@@ -202,11 +209,11 @@ permalink: /shotview
                     <div class="paragraph-wrapper">
                         <p>
                             Due to unexpected constraints, many of the designed app features were cut prior to launch.
-                            The elements of the app that remained required changes to compensate for the loss of key
-                            features, and this drastically changed the focus of the app.
+                            The remaining elements of the app required changes to account for the loss of key
+                            features, which drastically changed the focus of the app.
                         </p>
                         <div class="body-large font-medium">
-                            ShotView pivoted to prioritize presentation of session stats in a way that would still be
+                            In response, ShotView pivoted to prioritize presentation of session stats in a way that would still be
                             informative and insightful for users.
                         </div>
                     </div>

@@ -1,13 +1,4 @@
 main-projects:
-  - name: Wearables Library
-    link: /wearables-library
-    subline: Garmin’s first wearables wireframing kit
-    description: 
-    date: 2024 - 2025
-    type: Figma Library
-    image: "/assets/images/wearables-kit-notext-thumbnail.png" 
-    complete: false
-
   - name: ShotView Mobile
     link: /shotview
     subline: C1 Pro Chronograph & companion app
@@ -16,6 +7,15 @@ main-projects:
     type: Mobile & Consumer Electronics
     image: "/assets/images/shotview-marketing-app.png" 
     complete: true
+
+  - name: Wearables Library
+    link: /wearables-library
+    subline: Garmin’s first wearables wireframing kit
+    description: 
+    date: 2024 - 2025
+    type: Figma Library
+    image: "/assets/images/wearables-kit-notext-thumbnail.png" 
+    complete: false
 
   - name: eTrex SE
     link: /etrex-se
@@ -29,15 +29,15 @@ main-projects:
 other-projects:
   - name: GC+ Live Activity
     link: /live-activity
-    description: View and control wearable activities from the appin one of the most successful subscription features to launch on Connect+ this past year.
+    description: View and control wearable activities from the appin one of the most successful subscription features to launch on <a href="https://www.garmin.com/en-US/p/1565777/" target="_blank" class="text-link font-bold">Connect+</a> this past year.
     date: 2022 - 2025
     type: Mobile App, Concept Pitch
-    image: "/assets/images/wearables-kit-notext-thumbnail.png" 
+    image: "/assets/images/live-activity-thumbnail.png" 
     complete: false
 
   - name: Community Kits
     link: /figma-community
-    description: Component libraries I created and published to the public on Figma Community. Includes the FigPal Kit and ChatGPT 5 Web Kit.
+    description: Component libraries I created and published to the public on Figma Community. Includes the <a href="https://www.figma.com/community/file/1556069421164105393/figpal-kit" target="_blank" class="text-link font-bold">FigPal Kit</a> and <a href="https://www.figma.com/community/file/1565133807625812076/chatgpt-5-web-free-ui-kit-prototype" target="_blank" class="text-link font-bold">ChatGPT 5 Web Kit</a>.
     date: 2025 
     type: Figma Library
     image: "/assets/images/chatgpt-kit-thumbnail.png" 
@@ -45,7 +45,7 @@ other-projects:
 
   - name: Figma Plugins
     link: /figma-plugins
-    description: Three plugins I’ve created to help with UX work. Table of Contents Generator, Variable Copy/Paste/Export, and Screen Count. 
+    description: Three plugins I’ve created to help with UX work. Includes <a href="https://www.figma.com/community/plugin/1519398362585843338/table-of-contents-creator" target="_blank" class="text-link font-bold">Table of Contents Generator</a>, <a href="https://www.figma.com/community/plugin/1519396399925531267/variable-copy-paste-export" target="_blank" class="text-link font-bold">Variable Copy/Paste/Export</a>, and <a href="https://www.figma.com/community/plugin/1519388496828481119/screen-count" target="_blank" class="text-link font-bold">Screen Count</a>. 
     date: 2024 - 2025
     type: HTML/CSS/TypeScript
     image: "/assets/images/plugin-thumbnail.png"

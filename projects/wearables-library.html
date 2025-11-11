@@ -5,13 +5,18 @@ permalink: /wearables-library
 ---
 
 <div class="body-wrapper">
-
     <div id="Project-title" class="title-section">
+        <div class="title-img-wrapper"
+            style="background-image:url(/assets/images/wearables-kit-notext-thumbnail.png)">
+            <svg xmlns='http://www.w3.org/2000/svg'>
+                <filter id='noiseFilter'>
+                    <feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch' />
+                </filter>
+                <rect width='100%' height='100%' filter='url(#noiseFilter)' />
+            </svg>
+        </div>
         <div class="project-section">
             <div class="content-wrapper">
-                <div class="title-img-wrapper">
-                    <img src="/assets/images/shotview-marketing-app.png" class="project-card-img" alt="image">
-                </div>
                 <div class="title-wrapper"> <!-- Page Title & Subline  -->
                     <h2 class="font-extrabold text-accent-primary">{{ page.title }}</h2>
                     <h4 class="text-accent-secondary font-regular">Co-authoring Garmin's first wireframing kit for
@@ -52,9 +57,7 @@ permalink: /wearables-library
         </div>
     </div>
 
-    <div class="img-section-divider"> <!-- Placeholder for clickable process steps  -->
-        <img src="/assets/images/shotview-marketing-app.png" class="project-card-img" alt="image">
-    </div>
+    <!-- <div class="img-section-divider"> Placeholder for clickable process steps <img src="/assets/images/shotview-marketing-app.png" class="project-card-img" alt="image"></div> -->
 
     <div id="Table-of-contents" class="project-section">
         <div class="content-wrapper">
@@ -379,9 +382,6 @@ permalink: /wearables-library
                 </div>
             </div>
         </div>
-    </div>
-
-    <div id="Principles" class="project-section section-grid ">
         <div class="content-wrapper">
             <div class="section-title-wrapper">
                 <h4 class="section-title font-medium">
@@ -619,10 +619,8 @@ permalink: /wearables-library
             </div>
         </div>
     </div>
-
     <div class="img-standalone">
         <img src="/assets/images/shotview-marketing-app.png" class="project-card-img" alt="image">
         <small>Image caption</small>
     </div>
-
 </div>

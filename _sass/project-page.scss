@@ -20,14 +20,19 @@ $card-radius: 16px;
 .title-img-wrapper {
   display: flex;
   height: $title-img-height;
-  align-items: flex-start;
-  align-self: stretch;
+  // align-items: flex-start; 
+  // align-self: stretch;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-position: center;
 
-  .project-card-img {
-    flex: 1 0 0;
-    align-self: stretch;
-    object-fit: cover;
+  svg {
     width: 100%;
+    height: $title-img-height;
+    position: absolute;
+    top: 0;
+    mix-blend-mode: soft-light;
+    opacity: 0.5;
   }
 }
 
@@ -167,9 +172,9 @@ $card-radius: 16px;
 }
 
 @media (max-width: 700px) {
-.project-section {
-  padding: $xl2;
-}
+  .project-section {
+    padding: $xl2;
+  }
 
   .subsection-grid {
     grid-template-columns: auto;
@@ -181,9 +186,9 @@ $card-radius: 16px;
 }
 
 @media (max-width: 400px) {
-.project-section {
-  padding: $xl;
-}
+  .project-section {
+    padding: $xl;
+  }
 }
 
 // On layouts like 3l and 3r, lets you center the non-partnered content block
@@ -229,7 +234,7 @@ $card-radius: 16px;
   @extend .grid-item, .content-group;
   min-width: $grid-item-small-min-width;
   padding-bottom: $lg;
-   
+
   p {
     line-height: $line-height-display;
     padding: $sm 0;

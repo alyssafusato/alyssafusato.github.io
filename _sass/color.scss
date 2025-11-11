@@ -6,6 +6,7 @@ $accent-primary: #085F82;
 $accent-secondary: #0E86B6;
 $accent-tertiary: #d7a93e;
 $on-color: white;
+$on-color-accent: #c6dde5;
 // $accent-shadow: color.adjust($accent-secondary,
 //         /* used on for box-shadow on cards */
 //         $saturation: 10%,
@@ -53,4 +54,8 @@ $white-overlay-1: #ffffff7a;
 
 .text-on-color {
     color: $on-color;
+}
+
+.text-on-color-accent {
+    color: $on-color-accent;
 }
