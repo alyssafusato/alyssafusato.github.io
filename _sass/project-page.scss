@@ -10,6 +10,9 @@ $content-min-width: 300px;
 $img-divider-height: 240px;
 $title-img-height: 280px;
 
+$text-max-width: 760px;
+$img-small-max-width: 600px;
+
 $section-padding: $xl4;
 
 $grid-item-min-width: 250px;
@@ -20,11 +23,8 @@ $card-radius: 16px;
 .title-img-wrapper {
   display: flex;
   height: $title-img-height;
-  // align-items: flex-start; 
-  // align-self: stretch;
   background-size: cover;
   background-repeat: no-repeat;
-  // background-position: center;
 
   svg {
     width: 100%;
@@ -61,7 +61,7 @@ $card-radius: 16px;
   .stat-block {
     @include flex-col;
     color: $secondary;
-    padding: $xl $none;
+    padding: $xl $none $none;
     gap: $sm;
     max-width: 270px;
   }
@@ -101,9 +101,18 @@ $card-radius: 16px;
     gap: $xl;
     justify-content: center;
     max-width: $section-max-width;
-    align-self: stretch;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .body-large,
+  .body-xl,
+  .label-1,
+  .label-2,
+  p,
+  small {
+    max-width: $text-max-width;
   }
 
   ul {
@@ -275,6 +284,14 @@ $card-radius: 16px;
   }
 }
 
+.img-left-wrapper {
+  @extend .img-wrapper;
+  max-width: $section-max-width;
+  width: 100%;
+  margin: auto;
+  padding: $xl $xl4 $xl 0;
+}
+
 // Goes on img parent to make img go full width, creates decorative transition between sections
 .img-section-divider {
   @extend .img-wrapper;
@@ -291,8 +308,15 @@ $card-radius: 16px;
 .img-standalone {
   @extend .img-wrapper;
   max-width: $section-max-width;
+  width: 100%;
   margin: auto;
-  padding: $xl $xl4;
+  padding: $xl 0;
+}
+
+.img-small {
+  img {
+    max-width: $img-small-max-width;
+  }
 }
 
 #Table-of-contents {

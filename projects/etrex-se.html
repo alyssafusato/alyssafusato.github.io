@@ -7,11 +7,16 @@ permalink: /etrex-se
 <div class="body-wrapper">
 
     <div id="Project-title" class="title-section">
+        <div class="title-img-wrapper" style="background-image:url(/assets/images/shotview-promo.jpg)">
+            <svg xmlns='http://www.w3.org/2000/svg'>
+                <filter id='noiseFilter'>
+                    <feTurbulence type='fractalNoise' baseFrequency='0.90' numOctaves='3' stitchTiles='stitch' />
+                </filter>
+                <rect width='100%' height='100%' filter='url(#noiseFilter)' />
+            </svg>
+        </div>
         <div class="project-section">
             <div class="content-wrapper">
-                <div class="title-img-wrapper">
-                    <img src="/assets/images/shotview-marketing-app.png" class="project-card-img" alt="image">
-                </div>
                 <div class="title-wrapper"> <!-- Page Title & Subline  -->
                     <h2 class="font-extrabold text-accent-primary">
                         {{ page.title }}
@@ -44,11 +49,6 @@ permalink: /etrex-se
                         <div class="stat-block-label body-large">Project Role</div>
                         <div class="stat-block-value body-large">Lead UX Designer
                         </div>
-                    </div>
-                    <div class="stat-block">
-                        <div class="stat-block-label body-large">Collaborators</div>
-                        <div class="stat-block-value body-large">Consumer Electronics Software,
-                            Graphics, PM</div>
                     </div>
                 </div>
             </div>
@@ -186,46 +186,37 @@ permalink: /etrex-se
                 </div>
             </div>
         </div>
-    </div>
-
-    <div id="improvements" class="project-section section-row">
         <div class="content-wrapper">
             <div class="section-title-wrapper">
-                <h4 class="section-title font-medium text-accent-primary">Tracking improvements</h4>
+                <h4 class="section-title font-medium text-accent-primary">Tracking Update</h4>
             </div>
-            <div class="subsection-col">
+            <div class="subsection-row">
                 <div class="content-block">
                     <div class="body-large font-medium">
                         In addition to the button changes we needed to accommodate, we also wanted to improve the
                         tracking experience and tighten up the convoluted menu system.
                     </div>
-                    <div class="subsection-row">
-                        <div class="content-block">
-                            <p>
-                                For all of Garmin's GPS products, tracking has several key components:
-                            </p>
-                            <ul>
-                                <li>Displaying a trackline of where the user has been</li>
-                                <li>Controls for saving, pausing, or resetting the tracks</li>
-                                <li>Data such as distance, elevation, or time elapsed</li>
-                                <li>Other common actions, like marking the current location or starting navigation</li>
-                            </ul>
-
-                        </div>
-                        <div class="content-block" style="flex:1 0 0">
-
-                        </div>
-                        <div class="content-block">
-                            <p>
-                                On the eTrex 10, all of these features were scattered across the device as
-                                individual menu items with no clear relation to one another.
-                            </p>
-                            <div class="img-wrapper">
-                                <img src="/assets/images/etrex-10-tracking.png" class="project-card-img" alt="image">
-                                <div class="label-1 center-text">
-                                    Default menu setup on the eTrex 10
-                                </div>
-                            </div>
+                    <p>
+                        For all of Garmin's GPS products, tracking has several key components:
+                    </p>
+                    <ul>
+                        <li>Displaying a trackline of where the user has been</li>
+                        <li>Controls for saving, pausing, or resetting the tracks</li>
+                        <li>Data such as distance, elevation, or time elapsed</li>
+                        <li>Other common actions, like marking the current location or starting navigation</li>
+                    </ul>
+                    <p>
+                        On the eTrex 10, all of these features were <strong>
+                            scattered across the device as
+                            individual menu items with no clear relation
+                        </strong> to one another.
+                    </p>
+                </div>
+                <div class="content-block" style="flex:0.75 0 0">
+                    <div class="img-wrapper">
+                        <img src="/assets/images/etrex-tracking-features.png" class="project-card-img" alt="image">
+                        <div class="label-1 center-text">
+                            Default menu setup on the eTrex 10
                         </div>
                     </div>
                 </div>
@@ -262,9 +253,6 @@ permalink: /etrex-se
                 </div>
             </div>
         </div>
-    </div>
-
-    <div id="menu-button" class="project-section col">
         <div class="content-wrapper">
             <div class="section-title-wrapper">
                 <h4 class="section-title font-medium">
@@ -288,9 +276,6 @@ permalink: /etrex-se
                 <!-- <img src="/assets/images/etrex" class="project-card-img" alt="image"> -->
             </div>
         </div>
-    </div>
-
-    <div id="map-grid" class="project-section col">
         <div class="content-wrapper">
             <div class="section-title-wrapper">
                 <h4 class="section-title font-medium">
@@ -389,15 +374,11 @@ permalink: /etrex-se
                 </div>
             </div>
         </div>
+        <div class="img-standalone">
+            <img src="/assets/images/shotview-marketing-app.png" class="project-card-img" alt="image">
+            <small>Image caption</small>
+        </div>
     </div>
 
-    <div class="img-standalone">
-        <img src="/assets/images/shotview-marketing-app.png" class="project-card-img" alt="image">
-        <small>Image caption</small>
-    </div>
-
-    <div class="img-section-divider">
-        <img src="/assets/images/shotview-marketing-app.png" class="project-card-img" alt="image">
-    </div>
 
 </div>
