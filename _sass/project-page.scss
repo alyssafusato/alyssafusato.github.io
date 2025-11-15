@@ -19,6 +19,23 @@ $grid-item-min-width: 250px;
 $grid-item-small-min-width: 180px;
 $card-radius: 16px;
 
+
+.bg-color-surface {
+  background-color: $surface-1;
+}
+
+.bg-color-void {
+  background-color: $background-void;
+}
+
+.vertical-padding-small {
+  padding: $xl 0;
+}
+
+.border-radius-small {
+  border-radius: $card-radius;
+}
+
 // TITLE
 .title-img-wrapper {
   display: flex;
@@ -319,7 +336,8 @@ $card-radius: 16px;
   }
 }
 
-#Table-of-contents {
+
+#table-of-contents {
   align-items: center;
   flex-direction: row;
 
