@@ -19,7 +19,17 @@ $background-default: #E0EAEE;
 $background-secondary: #c6dde5;
 $background-void: white;
 $surface-1: #EDF2F5;
-$white-overlay-1: #ffffff7a;
+$white-overlay-1: #ffffff9e;
+
+$green-accent: hsl(129, 72%, 18%);
+$green-accent-secondary: hsl(129, 81%, 31%);
+$green-background-default: hsl(129, 29%, 91%);
+$green-background-secondary: hsl(129, 39%, 84%);
+
+$brown-accent: hsl(37, 52%, 26%);
+$brown-accent-secondary: hsl(38, 36%, 42%);
+$brown-background-default: hsl(37, 20%, 90%);
+$brown-background-secondary: hsl(37, 30%, 84%);
 
 :root {
     --primary: #{$primary};

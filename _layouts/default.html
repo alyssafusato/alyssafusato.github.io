@@ -31,7 +31,17 @@
   // Google tag end
 </script>
 
-<body style="overflow-x: hidden">
+<body style="overflow-x: hidden"
+{% comment %}
+{% assign link = page.permalink %}
+{% case link %}
+{% when "/demo-plain" %}
+class="theme-green"
+{% when "/shotview" %}
+class="theme-brown" 
+{% endcase %}
+{% endcomment %}
+>
   {{ content }}
 </body>
 

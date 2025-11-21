@@ -7,6 +7,8 @@ $section-min-height: 400px;
 $section-max-width: 900px; // If changing, please also update style override on _includes/footer.html to match
 $content-min-width: 300px;
 
+$paragraph-width: 640px;
+
 $img-divider-height: 240px;
 $title-img-height: 280px;
 
@@ -96,7 +98,7 @@ $card-radius: 16px;
 // BODY
 .body-wrapper {
   .project-section:nth-of-type(odd) {
-    background-color: $surface-1;
+    background-color: $white-overlay-1;
   }
 }
 
@@ -389,5 +391,140 @@ $card-radius: 16px;
 
   > :nth-child(odd) {
     min-width: 140px;
+  }
+}
+
+
+// Plain Demo --------------------------------------
+.paragraph-container {
+  @include flex-col;
+  margin: auto;
+  gap: 1em;
+  width: $paragraph-width;
+  padding: $xl2;
+
+  .stat-block-wrapper {
+    @include flex-row;
+    gap: $xl $xl3;
+    border: none; // Delete once old CSS is gone
+    padding: $sm 0;
+
+    .stat-block {
+      @include flex-col;
+      color: $secondary;
+      gap: $xs;
+      flex: 1 0 0;
+      min-width: 140px;
+      max-width: 250px;
+      padding: 0; // Delete once old CSS is gone
+    }
+  }
+
+  p,
+  ul,
+  ol {
+    font-weight: 350;
+    margin: 0;
+  }
+
+  ul,
+  ol {
+    padding-left: 1.5em;
+
+    li {
+      margin-bottom: $med;
+    }
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  .img-container {
+    @include flex-col;
+    margin: $med 0;
+    gap: $med;
+
+    .label-1 {
+      text-align: center;
+      font-style: italic;
+      color: $secondary;
+    }
+  }
+
+  .img-smaller {
+    align-items: center;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    padding: 0;
+  }
+
+  @media (max-width: 750px) {
+    width: unset;
+  }
+}
+
+.theme-green {
+  background-color: $green-background-default;
+
+  .text-accent-primary {
+    color: $green-accent;
+  }
+
+  .text-accent-secondary {
+    color: $green-accent-secondary;
+  }
+
+  .text-link {
+    color: $green-accent;
+  }
+
+  footer {
+    background-color: $green-background-secondary;
+
+    .contact-wrapper path {
+      fill: $green-accent;
+    }
+  }
+
+  hr {
+    border-color: $green-accent-secondary;
+  }
+}
+
+.theme-brown {
+  background-color: $brown-background-default;
+
+  .text-accent-primary {
+    color: $brown-accent;
+  }
+
+  .text-accent-secondary {
+    color: $brown-accent-secondary;
+  }
+
+  .text-link {
+    color: $brown-accent;
+  }
+
+  footer {
+    background-color: $brown-background-secondary;
+
+    .contact-wrapper path {
+      fill: $brown-accent;
+    }
+  }
+
+  hr {
+    border-color: $brown-accent-secondary;
   }
 }
