@@ -21,8 +21,7 @@
   font-stretch: 75% 100%;
 }
 
-$body:
-  "Inter",
+$body: "Inter",
   ui-sans-serif,
   -apple-system,
   system-ui,
@@ -141,6 +140,14 @@ h6 {
   font-size: $body-lg-size;
   font-weight: 450;
   letter-spacing: -0.2px;
+}
+
+.body-lg {
+  font-family: $body;
+  line-height: 130%;
+  font-size: $body-xl-size;
+  font-weight: 300;
+  letter-spacing: -0.1px;
 }
 
 p {
