@@ -15,7 +15,7 @@ main-projects:
     date: 2024 - 2025
     type: Figma Library
     image: "/assets/images/wearables-kit-notext-thumbnail.png" 
-    complete: false
+    complete: true
 
   - name: eTrex SE
     link: /etrex-se
@@ -24,7 +24,7 @@ main-projects:
     date: 2021 - 2022
     type: Consumer Electronics
     image: "/assets/images/etrex-se-video-screenshot.png" 
-    complete: false
+    complete: true
 
 other-projects:
   - name: GC+ Live Activity
