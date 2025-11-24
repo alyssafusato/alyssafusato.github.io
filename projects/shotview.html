@@ -4,424 +4,137 @@ title: ShotView Mobile
 permalink: /shotview
 ---
 
-<div class="body-wrapper">
-
-    <div id="project-title" class="title-section">
-        <div class="title-img-wrapper" style="background-image:url(/assets/images/shotview-promo.jpg)"><svg xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.90' numOctaves='3'stitchTiles='stitch' /></filter><rect width='100%' height='100%' filter='url(#noiseFilter)' /></svg></div>
-        <div class="project-section">
-            <div class="content-wrapper">
-                <div class="title-wrapper"> <!-- Page Title & Subline  -->
-                    <h2 class="font-extrabold text-accent-primary">
-                        {{ page.title }}
-                    </h2>
-                    <h5 class="text-accent-secondary font-regular">
-                        Designing a home for XERO ballistics
-                    </h5>
-                </div>
-                <div class="subsection-row">
-                    <div class="content-block"> <!-- Page Description & Intro  -->
-                        <div class="body-xl">
-                            Garmin's XERO product family encapsulates the <strong>hunting, archery, and rifle sports
-                                categories</strong>.
-                            Following its 2018 debut, XERO had seen rapid growth and was developing a product
-                            that would change the game forever.
-                        </div>
-                    </div>
-                    <div class="content-block">
-                        <p>
-                            The <a href="https://www.garmin.com/en-US/p/771164/" target="_blank"
-                                class="text-link font-bold">XERO C1
-                                Pro</a> is a radar chronograph, a device that measures and records bullet speeds.
-                            In early 2022, I was brought onboard as the new UX lead for the C1 and its companion app
-                            ShotView. </p>
-                        <p>
-                            Work on the device was nearing completion, but ShotView was stuck
-                            in its initial stages and in desperate need of a fresh start.
-                        </p>
-                    </div>
-                </div>
-                <div class="stat-block-wrapper">
-                    <div class="stat-block">
-                        <p class="stat-block-label">Timeline</p>
-                        <p class="stat-block-value">21 months <br> Jan 2022 - Oct 2023</p>
-                    </div>
-                    <div class="stat-block">
-                        <p class="stat-block-label">Project Role</p>
-                        <p class="stat-block-value">Lead UX Designer
-                        </p>
-                    </div>
-                </div>
+<div class="paragraph-container">
+    <a href="/" class="text-link" style="align-self: flex-start">
+        &lt;- Home
+    </a>
+    <img src="assets/images/shotview-promo.jpg" alt=""></img>
+    <div class="title-wrapper">
+        <h3 class="font-family-display">{{ page.title }}</h3>
+        <h5 class="text-secondary">Designing a home for XERO ballistics</h5>
+    </div>
+    <div class="stat-block-row">
+        <hr>
+        <div class="stat-block-wrapper">
+            <div class="stat-block">
+                <p><strong>Timeline</strong></p>
+                <p>
+                    21 months
+                    <!-- <br> -->
+                    (2022 - 2023)
+                </p>
             </div>
+            <div class="stat-block">
+                <p><strong>Project Role</strong></p>
+                <p>Lead UX Designer</p>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <p>
+        Garmin's Xero product family has been making waves in the hunting, archery, and rifle sports scene since
+        its debut in 2018. I joined the Xero product team as they were working on a slate of exciting new
+        products and their mobile counterparts.
+    </p>
+    <p>
+        Of these, the most highly anticipated was the C1 Pro radar chronograph. While the product team was
+        confident they’d struck gold with the device, its companion app ShotView needed a complete overhaul.
+    </p>
+    <hr>
+    <h4>Background</h4>
+    <p>
+        Chronographs are devices that measure projectile speeds. They are often used by hunters and long-range
+        shooters to optimize their gear for peak accuracy and consistency. Most higher-end chronographs come
+        with apps that allow users to easily review, edit, and share their shot data.
+    </p>
+    <p>
+        While chronographs all basically do the same thing, the C1 Pro’s standout feature is its compact size
+        and easy setup. No more data cables, power cords, bulky carrying cases, or giant tripods.
+    </p>
+    <div class="img-container img-smaller">
+        <img src="assets/images/chronograph-sizing.png" alt=""></img>
+        <div class="label-1">Unlike its competitors at the time, the C1 Pro was small enough to fit in your
+            pocket without compromising on accuracy or reliability.</div>
+    </div>
+    <p>
+        We envisioned ShotView as the central hub for all future shooting and archery-related products at
+        Garmin. But in the near-term, its main purpose would be to give shooters a way to view and manage shot
+        data recorded on the C1 Pro.
+    </p>
+    <hr>
+    <h4>Design</h4>
+    <p>
+        We started by designing all of the exciting interactions first. This came back to bite us when half of
+        them had to be cut so we could launch on time. The decision had been made fairly late into the project
+        and required revisions to most of the app to account for the loss of key features.
+    </p>
+    <p>
+        ShotView’s objectives pivoted to presenting shot stats in a way that would still be informative and
+        insightful for users. The result is a minimalistic app with a strong emphasis on visual hierarchy to
+        showcase session data.
+    </p>
+    <div class="img-container">
+        <img src="assets/images/shotview-final-screens.png" alt=""></img>
+        <div class="label-1">ShotView’s Home and Session pages</div>
+    </div>
+    <p>
+        A simplified map of ShotView's main screens is diagrammed below. The app's shallow, modular architecture
+        serves as a scalable base so new features can easily be added in, whether for other ballistics devices
+        or new chronograph features.
+    </p>
+    <div class="img-container">
+        <img src="assets/images/shotview-app-diagram.png" alt=""></img>
+        <!-- <div class="label-1">Several different iterations of the main data section</div> -->
+    </div>
+    <p>
+        Ideally, users would pair the ShotView app and the C1 chronograph for the best possible experience, but
+        there are some users who prefer to use the C1 on its own. To accommodate these users, I pulled in UI
+        updates to mirror the app's design.
+    </p>
+    <p>
+        In some cases, this was challenging because of the device’s much smaller screen size and low resolution
+        black-and-white display. Sample changes are displayed below.
+    </p>
+    <div class="img-container img-smaller">
+        <img src="assets/images/c1-device-improvements.png" alt=""></img>
+        <div class="label-1">These improvements help reduce cognitive load when the user is browsing saved
+            sessions on the device.</div>
+    </div>
+    <p>
+        There were a few new suggestions for improvements that were investigated and implemented after launch.
+        One of them was the addition of bulk exports for sessions, which was a major perk for users who were
+        recording lots of sessions and wanted to share them with other platforms for further analysis.
+    </p>
+    <div class="img-container">
+        <img src="assets/images/shotview-bulk-export.png" alt=""></img>
+        <!-- <div class="label-1">Wireframe flow for bulk exporting sessions</div> -->
+    </div>
+    <hr>
+    <h4>Conclusion</h4>
+    <p>
+        The C1 Pro and ShotView released together on October 19 2023 to great success, prompting the C1 to go
+        out of stock for months afterward.
+    </p>
+    <div class="img-container img-smaller">
+        <img src="assets/images/xero-sold-out.png" alt=""></img>
+        <div class="label-1">
+            Garmin’s sales team had underestimated the units needed by about tenfold, eliciting this reaction
+            from user @giumau1 on the Sniper’s Hide forum.
         </div>
     </div>
-
-    <div id="table-of-contents" class="project-section">
-        <div class="content-wrapper">
-            <div class="section-link-wrapper">
-                <div class="icon-wrapper">
-                    <svg width="32" height="32" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M16.1864 3.75C15.9591 2.74801 15.063 2 13.9922 2H10.0547C8.98389 2 8.08781 2.74801 7.86044 3.75H6.77344C5.5308 3.75 4.52344 4.75736 4.52344 6V19.75C4.52344 20.9926 5.5308 22 6.77344 22H17.2734C18.5161 22 19.5234 20.9926 19.5234 19.75L19.5234 6C19.5234 4.75736 18.5161 3.75 17.2734 3.75H16.1864ZM9.30469 4.25C9.30469 3.83579 9.64047 3.5 10.0547 3.5H13.9922C14.4064 3.5 14.7422 3.83578 14.7422 4.25L14.7422 4.71875C14.7422 5.13296 14.4064 5.46875 13.9922 5.46875H10.0547C9.64047 5.46875 9.30469 5.13296 9.30469 4.71875V4.25ZM7.86777 5.25H6.77344C6.35922 5.25 6.02344 5.58579 6.02344 6V19.75C6.02344 20.1642 6.35922 20.5 6.77344 20.5H17.2734C17.6877 20.5 18.0234 20.1642 18.0234 19.75L18.0234 6C18.0234 5.58579 17.6876 5.25 17.2734 5.25H16.1791C15.9404 6.23626 15.0518 6.96875 13.9922 6.96875H10.0547C8.99506 6.96875 8.10651 6.23626 7.86777 5.25Z"
-                            fill="#323544" />
-                    </svg>
-
-                </div>
-                <small class="font-bold"><a href="{{ page.permalink }}#background" class="text-link"> Background
-                    </a></small>
-            </div>
-            <div class="horizontal-line"> </div>
-            <div class="section-link-wrapper">
-                <div class="icon-wrapper">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <path
-                            d="M28 28L22.2 22.2M25.3333 14.6667C25.3333 20.5577 20.5577 25.3333 14.6667 25.3333C8.77563 25.3333 4 20.5577 4 14.6667C4 8.77563 8.77563 4 14.6667 4C20.5577 4 25.3333 8.77563 25.3333 14.6667Z"
-                            stroke="#206C87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </div>
-                <small class="font-bold"><a href="{{ page.permalink }}#research" class="text-link"> Research
-                    </a></small>
-            </div>
-            <div class="horizontal-line"> </div>
-            <div class="section-link-wrapper">
-                <div class="icon-wrapper">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <path
-                            d="M15.9998 2.66663H11.3332C10.0955 2.66663 8.90851 3.15829 8.03334 4.03346C7.15817 4.90863 6.6665 6.09562 6.6665 7.33329C6.6665 8.57097 7.15817 9.75795 8.03334 10.6331C8.90851 11.5083 10.0955 12 11.3332 12M15.9998 2.66663V12M15.9998 2.66663H20.6665C21.2793 2.66663 21.8862 2.78733 22.4524 3.02185C23.0185 3.25638 23.533 3.60012 23.9663 4.03346C24.3997 4.4668 24.7434 4.98125 24.9779 5.54744C25.2125 6.11362 25.3332 6.72046 25.3332 7.33329C25.3332 7.94613 25.2125 8.55296 24.9779 9.11915C24.7434 9.68534 24.3997 10.1998 23.9663 10.6331C23.533 11.0665 23.0185 11.4102 22.4524 11.6447C21.8862 11.8793 21.2793 12 20.6665 12M15.9998 12H11.3332M15.9998 12H20.6665M15.9998 12V21.3333M11.3332 12C10.0955 12 8.90851 12.4916 8.03334 13.3668C7.15817 14.242 6.6665 15.4289 6.6665 16.6666C6.6665 17.9043 7.15817 19.0913 8.03334 19.9665C8.90851 20.8416 10.0955 21.3333 11.3332 21.3333M20.6665 12C20.0537 12 19.4468 12.1207 18.8806 12.3552C18.3145 12.5897 17.8 12.9335 17.3667 13.3668C16.9333 13.8001 16.5896 14.3146 16.3551 14.8808C16.1205 15.447 15.9998 16.0538 15.9998 16.6666C15.9998 17.2795 16.1205 17.8863 16.3551 18.4525C16.5896 19.0187 16.9333 19.5331 17.3667 19.9665C17.8 20.3998 18.3145 20.7435 18.8806 20.9781C19.4468 21.2126 20.0537 21.3333 20.6665 21.3333C21.2793 21.3333 21.8862 21.2126 22.4524 20.9781C23.0185 20.7435 23.533 20.3998 23.9663 19.9665C24.3997 19.5331 24.7434 19.0187 24.9779 18.4525C25.2125 17.8863 25.3332 17.2795 25.3332 16.6666C25.3332 16.0538 25.2125 15.447 24.9779 14.8808C24.7434 14.3146 24.3997 13.8001 23.9663 13.3668C23.533 12.9335 23.0185 12.5897 22.4524 12.3552C21.8862 12.1207 21.2793 12 20.6665 12ZM11.3332 21.3333C10.0955 21.3333 8.90851 21.825 8.03334 22.7001C7.15817 23.5753 6.6665 24.7623 6.6665 26C6.6665 27.2376 7.15817 28.4246 8.03334 29.2998C8.90851 30.175 10.0955 30.6666 11.3332 30.6666C12.5708 30.6666 13.7578 30.175 14.633 29.2998C15.5082 28.4246 15.9998 27.2376 15.9998 26V21.3333M11.3332 21.3333H15.9998"
-                            stroke="#206C87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <defs>
-                            <clipPath id="clip0_2221_221">
-                                <rect width="32" height="32" fill="white"></rect>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </div>
-                <small class="font-bold"><a href="{{ page.permalink }}#design" class="text-link">Design</a></small>
-            </div>
-            <div class="horizontal-line"> </div>
-            <div class="section-link-wrapper">
-                <div class="icon-wrapper">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <path
-                            d="M12 14.6667L16 18.6667L29.3333 5.33333M28 16V25.3333C28 26.0406 27.719 26.7189 27.219 27.219C26.7189 27.719 26.0406 28 25.3333 28H6.66667C5.95942 28 5.28115 27.719 4.78105 27.219C4.28095 26.7189 4 26.0406 4 25.3333V6.66667C4 5.95942 4.28095 5.28115 4.78105 4.78105C5.28115 4.28095 5.95942 4 6.66667 4H21.3333"
-                            stroke="#206C87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </div>
-                <small class="font-bold"><a href="{{ page.permalink }}#feedback" class="text-link">Feedback</a></small>
-            </div>
-            <div class="horizontal-line"> </div>
-            <div class="section-link-wrapper">
-                <div class="icon-wrapper">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <path
-                            d="M10.6665 18.6666C10.6665 18.6666 12.6665 21.3333 15.9998 21.3333C19.3332 21.3333 21.3332 18.6666 21.3332 18.6666M11.9998 12H12.0132M19.9998 12H20.0132M29.3332 16C29.3332 23.3638 23.3636 29.3333 15.9998 29.3333C8.63604 29.3333 2.6665 23.3638 2.6665 16C2.6665 8.63616 8.63604 2.66663 15.9998 2.66663C23.3636 2.66663 29.3332 8.63616 29.3332 16Z"
-                            stroke="#206C87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </div>
-                <small class="font-bold"><a href="{{ page.permalink }}#conclusion"
-                        class="text-link">Conclusion</a></small>
-            </div>
-        </div>
+    <p>
+        While external limitations prevented the team from implementing everything that had been planned, the
+        need to adapt rapidly within those constraints helped me rethink the way I approach design projects.
+        Serving as the UX lead on this product taught me to trust my intuition as a designer, and it was
+        satisfying to see the tangible results of the whole team's contributions.
+    </p>
+    <p>
+        Overall, ShotView was a rare opportunity for me to design an app from the ground up and experience all
+        of the ups and downs associated with the full process. I'm proud of have been a part of it and am
+        excited to see where it goes in the future.
+    </p>
+    <div class="img-container">
+        <img src="assets/images/shotview-marketing-projectile.png" alt=""></img>
+        <div class="label-1">A shot from the official feature reel for the C1 Pro</div>
     </div>
-
-    <div id="background" class="project-section section-row">
-        <div class="content-wrapper">
-            <div class="section-title-wrapper">
-                <h3 class="section-title">Background</h3>
-            </div>
-            <div class="subsection-col">
-                <div class="content-block">
-                    <p>
-                        In load development, chronographs are used to determine the ideal mix of ammunition
-                        components—bullet, case, powder, and primer—to achieve the best possible accuracy and
-                        consistency. Many external factors can affect a bullet's trajectory, from wind and barrel
-                        temperature to even the Earth’s rotation, so dedicated hunters and long-range marksmen rely on
-                        chronographs to understand and optimize their gear’s performance.
-                    </p>
-                </div>
-            </div>
-            <div class="subsection-row">
-                <div class="content-block">
-                    <div class="body-large font-medium">
-                        The team was working on a new ultra-compact radar chronograph, the XERO C1 Pro.
-                    </div>
-                    <p>
-                        Unlike other chronographs on the market, the C1 Pro would be small enough to fit in your pocket
-                        without compromising on accuracy or usability.
-                    </p>
-                </div>
-                <div class="content-block" style="flex:1.5 0 0">
-                    <div class="img-wrapper">
-                        <img src="/assets/images/chronograph-sizing.png" class="project-card-img" alt="image">
-                        <small>The size of the C1 Pro relative to other popular chronographs</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="research" class="project-section section-row">
-        <div class="content-wrapper">
-            <div class="section-title-wrapper">
-                <h3 class="section-title">Research</h3>
-            </div>
-            <div class="subsection-col">
-                <div class="content-block">
-                    <div class="body-large font-medium">
-                        I had no background in hunting and sports shooting prior to this project. To gain familiarity
-                        with this space, I conducted interviews with several shooters and drew up a
-                        competitive analysis of existing chronograph apps.
-                    </div>
-                </div>
-                <div class="content-block" style="flex:1.5 0 0">
-                    <p>
-                        Through this process, I gained a sense for common design patterns, user expectations, and
-                        opportunities for Garmin to set itself apart in the market.
-                    </p>
-                </div>
-            </div>
-            <div class="img-wrapper">
-                <img src="/assets/images/shotview-competitors.png" class="project-card-img" alt="image">
-                <small>Screenshots from the Caldwell Precision Chronograph and FX Radar mobile apps</small>
-            </div>
-        </div>
-    </div>
-
-    <div id="design" class="project-section section-col">
-        <div class="content-wrapper">
-            <div class="section-title-wrapper">
-                <h3 class="section-title">
-                    Design
-                </h3>
-            </div>
-            <div class="subsection-row">
-                <div class="content-block">
-                    <div class="paragraph-wrapper">
-                        <p>
-                            Due to unexpected constraints, many of the designed app features were cut prior to launch.
-                            The remaining elements of the app required changes to account for the loss of key
-                            features, which drastically changed the focus of the app.
-                        </p>
-                        <div class="body-large font-medium">
-                            In response, ShotView pivoted to prioritize presentation of session stats in a way that
-                            would still be
-                            informative and insightful for users.
-                        </div>
-                    </div>
-                </div>
-                <div class="content-block">
-                    <div class="img-wrapper"><img src="/assets/images/shotview-data-drafts-vertical.png"
-                            class="project-card-img" alt="image"></div>
-                    <div class="label-1 center-text text-secondary">Several rejected iterations of the main data section
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content-wrapper">
-            <div class="section-title-wrapper">
-                <h4 class="section-title font-medium">
-                    Main screens
-                </h4>
-            </div>
-            <div class="subsection-col">
-                <div class="content-block">
-                    <p>The result is a minimalistic app with a strong emphasis on visual hierarchy to showcase session
-                        stats.</p>
-                </div>
-            </div>
-            <div class="img-wrapper">
-                <img src="/assets/images/shotview-final-screens.png" class="project-card-img" alt="image">
-            </div>
-        </div>
-        <div class="content-wrapper">
-            <div class="section-title-wrapper">
-                <h4 class="section-title font-medium">
-                    App Overview
-                </h4>
-            </div>
-            <div class="subsection-col">
-                <div class="content-block">
-                    <p>
-                        A simplified map of ShotView's main screens is diagrammed below. The app's shallow, modular
-                        architecture serves as a scalable base so new features can easily be added in, whether for other
-                        ballistics devices or new chronograph features.
-                    </p>
-                </div>
-            </div>
-            <div class="img-standalone">
-                <img src="/assets/images/shotview-app-diagram.png" class="project-card-img" alt="image">
-                <!-- <small class="center-text"></small> -->
-            </div>
-        </div>
-        <div class="content-wrapper">
-            <div class="section-title-wrapper">
-                <h4 class="section-title font-medium">
-                    Device Improvements
-                </h4>
-            </div>
-            <div class="subsection-col">
-                <div class="content-block">
-                    <p>
-                        Ideally, users would pair the ShotView app and the C1 chronograph for the best possible
-                        experience, but there are some users who prefer to use C1 on its own. To accommodate these
-                        users, I pulled in UI updates to mirror the app's design.
-                    </p>
-                    <p>
-                        In some cases, this was challenging because of the difference in screen size and increased
-                        constraints with the low resolution black-and-white display. Sample changes are displayed below.
-                    </p>
-                </div>
-            </div>
-            <div class="img-standalone img-small">
-                <img src="/assets/images/c1-device-improvements.png" class="project-card-img" alt="image">
-                <small class="center-text">
-                </small>
-            </div>
-        </div>
-    </div>
-
-    <div id="feedback" class="project-section section-row">
-        <div class="content-wrapper">
-            <div class="section-title-wrapper">
-                <h3 class="section-title">
-                    Feedback & Results
-                </h3>
-            </div>
-            <div class="subsection-row">
-                <div class="content-block">
-                    <div class="paragraph-wrapper">
-                        <div class="body-xl font-medium">
-                            The C1 Pro and ShotView released together on October 19, 2023.
-                        </div>
-                        <p>
-                            Reception was <strong>overwhelmingly positive for the device</strong>, garnering widespread
-                            praise for its
-                            ease-of-use and portable size.
-                        </p>
-                        <p>
-                            It became infamously backordered for several months after launch.
-                            Manufacturing struggled to keep up with surging demand since Garmin's sales team had
-                            underestimated the units needed by about tenfold.
-                        </p>
-                    </div>
-                </div>
-                <div class="content-block">
-                    <div class="img-wrapper"><img src="/assets/images/xero-sold-out.png" class="project-card-img"
-                            alt="image"></div>
-                    <div class="label-1 center-text text-secondary">A response to the device shortage by user @giumau1
-                        from the forum
-                        Sniper's Hide
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content-wrapper">
-            <div class="section-title-wrapper">
-                <h4 class="section-title font-medium">
-                    Reception to the ShotView app was mixed
-                </h4>
-            </div>
-            <div class="subsection-row">
-                <div class="content-block" style="flex: 1.5 0 0">
-                    <div class="paragraph-wrapper">
-                        <div class="body-xl">
-                            Some users were happy with the app's detailed session view and note-taking tools, while
-                            others were hoping for more advanced features.
-                        </div>
-                        <p>
-                            Commonly requested features include location-based weather data, photos, weapon and
-                            projectile profiles, and a live view of the current session.
-                        </p>
-                        <p>
-                            Nearly all of these features were identified and designed early in the development process
-                            but could not be included due to scope changes. The feedback provided is encouraging and
-                            confirms the team's vision of how to serve users in the future.
-                        </p>
-                    </div>
-                </div>
-                <div class="content-block">
-                    <div class="img-wrapper"><img src="/assets/images/shotview-reactions.png" class="project-card-img"
-                            alt="image">
-                        <div class="label-1  center-text">
-                            The general tone of some of these reactions makes me wonder if the
-                            hype surrounding the device led to equally high expectations for the app.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content-wrapper">
-            <div class="section-title-wrapper">
-                <h4 class="section-title font-medium">
-                    Post-launch Improvements
-                </h4>
-            </div>
-            <div class="subsection-col">
-                <div class="content-block content-group">
-                    <p>
-                        There were a few new suggestions for improvements that were investigated and implemented
-                        after launch. One standout was the addition of bulk exports for sessions, which was a major perk
-                        for users who had their own external systems for tracking and processing the data they recorded.
-                    </p>
-                    <div class="img-wrapper"><img src="/assets/images/shotview-bulk-export.png" class="project-card-img"
-                            alt="image">
-                        <div class="label-1">
-                            Wireframe flow for bulk exporting sessions
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="conclusion" class="project-section section-row">
-        <div class="content-wrapper">
-            <div class="section-title-wrapper">
-                <h3 class="section-title">
-                    Conclusion
-                </h3>
-            </div>
-            <div class="subsection-row">
-                <div class="content-block" style="flex: 1.5 0 0">
-                    <div class="paragraph-wrapper">
-                        <div class="body-xl">
-                            ShotView was a rare opportunity for me to design an app from the ground up and experience
-                            all of the ups and downs associated with the full process.
-                        </div>
-                        <p>
-                            While external limitations prevented the team from implementing everything that had been
-                            planned, the need to adapt rapidly within those constraints made me rethink the way I
-                            approach design projects.
-                        </p>
-                        <p>
-                            Serving as the lead designer on ShotView taught me to trust my intuition more as a designer,
-                            and it was satisfying to see the tangible results of the whole team's contributions.
-                        </p>
-                        <p>
-                            Overall, ShotView is a unique product with huge potential for growth, I'm proud of have been
-                            a part of it, and I'm excited to see where it goes in the future.
-                        </p>
-                    </div>
-                </div>
-                <div class="content-block">
-                    <div class="img-wrapper">
-                        <img src="/assets/images/shotview-promo-projectiles.png" class="project-card-img" alt="image">
-                        <div class="label-1">
-                            Screenshot from the official promotional video
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="img-standalone">
-            <img src="/assets/images/shotview-marketing-app-whole.png" class="project-card-img" alt="image">
-            <!-- <small>Image caption</small> -->
-        </div>
-    </div>
-
-
-
-    <!-- <div class="img-section-divider">
-        <img src="/assets/images/shotview-video-thumbnail.png" class="project-card-img" alt="image">
-    </div> -->
-
 </div>
