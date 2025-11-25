@@ -3,4 +3,143 @@ layout: default
 title: Live Activity
 permalink: /live-activity
 ---
-<h1>{{ page.title }}</h1>
+
+<div class="paragraph-container">
+    <a href="/" class="text-link" style="align-self: flex-start">
+        &lt;- Home
+    </a>
+    <img src="assets/images/wearables-banner.png" alt=""></img>
+    <div class="title-wrapper">
+        <h3 class="font-family-display">{{ page.title }}</h3>
+        <h5 class="text-secondary">--</h5>
+    </div>
+    <div class="stat-block-row">
+        <hr>
+        <div class="stat-block-wrapper">
+            <div class="stat-block">
+                <p><strong>Timeline</strong></p>
+                <p>
+                    <!-- 12 months -->
+                    <!-- <br> -->
+                    (2022-2023)
+                </p>
+            </div>
+            <div class="stat-block">
+                <p><strong>Project Role</strong></p>
+                <p>Concept Development</p>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <p>
+        Garmin Connect is the central app that syncs to our vast range of fitness and wellness products. It serves over
+        __ users every day and is really, really important for us.
+    </p>
+    <p>
+        Back in 2022, Connect was undergoing a lot of change. As part of the team that designs the devices that pair to
+        Connect, we wanted to take this opportunity to push for new features that make the most of the app’s ties to our
+        wearables.
+    </p>
+    <hr>
+    <!-- <h4>Background</h4> -->
+    <p>
+        I didn’t initially set out to create Live Activity. It came up as a part of a larger project to help users
+        understand the many performance scores recorded by our devices and present them in new and interesting ways.
+    </p>
+    <div class="img-container img-smaller">
+        <img src="assets/images/wearables-screen-size.png" alt=""></img>
+        <div class="label-1">This kind of thing happened way more often than it should have (which is never)</div>
+    </div>
+    <p>
+        The problem was that we had a lot of advanced features and insights to show users, but weren’t providing
+        explanations for them in a readily accessible manner- users had to go out of their way to learn about them,
+        which often meant they didn’t.
+    </p>
+    <p>
+        Most of the work I did went into visualizing these advanced stats, providing explanations about their meaning,
+        and reorganizing the app to better accommodate them. We also designed tools to help users analyze and compare
+        specific metrics over time, which is currently difficult to do.
+    </p>
+    <div class="img-container img-smaller">
+        <img src="assets/images/wearables-screen-size.png" alt=""></img>
+        <div class="label-1">This kind of thing happened way more often than it should have (which is never)</div>
+    </div>
+    <p>
+        At some point, I realized that a major problem with displaying these stats and trends was that users simply
+        weren’t recording some of the details we’d need for the feature to work. On activities like Strength, users
+        often didn’t bother to add critical details like reps, weight, and the exercises they were doing- both because
+        the app didn’t do anything interesting with it, and because it was hard to do.
+    </p>
+    <p>
+        The other features I had concepted helped with the “interesting” part. But we needed to make it easy for users
+        to track and update activity details, or they were going to do it somewhere else.
+    </p>
+    <p>
+        My immediate thought was to improve our workout editor and make it easier to edit activities after they’d been
+        saved. This would be good, but something told me we could do better.
+    </p>
+    <hr>
+    <p>
+        As a part of research for this project, I began spending a lot more time in the gym with other fitness apps. It
+        felt much more natural to use my phone to track my strength workouts than my watch, especially since weight
+        training has regular breaks for me to open an app and update my workout. The larger screen was great for seeing
+        multiple exercises at once, looking up references for the moves I wanted to try, and making changes as I went.
+    </p>
+    <p>
+        I was likelier to keep an accurate log of my activity when I did it on my phone compared to my watch. If only we
+        could detect when a user started a strength activity on their watch and allow them to add details on the app in
+        real time!
+    </p>
+    <p>
+        On a similar note, during treadmill runs I started to notice that I preferred to use the treadmill’s display to
+        keep track of my distance rather than my wearable. Even though the treadmill was worse at accurately tracking
+        metrics like heartrate and calories, it was way easier to look at and felt less intrusive to my running
+        experience.
+    </p>
+    <p>
+        Many treadmills also have a little built-in place to display your phone as you run. My guess is that it’s for
+        watching videos or whatever so you momentarily forget that you’re running. If only we could funnel all of the
+        activity data we record from the watch onto somewhere easier to see, like your phone...
+    </p>
+    <p>
+        At the same time, I was working on a different mobile project that relied on a “live” connection to one of our
+        devices to control it remotely and display data, so I knew that we had the technology to make it happen. With
+        all of that in place, it was time to start designing.
+    </p>
+    <hr>
+    <p>I wanted the live activity feature to do a few things:</p>
+    <ul>
+        <li>Mirror the activity data being recorded on your watch</li>
+        <li>Allow users to add rep/weight/move info to strength workouts as they go</li>
+        <li>Display video references for strength and yoga moves (which we already have on Connect) in real time</li>
+    </ul>
+    <p>
+        Here are the two concept screens I made for the pitch deck.
+    </p>
+    <div class="img-container img-smaller">
+        <img src="assets/images/wearables-screen-size.png" alt=""></img>
+        <div class="label-1">This kind of thing happened way more often than it should have (which is never)</div>
+    </div>
+    <p>
+        After presenting my work to the VPs in charge of Connect, Fitness, and Outdoor, Live Activity was immediately
+        picked up as a feature to be included in Connect’s first subscription launch, Garmin Connect+.
+    </p>
+    <p>
+        The mockups were handed off to a designer who works on Connect, who refined them into their current
+        implementation.
+    </p>
+    <div class="img-container img-smaller">
+        <img src="assets/images/wearables-screen-size.png" alt=""></img>
+        <div class="label-1">This kind of thing happened way more often than it should have (which is never)</div>
+    </div>
+    <p>
+        The other data analysis recommendations I pitched didn’t make it on the Connect mobile app, but Connect web
+        later launched a subscription feature called Performance Dashboard that heavily resembles the chart overlays and
+        metric tracking in my presentation and serves the same purpose.
+    </p>
+    <p>
+        Following launch, our analytics showed that Live Activity was widely used despite being limited to specific
+        wearables and activity types.
+    </p>
+
+</div>
