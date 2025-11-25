@@ -29,7 +29,7 @@ main-projects:
 other-projects:
   - name: GC+ Live Activity
     link: /live-activity
-    description: View and control wearable activities from the app in one of the most successful subscription features to launch on <a href="https://www.garmin.com/en-US/p/1565777/" target="_blank" class="text-link font-bold">Connect+</a> this past year.
+    description: View and control wearable activities from the app in one of the most successful subscription features to launch on Connect+ this past year.
     date: 2022 - 2025
     type: Mobile App, Concept Pitch
     image: "/assets/images/live-activity-thumbnail.png" 
