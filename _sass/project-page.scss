@@ -1,6 +1,6 @@
-// @import "font";
-// @import "color";
-// @import "spacing";
+@import "font";
+@import "color";
+@import "spacing";
 
 $section-min-height: 400px;
 $section-max-width: 900px; // If changing, please also update style override on _includes/footer.html to match
