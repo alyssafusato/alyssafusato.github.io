@@ -2,24 +2,9 @@
 @import "color";
 @import "spacing";
 
-$section-min-height: 400px;
-$section-max-width: 900px; // If changing, please also update style override on _includes/footer.html to match
-$content-min-width: 300px;
-
 $paragraph-width: 650px;
 
-$img-divider-height: 240px;
-$title-img-height: 280px;
-
-$text-max-width: 760px;
-$img-small-max-width: 600px;
-
-$section-padding: $xl4;
-
-$grid-item-min-width: 250px;
-$grid-item-small-min-width: 180px;
-$card-radius: 16px;
-
+// $title-img-height: 280px;
 
 // Plain Demo --------------------------------------
 .paragraph-container {
@@ -33,7 +18,6 @@ $card-radius: 16px;
   .stat-block-wrapper {
     @include flex-row;
     gap: $xl $xl3;
-    border: none; // Delete once old CSS is gone
     padding: $sm 0;
 
     .stat-block {
@@ -44,7 +28,6 @@ $card-radius: 16px;
       flex: 1 0 0;
       min-width: 140px;
       max-width: 250px;
-      padding: 0; // Delete once old CSS is gone
     }
   }
 
