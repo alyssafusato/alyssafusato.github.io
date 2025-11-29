@@ -5,9 +5,7 @@ permalink: /wearables-library
 ---
 
 <div class="paragraph-container">
-    <a href="/" class="text-link" style="align-self: flex-start">
-        &lt;- Home
-    </a>
+    <a href="/" class="text-link" style="align-self: flex-start">&lt;- Home</a>
     <img src="assets/images/wearables-banner.png" alt=""></img>
     <div class="title-wrapper">
         <h3 class="font-family-display">{{ page.title }}</h3>
@@ -17,16 +15,21 @@ permalink: /wearables-library
         <hr>
         <div class="stat-block-wrapper">
             <div class="stat-block">
-                <p><strong>Timeline</strong></p>
-                <p>
-                    12 months
-                    <!-- <br> -->
-                    (2024 - 2025)
-                </p>
+                <small><strong>Timeline</strong></small>
+                <small>12 months<!-- <br> -->(2024 - 2025)</small>
             </div>
             <div class="stat-block">
-                <p><strong>Project Role</strong></p>
-                <p>Lead Architect</p>
+                <small><strong>Project Role</strong></small>
+                <small>Lead Architect</small>
+            </div>
+            <div class="stat-block" style="max-width: unset; flex: unset;">
+                <small><strong>Responsibilities</strong></small>
+                <small>
+                    Led research on design systems and met with other teams to discuss opportunities for collaboration
+                    and future growth. Defined the basic vision and goals for the project and set up processes for
+                    tracking existing UI and updating the library. Created library elements and the documentation to
+                    support them, then compiled a handoff document to help onboard new users and future architects.
+                </small>
             </div>
         </div>
         <hr>
@@ -38,19 +41,19 @@ permalink: /wearables-library
             target="_blank" class="link-styling">
             multi-billion dollar revenue stream</a>.
     </p>
-    <p>When I first joined Garmin, each wearable had its own dedicated product designer who handled everything for it.
-        As wearables grew, the team pivoted to a centralized feature-based approach to create a more cohesive experience
-        within our ecosystem.</p>
-    <p>Designers were now in charge of features rather than individual devices. Their designs had to account for
-        multiple unfamiliar device types with completely different inputs and screen sizes. Compounded by a chronic lack
-        of UX documentation, new and experienced designers alike struggled to keep up with the new system.
+    <p>
+        Prior to the development of this library, every product designer worked in isolation on one product line. This
+        approach began to fail as Garmin’s offerings grew and diversified. Designers struggled to create cohesive
+        experiences across screen sizes and features, and onboarding new team members became a nightmare of a task.
     </p>
-    <p>I was brought in to build a wireframing library that would span multiple product families and help Wearables move
-        faster. Having only built a few small libraries for myself up until that point, this challenge would be a huge
-        leap into uncharted territory.</p>
+    <p>
+        I was asked to build a wireframing kit that could address these bottlenecks, and set out to build a system that
+        could scale rapid development and seamless onboarding across diverse product families.
+    </p>
     <hr>
-    <!-- <h4>Background</h4> -->
+    <h4>Defining the problem</h4>
     <p>I began by studying other design systems and learning more about the Wearable team’s day-to-day pain points. </p>
+    <p>There were two core issues:</p>
     <ol>
         <li>
             <strong>Each designer had to figure out how to build common elements and interactions on their own.</strong>
@@ -82,6 +85,7 @@ permalink: /wearables-library
         systems are often criticized for. These fears have prevented us from investing in design systems in the past,
         and we wanted to be mindful of them moving forward.
     </p>
+    <h4>Library requirements</h4>
     <p>From this phase, a set of requirements for the library emerged:</p>
     <ol>
         <li>Support the main product families owned by the wearables team and make it easy to convert features
@@ -91,6 +95,7 @@ permalink: /wearables-library
         <li>Include a process for auditing arbitrary differences and other weirdness</li>
     </ol>
     <hr>
+    <h4>Establishing a fast, iterative process</h4>
     <p>
         We set up a system to handle component requests and met with the wearables team weekly to discuss them. To keep
         things moving, we kept the process light and prioritized iteration over perfection.
@@ -99,6 +104,7 @@ permalink: /wearables-library
         <img src="assets/images/wearables-library-process.png" alt=""></img>
         <!-- <div class="label-1"> // Diagram of our process // </div> -->
     </div>
+    <h4>Auditing existing work</h4>
     <p>
         It didn’t take long for me to realize that the mockups and design specs linked in each ticket didn’t always
         match implementation. I started keeping a record of device screenshots to show the design team and help with
@@ -113,6 +119,7 @@ permalink: /wearables-library
         <div class="label-1">The UX Audit file turned out to be helpful for newer designers learning about the device
         </div>
     </div>
+    <h4>Narrowing down device types</h4>
     <p>
         To feasibly build a single library to cover several product families, we decided go mid-fi and only include the
         details needed to make UX decisions. Out of the many product families and variations Garmin offers, we defined
@@ -123,6 +130,7 @@ permalink: /wearables-library
         <img src="assets/images/wearable-types.png" alt=""></img>
         <div class="label-1">The basic device types and the products they cover </div>
     </div>
+    <h4>Designing for flexibility</h4>
     <p>
         We started with our most common interface element- list items. List items are notoriously complex with many
         different use cases and variations, so we used nested “building block” components to help split them into
@@ -138,6 +146,7 @@ permalink: /wearables-library
         <img src="assets/images/component-structure.png" alt=""></img>
         <div class="label-1">List items are built using modular pieces that can be swapped out</div>
     </div>
+    <h4>Built-in suggestions</h4>
     <p>
         Our approach was great at providing options and possibilities, but lacked direction. We also wanted to give
         users an easy path to the most common versions of an element, which is what they want 99% of the time anyway.
@@ -158,6 +167,7 @@ permalink: /wearables-library
         <div class="label-1">Patterns, galleries, and templates are published alongside the base component to help
             designers understand how the component works and get what they need at a glance</div>
     </div>
+    <h4>Intuitive Navigation</h4>
     <p>
         Nailing findability was personal to me.
 
@@ -188,6 +198,7 @@ permalink: /wearables-library
         see which components are already built and what still needs to be requested before opening a new ticket.
     </p>
     <hr>
+    <h4>Reception</h4>
     <p>
         The Wearables Library made its official debut in early 2024 and only grew from there. Within a year, we had
         built

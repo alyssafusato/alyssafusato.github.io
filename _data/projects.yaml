@@ -10,7 +10,7 @@ main-projects:
 
   - name: Wearables Library
     link: /wearables-library
-    subline: Garmin’s first wearables wireframing kit
+    subline: Building Garmin’s first wireframing kit for wearables
     description: 
     date: 2024 - 2025
     type: Figma Library
@@ -19,7 +19,7 @@ main-projects:
 
   - name: eTrex SE
     link: /etrex-se
-    subline: Entry-level GPS navigator
+    subline: Creating a successor to Garmin's bestselling handheld GPS
     description: 
     date: 2021 - 2022
     type: Consumer Electronics
@@ -29,7 +29,7 @@ main-projects:
 other-projects:
   - name: GC+ Live Activity
     link: /live-activity
-    description: View and control wearable activities from the app in one of the most successful subscription features to launch on Connect+ this past year.
+    description: View and control wearable activities from your phone in one of the most successful subscription features to launch on Connect+ this past year.
     date: 2022 - 2025
     type: Mobile App, Concept Pitch
     image: "/assets/images/live-activity-thumbnail.png" 
