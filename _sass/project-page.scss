@@ -147,7 +147,7 @@ $paragraph-width: 650px;
 
 .next-project {
   @include flex-row-nowrap;
-  margin-top: $xl;
+  margin-top: $xl3;
   gap: $xl;
   background-color: $surface-1;
   padding: $xl;
