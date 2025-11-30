@@ -20,22 +20,23 @@ permalink: /wearables-library
             </div>
             <div class="stat-block">
                 <small><strong>Project Role</strong></small>
-                <small>Lead Architect</small>
+                <small>Architect</small>
             </div>
             <div class="stat-block" style="max-width: unset; flex: unset;">
                 <small><strong>Responsibilities</strong></small>
                 <small>
-                    Led research on design systems and met with other teams to discuss opportunities for collaboration
-                    and future growth. Defined the basic vision and goals for the project and set up processes for
-                    tracking existing UI and updating the library. Created library elements and the documentation to
-                    support them, then compiled a handoff document to help onboard new users and future architects.
+                    Led research on design systems and met with other teams to discuss opportunities for collaboration.
+                    Defined the vision and goals for the project and set up processes to guide its development. Created
+                    library elements and the documentation to support them, then compiled a handoff document to onboard
+                    new users and future architects.
                 </small>
             </div>
         </div>
         <hr>
     </div>
     <p class="body-lg">
-        Wearables are a major part of Garmin’s product portfolio, boasting 6+ regularly updated product families and
+        Wearables like fitness trackers and running watches are a major part of Garmin’s product portfolio, boasting 6+
+        regularly updated product families and
         making up nearly 40% of the company’s
         <a href="https://www.garmin.com/en-US/newsroom/wp-content/uploads/2025/02/2024-Q4-GRMN-Earnings-Release_Final.pdf"
             target="_blank" class="link-styling">
@@ -76,12 +77,13 @@ permalink: /wearables-library
         </li>
     </ul>
     <div class="img-container img-smaller">
-        <img src="assets/images/wearables-screen-size.png" alt=""></img>
-        <div class="label-1">This kind of thing happened way more often than it should have (which is never)</div>
+        <img src="assets/images/watch-size.png" alt=""></img>
+        <div class="label-1">This kind of thing happened way more often than it should have</div>
     </div>
     <p>
         Despite the situation, there was also a lot of anxiety about how having a library could change the
-        team’s workflow. The biggest worry was around losing creative freedom and limiting innovation, which design
+        team’s workflow. The biggest worry was around <strong>losing creative freedom and limiting innovation</strong>,
+        which design
         systems are often criticized for. These fears have prevented us from investing in design systems in the past,
         and we wanted to be mindful of them moving forward.
     </p>
@@ -97,7 +99,7 @@ permalink: /wearables-library
     <hr>
     <h4>Establishing a fast, iterative process</h4>
     <p>
-        We set up a system to handle component requests and met with the wearables team weekly to discuss them. To keep
+        I set up a system to handle component requests and met with the wearables team weekly to discuss them. To keep
         things moving, we kept the process light and prioritized iteration over perfection.
     </p>
     <div class="img-container">
@@ -121,25 +123,24 @@ permalink: /wearables-library
     </div>
     <h4>Narrowing down device types</h4>
     <p>
-        To feasibly build a single library to cover several product families, we decided go mid-fi and only include the
+        To feasibly build a single library to cover several product families, I decided go mid-fi and only include the
         details needed to make UX decisions. Out of the many product families and variations Garmin offers, we defined
         <strong>four basic wearable types</strong> that capture all of the products we needed. These would be designed
         at a similar screen size to make conversions between types faster and easier.
     </p>
     <div class="img-container">
         <img src="assets/images/wearable-types.png" alt=""></img>
-        <div class="label-1">The basic device types and the products they cover </div>
+        <!-- <div class="label-1">Devices were sorted into types by button layout and screen shape</div> -->
     </div>
     <h4>Designing for flexibility</h4>
     <p>
-        We started with our most common interface element- list items. List items are notoriously complex with many
-        different use cases and variations, so we used nested “building block” components to help split them into
-        manageable pieces.
+        I started with our most common interface element- list items. List items are notoriously complex with many
+        different use cases and variations, so we broke the component down into smaller interchangeable pieces.
     </p>
     <p>
-        Since building blocks are controlled by instance swaps rather than variants, users would also be able to create
-        entirely new kinds of secondary content or left/right elements and switch them in without breaking the original
-        component. This gave us an incredibly flexible base that designers would have room to experiment with.
+        By structuring things this way, users would also be able to create entirely new kinds of content and switch them
+        in without breaking the original component. This gave us an incredibly flexible base that designers would have
+        room to experiment with.
     </p>
 
     <div class="img-container">
@@ -148,7 +149,7 @@ permalink: /wearables-library
     </div>
     <h4>Built-in suggestions</h4>
     <p>
-        Our approach was great at providing options and possibilities, but lacked direction. We also wanted to give
+        Our approach was great at providing options and possibilities, but lacked direction. I also wanted to give
         users an easy path to the most common versions of an element, which is what they want 99% of the time anyway.
         This would be especially important to avoid overwhelming newer designers still getting the hang of our
         ecosystem.
