@@ -1,0 +1,53 @@
+<div class="next-container">
+    <div class="next-project">
+        {% assign link = page.permalink %}
+        {% case link %}
+
+        {% when "/shotview" %}
+        {% for item in site.data.projects.main-projects %}
+        {% assign nextproj = "Wearables Library" %}
+        {% if nextproj == item.name %}
+        <div class="next-proj-wrapper">
+            <div class="label-1 text-secondary"><em> Next project -&gt; </em></div>
+            <div class="text-wrapper">
+                <a href="{{item.link}}" class="link-styling"><strong>{{ item.name }}</strong></a>
+                <small>{{item.subline}}</small>
+            </div>
+        </div>
+        <img src="{{ item.image }}" alt="" class="next-proj-img">
+        {% endif %}
+        {% endfor %}
+
+        {% when "/wearables-library" %}
+        {% for item in site.data.projects.main-projects %}
+        {% assign nextproj = "eTrex SE" %}
+        {% if nextproj == item.name %}
+        <div class="next-proj-wrapper">
+            <div class="label-1 text-secondary"><em>  Next project -&gt; </em></div>
+            <div class="text-wrapper">
+                <a href="{{item.link}}" class="link-styling"><strong>{{ item.name }}</strong></a>
+                <small>{{item.subline}}</small>
+            </div>
+        </div>
+        <img src="{{ item.image }}" alt="" class="next-proj-img">
+        {% endif %}
+        {% endfor %}
+
+        {% when "/etrex-se" %}
+        {% for item in site.data.projects.main-projects %}
+        {% assign nextproj = "ShotView Mobile" %}
+        {% if nextproj == item.name %}
+        <div class="next-proj-wrapper">
+            <div class="label-1 text-secondary"><em> &lt;- Previous project </em></div>
+            <div class="text-wrapper">
+                <a href="{{item.link}}" class="link-styling"><strong>{{ item.name }}</strong></a>
+                <small>{{item.subline}}</small>
+            </div>
+        </div>
+        <img src="{{ item.image }}" alt="" class="next-proj-img">
+        {% endif %}
+        {% endfor %}
+
+        {% endcase %}
+    </div>
+</div>

@@ -140,3 +140,46 @@ $paragraph-width: 650px;
     border-color: $brown-accent-secondary;
   }
 }
+
+.next-container {
+  position: relative;
+}
+
+.next-project {
+  @include flex-row-nowrap;
+  margin-top: $xl;
+  gap: $xl;
+  background-color: $surface-1;
+  padding: $xl;
+  border-radius: $sm;
+  align-items: center;
+
+  .next-proj-wrapper {
+    @include flex-col;
+    flex: 1 0 0;
+    gap: $med;
+  }
+
+  .text-wrapper {
+    @include flex-col;
+    gap: 0px;
+  }
+
+  .next-proj-img {
+    height: 100px;
+    border-radius: $xs;
+  }
+
+  a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &:hover {
+    background-color: mix($surface-1, white, 70%);
+  }
+}
