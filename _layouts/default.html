@@ -32,15 +32,15 @@
 </script>
 
 <body style="overflow-x: hidden"
-{% comment %}
 {% assign link = page.permalink %}
 {% case link %}
-{% when "/demo-plain" %}
-class="theme-green"
+{% when "/wearables-library" %}
+class="theme-darkblue"
 {% when "/shotview" %}
-class="theme-brown" 
+class="theme-green" 
+{% when "/etrex-se" %}
+class="theme-yellow" 
 {% endcase %}
-{% endcomment %}
 >
   {{ content }}
 </body>

@@ -113,31 +113,59 @@ $paragraph-width: 650px;
   }
 }
 
-.theme-brown {
-  background-color: $brown-background-default;
+.theme-yellow {
+  background-color: $yellow-background-default;
 
   .text-accent-primary {
-    color: $brown-accent;
+    color: $yellow-accent;
   }
 
   .text-accent-secondary {
-    color: $brown-accent-secondary;
+    color: $yellow-accent-secondary;
   }
 
   .text-link {
-    color: $brown-accent;
+    color: $yellow-accent;
   }
 
   footer {
-    background-color: $brown-background-secondary;
+    background-color: $yellow-background-secondary;
 
     .contact-wrapper path {
-      fill: $brown-accent;
+      fill: $yellow-accent;
     }
   }
 
   hr {
-    border-color: $brown-accent-secondary;
+    border-color: $yellow-accent-secondary;
+  }
+}
+
+.theme-darkblue{
+  background-color: $darkblue-background-default;
+
+  .text-accent-primary {
+    color: $darkblue-accent;
+  }
+
+  .text-accent-secondary {
+    color: $darkblue-accent-secondary;
+  }
+
+  .text-link {
+    color: $darkblue-accent;
+  }
+
+  footer {
+    background-color: $darkblue-background-secondary;
+
+    .contact-wrapper path {
+      fill: $darkblue-accent;
+    }
+  }
+
+  hr {
+    border-color: $darkblue-accent-secondary;
   }
 }
 
@@ -153,6 +181,7 @@ $paragraph-width: 650px;
   padding: $xl;
   border-radius: $sm;
   align-items: center;
+  box-shadow: 2px 2px 12px -4px $accent-shadow;
 
   .next-proj-wrapper {
     @include flex-col;

@@ -21,15 +21,26 @@ $background-void: white;
 $surface-1: #EDF2F5;
 $white-overlay-1: #ffffff9e;
 
-$green-accent: hsl(129, 72%, 18%);
-$green-accent-secondary: hsl(129, 81%, 31%);
-$green-background-default: hsl(129, 29%, 91%);
-$green-background-secondary: hsl(129, 39%, 84%);
+$green-accent: #4b641f;
+$green-accent-secondary: #6e9629;
+$green-background-default: hsl(81, 16%, 92%);
+$green-background-secondary: #d3ddc3;
 
-$brown-accent: hsl(37, 52%, 26%);
-$brown-accent-secondary: hsl(38, 36%, 42%);
-$brown-background-default: hsl(37, 20%, 90%);
-$brown-background-secondary: hsl(37, 30%, 84%);
+// $brown-accent: hsl(37, 52%, 26%);
+// $brown-accent-secondary: hsl(38, 36%, 42%);
+// $brown-background-default: hsl(37, 20%, 90%);
+// $brown-background-secondary: hsl(37, 30%, 84%);
+
+$yellow-accent: #755b0d;
+$yellow-accent-secondary: #C89B13;
+$yellow-background-default: hsl(52, 16%, 91%);
+$yellow-background-secondary: #e4dfc6;
+
+$darkblue-accent: #4358AC;
+$darkblue-accent-secondary: #6B7FD0;
+$darkblue-background-default: #E4E6EE;
+$darkblue-background-secondary: #D1D6EB;
+
 
 :root {
     --primary: #{$primary};
