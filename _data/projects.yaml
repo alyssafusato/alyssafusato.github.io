@@ -33,7 +33,7 @@ other-projects:
     date: 2022 - 2025
     type: Mobile App, Concept Pitch
     image: "/assets/images/live-activity-thumbnail.png" 
-    complete: true
+    complete: false
 
   - name: Community Kits
     link: /figma-community
