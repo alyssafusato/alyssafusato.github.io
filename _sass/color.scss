@@ -80,3 +80,89 @@ $darkblue-background-secondary: #D1D6EB;
 .text-on-color-accent {
     color: $on-color-accent;
 }
+
+// Color Theme ------------------
+
+.theme-green {
+  background-color: $green-background-default;
+
+  .text-accent-primary {
+    color: $green-accent;
+  }
+
+  .text-accent-secondary {
+    color: $green-accent-secondary;
+  }
+
+  .text-link {
+    color: $green-accent;
+  }
+
+  footer {
+    background-color: $green-background-secondary;
+
+    .contact-wrapper path {
+      fill: $green-accent;
+    }
+  }
+
+  hr {
+    border-color: $green-accent-secondary !important;
+  }
+}
+
+.theme-yellow {
+  background-color: $yellow-background-default;
+
+  .text-accent-primary {
+    color: $yellow-accent;
+  }
+
+  .text-accent-secondary {
+    color: $yellow-accent-secondary;
+  }
+
+  .text-link {
+    color: $yellow-accent;
+  }
+
+  footer {
+    background-color: $yellow-background-secondary;
+
+    .contact-wrapper path {
+      fill: $yellow-accent;
+    }
+  }
+
+  hr {
+    border-color: $yellow-accent-secondary !important;
+  }
+}
+
+.theme-darkblue{
+  background-color: $darkblue-background-default;
+
+  .text-accent-primary {
+    color: $darkblue-accent;
+  }
+
+  .text-accent-secondary {
+    color: $darkblue-accent-secondary;
+  }
+
+  .text-link {
+    color: $darkblue-accent;
+  }
+
+  footer {
+    background-color: $darkblue-background-secondary;
+
+    .contact-wrapper path {
+      fill: $darkblue-accent;
+    }
+  }
+
+  hr {
+    border-color: $darkblue-accent-secondary !important;
+  }
+}
