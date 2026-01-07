@@ -9,7 +9,7 @@ permalink: /shotview
     <img src="assets/images/shotview-promo.jpg" alt=""></img>
     <div class="title-wrapper">
         <h3 class="font-family-display">{{ page.title }}</h3>
-        <h5 class="text-secondary">Designing a home for Garmin ballistics</h5>
+        <h5 class="text-secondary">Designing a home for Garmin archery & ballistics</h5>
     </div>
     <div class="stat-block-row">
         <hr>
@@ -26,91 +26,160 @@ permalink: /shotview
                 <small><strong>Project Role</strong></small>
                 <small>Lead UX Designer</small>
             </div>
-            <div class="stat-block" style="max-width: unset; flex: unset;">
-                <small><strong>Responsibilities</strong></small>
-                <small>
-                    Worked with a product manager, mobile software, and consumer electronics software to
-                    define requirements, identify opportunities for improvement, concept and design mockups, 
-                    establish a handoff process, and create a plan for the app's future growth.
-                </small>
-            </div>
+            <!-- <div class="stat-block" style="max-width: unset; flex: unset;"><small><strong>Responsibilities</strong></small><small>Defined requirements, identified opportunities for improvement, concepted and designed mockups,established a handoff process, and created a plan for the app's future growth.</small></div> -->
         </div>
         <hr>
     </div>
+    <h4>Summary</h4>
     <p>
-        Garmin's Xero product family has been making waves in the hunting, archery, and rifle sports scene since its
-        debut in 2018. I joined the Xero product team as they were working on a slate of exciting new products and their
-        mobile counterparts.
+        ShotView is a mobile platform for managing Garmin archery and ballistics devices, starting with our upcoming
+        radar chronograph. As the sole designer on the project, <strong>I was in charge of bringing the app from a few
+            rough concept screens into a fully-realized app experience. </strong>
     </p>
+
+    <div class="img-container">
+        <img src="assets/images/sv-overview.png" alt="Diagram of how the C1 sends data to the ShotView app"></img>
+        <div class="label-1">
+            Users record shots on the C1 Pro Chronograph, which are sent to the ShotView app for easier
+            viewing and management.
+        </div>
+    </div>
     <p>
-        Of these, the most highly anticipated was the C1 Pro radar chronograph. While the product team had full
-        confidence in the device, its companion app ShotView needed a complete overhaul.
+        Created to launch alongside the C1 Pro chronograph, the ShotView app needed to allow users to view, edit, and
+        export shot data recorded by the C1 device. <strong>
+            In the future, ShotView will also have to support many other Garmin archery
+            and ballistics products, requiring a highly adaptive and scalable design.
+        </strong>
     </p>
+    <div class="img-container">
+        <img src="assets/images/sv-app-screens.png" alt="Mockups of ShotView app's main screens"></img>
+    </div>
     <hr>
-    <h4>Background</h4>
+    <h4>What is the C1 Pro Chronograph?</h4>
     <p>
         Chronographs are devices that measure projectile speeds. They are often used by hunters and long-range
-        shooters to optimize their gear for peak accuracy and consistency. Most higher-end chronographs come
-        with apps that allow users to easily review, edit, and share their shot data.
+        shooters to optimize their gear for peak accuracy and consistency.
     </p>
     <p>
-        While chronographs all basically do the same thing, the C1 Pro’s standout feature is its compact size and simple
-        setup process.
+        Most chronographs needed massive shades, a dedicated stand, bulky carrying cases, or
+        lengthy calibration procedures. By contrast,
+        <strong>
+            the Garmin C1 Pro’s ultra compact size and effortless setup
+            process made the device unlike anything before it.
+        </strong>
     </p>
     <div class="img-container img-smaller">
-        <img src="assets/images/chronograph-sizing.png" alt=""></img>
-        <div class="label-1">Unlike its competitors at the time, the C1 Pro was small enough to fit in your
+        <img src="assets/images/chronograph-size-compare.png"
+            alt="Illustration of the C1's size compared to other chronographs"></img>
+        <div class="label-1">The C1 Pro is small enough to fit in your
             pocket without compromising on accuracy or reliability.</div>
     </div>
     <p>
-        We envisioned ShotView as the central hub for all future shooting and archery-related products at
-        Garmin. But in the near-term, its main purpose would be to give shooters a way to view and manage shot
-        data recorded on the C1 Pro.
+        Consumer electronics like the C1 Pro will often pair to a mobile app for additional functionality and support.
+        I designed the ShotView app to have several additional features to further enhance the C1 experience, but
+        they were ultimately shelved in a late-project scope change.
+    </p>
+    <p>
+        <strong>
+            The app’s main focus shifted to allow users to review, edit, and share the shot data recorded on the C1 Pro.
+        </strong>
     </p>
     <hr>
-    <h4>Design</h4>
+    <h4>A clear & informative review screen</h4>
     <p>
-        We started by designing all of the exciting interactions first. This came back to bite us when half of them had
-        to be shelved so we could launch on time. The decision had been made fairly late into the project and required
-        revisions to most of the app to account for the loss of key features, but gave us a roadmap for future updates
-        and releases.
+        The review screen for each session needed to show aggregated values for the larger activity along with specific
+        metrics for individual shots.
     </p>
     <p>
-        ShotView’s objectives pivoted to presenting shot stats in a way that would still be informative and
-        insightful for users. The result is a minimalistic app with a strong emphasis on visual hierarchy to
-        showcase session data. 
+        I leaned into <strong>visual hierarchy to draw out the most important stats</strong> up front while still
+        providing access to
+        individual shot details below. Here’s how ShotView’s review screen stacks up to our competitors:
     </p>
     <div class="img-container">
-        <img src="assets/images/shotview-final-screens.png" alt=""></img>
-        <div class="label-1">ShotView’s Home and Session pages</div>
+        <img src="assets/images/sv-compare.png"
+            alt="Screenshots of ShotView app's review screen next to other apps"></img>
+        <div class="label-1">The review screens on other chronograph apps have nearly idential information
+            and mainly differ in presentation</div>
     </div>
     <p>
-        A simplified map of ShotView's main screens is diagrammed below. The app's shallow, modular architecture
-        serves as a scalable base so new features can easily be added in, whether for other ballistics devices
-        or new chronograph features.
+        <strong>
+            I built the review screen using modular sections that allow the layout to be easily added onto or rearranged
+            to suit our needs.
+        </strong>
+        This became crucial later into development when features had to be cut for time. Instead of
+        being forced to refactor everything, all I needed to do was take a few sections out for launch so they could be
+        re-added in a later release.
     </p>
     <div class="img-container">
-        <img src="assets/images/shotview-diagram.png" alt=""></img>
-        <!-- <div class="label-1">Several different iterations of the main data section</div> -->
+        <img src="assets/images/sv-session-screen.png" alt="Diagram of the Review screen labeled by section"></img>
+        <div class="label-1">A breakdown of the Session Review screen, which has been organized into modular sections.
+        </div>
     </div>
+    <h4>Building with future growth in mind</h4>
+    <p>
+        On top of gradually introducing major feature updates over time, ShotView would need to support upcoming archery
+        and ballistics devices with completely different needs and use cases.
+    </p>
+    <p>
+        This required a flexible design that
+        <strong>
+            could accommodate new features and functionality without completely disrupting the user’s prior experience.
+        </strong>
+    </p>
+    <div class="img-container">
+        <img src="assets/images/sv-new-devices.png" alt=""></img>
+        <div class="label-1">Main tabs have a consistent structure while the device and review pages are tailored to suit the needs of each product.</div>
+    </div>
+    <p>
+        Organizing the app this way means that new archery and ballistics devices can pair to ShotView instead of
+        needing an entirely new companion app.
+    </p>
+    <h4>Adding flexibility to the home screen</h4>
+    <p>
+        The Home screen is made up of cards and button elements that can adapt to whichever devices are currently paired
+        to the app. As ShotView grows, the top section of Home can be used to display insights, analytics, or shortcuts
+        to common actions.
+    </p>
+    <div class="img-container">
+        <img src="assets/images/sv-homescreen-layout.png"
+            alt="Diagram showing how the home screen could look in the future"></img>
+        <!-- <div class="label-1">Main pages of the app contain a list of subpages to device or session-specific details</div> -->
+    </div>
+    <p>
+        <strong>I designed the session cards on the home screen with new future session types in mind.</strong>
+        There are several new types on our roadmap that use this card as a template with adjustments tailored to their
+        content.
+    </p>
+    <div class="img-container img-smaller">
+        <img src="assets/images/sv-session-cards.png" alt=""></img>
+        <!-- <div class="label-1">Main pages of the app contain a list of subpages to device or session-specific details</div> -->
+    </div>
+    <h4>Bringing app improvements into the device</h4>
     <p>
         Ideally, users would pair the ShotView app and the C1 chronograph for the best possible experience, but
-        there are some users who prefer to use the C1 on its own. To accommodate these users, I pulled in UI
-        updates to mirror the app's design.
+        there are some users who prefer to use the C1 on its own. To accommodate these users,
+        <strong>
+            I pulled in UI updates to mirror the app's design.
+        </strong>
     </p>
     <p>
-        In some cases, this was challenging because of the device’s much smaller screen size and low resolution
-        black-and-white display. Sample changes are displayed below.
+        The C1’s much smaller screen size, limited fonts, and black-and-white pixel display meant that UI elements had
+        to be adjusted in order to work. Below are some changes that make it
+        <strong>
+            easier to identify sessions at a glance and help reduce the amount of button presses
+        </strong>
+        needed to see relevant information.
     </p>
     <div class="img-container img-smaller">
         <img src="assets/images/c1-device-improvements.png" alt=""></img>
-        <div class="label-1">These improvements help reduce cognitive load when the user is browsing saved
+        <div class="label-1">These improvements help reduce cognitive load when the user is browsing recent
             sessions on the device.</div>
     </div>
+    <h4>Feedback-driven additions</h4>
     <p>
-        There were a few new suggestions for improvements that were investigated and implemented after launch.
-        One of them was the addition of bulk exports for sessions, which was a major perk for users who were
-        recording lots of sessions and wanted to share them with other platforms for further analysis.
+        There were a few new suggestions for improvements that I investigated and implemented after launch. One of them
+        was the ability to bulk select sessions for export, which was a major perk for users who were recording lots of
+        sessions and wanted to share them for further analysis.
     </p>
     <div class="img-container">
         <img src="assets/images/shotview-bulk-export.png" alt=""></img>
@@ -119,14 +188,14 @@ permalink: /shotview
     <hr>
     <h4>Conclusion</h4>
     <p>
-        The C1 Pro and ShotView released together on October 19 2023 to great success, prompting the C1 to go
+        The C1 Pro and ShotView released together on October 19, 2023 to great success, prompting the C1 to go
         out of stock for months afterward.
     </p>
     <div class="img-container img-smaller">
         <img src="assets/images/xero-sold-out.png" alt=""></img>
         <div class="label-1">
             Garmin’s sales team had underestimated the units needed by about tenfold, eliciting this reaction
-            from user @giumau1 on the Sniper’s Hide forum.
+            from a user on a popular rifle sports forum.
         </div>
     </div>
     <p>
@@ -136,7 +205,7 @@ permalink: /shotview
         satisfying to see the tangible results of the whole team's contributions.
     </p>
     <p>
-        Overall, ShotView was a rare opportunity for me to design an app from the ground up and experience all
+        ShotView was a rare opportunity for me to design an app from the ground up and experience all
         of the ups and downs associated with the full process. I'm proud of have been a part of the project and am
         excited to see where it goes in the future.
     </p>
